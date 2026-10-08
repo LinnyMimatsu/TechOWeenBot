@@ -1,0 +1,1 @@
+/home/atuiee/spooky_ws/build/srf08_publisher/ament_cmake_core/srf08_publisherConfig.cmake

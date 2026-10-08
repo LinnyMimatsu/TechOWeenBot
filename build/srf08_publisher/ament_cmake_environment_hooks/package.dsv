@@ -1,0 +1,4 @@
+source;share/srf08_publisher/local_setup.bash
+source;share/srf08_publisher/local_setup.dsv
+source;share/srf08_publisher/local_setup.sh
+source;share/srf08_publisher/local_setup.zsh

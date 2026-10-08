@@ -1,0 +1,17 @@
+/home/atuiee/spooky_ws/install/srf08_publisher/lib/srf08_publisher/srf08_node
+/home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher//launch/srf08_launch.py
+/home/atuiee/spooky_ws/install/srf08_publisher/share/ament_index/resource_index/package_run_dependencies/srf08_publisher
+/home/atuiee/spooky_ws/install/srf08_publisher/share/ament_index/resource_index/parent_prefix_path/srf08_publisher
+/home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/environment/ament_prefix_path.sh
+/home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/environment/ament_prefix_path.dsv
+/home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/environment/path.sh
+/home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/environment/path.dsv
+/home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/local_setup.bash
+/home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/local_setup.sh
+/home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/local_setup.zsh
+/home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/local_setup.dsv
+/home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/package.dsv
+/home/atuiee/spooky_ws/install/srf08_publisher/share/ament_index/resource_index/packages/srf08_publisher
+/home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/cmake/srf08_publisherConfig.cmake
+/home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/cmake/srf08_publisherConfig-version.cmake
+/home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/package.xml
