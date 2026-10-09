@@ -1,1 +1,0 @@
-/home/atuiee/spooky_ws/build/ros2_servo_motion/ament_cmake_core/ros2_servo_motionConfig-version.cmake

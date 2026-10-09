@@ -1,3 +1,0 @@
-/home/atuiee/spooky_ws/install/ros2_servo_motion/lib/libros2_servo_motion.so
-/home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/cmake/export_hardwareExport.cmake
-/home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/cmake/export_hardwareExport-noconfig.cmake

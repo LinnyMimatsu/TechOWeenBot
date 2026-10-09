@@ -1,1 +1,0 @@
-/home/atuiee/spooky_ws/src/ROS2_servo_motion/bringup/launch/test_fordware_position_controller.launch.py
