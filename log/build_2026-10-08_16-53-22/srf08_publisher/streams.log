@@ -1,0 +1,24 @@
+[0.076s] Invoking command in '/home/atuiee/spooky_ws/build/srf08_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/atuiee/spooky_ws/build/srf08_publisher -- -j4 -l4
+[0.469s] [100%] Built target srf08_node
+[0.606s] Invoked command in '/home/atuiee/spooky_ws/build/srf08_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/atuiee/spooky_ws/build/srf08_publisher -- -j4 -l4
+[0.728s] Invoking command in '/home/atuiee/spooky_ws/build/srf08_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/atuiee/spooky_ws/build/srf08_publisher
+[0.809s] -- Install configuration: ""
+[0.813s] -- Execute custom install script
+[0.815s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/lib/srf08_publisher/srf08_node
+[0.826s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher//launch/srf08_launch.py
+[0.840s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/ament_index/resource_index/package_run_dependencies/srf08_publisher
+[0.841s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/ament_index/resource_index/parent_prefix_path/srf08_publisher
+[0.841s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/environment/ament_prefix_path.sh
+[0.842s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/environment/ament_prefix_path.dsv
+[0.852s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/environment/path.sh
+[0.854s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/environment/path.dsv
+[0.860s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/local_setup.bash
+[0.861s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/local_setup.sh
+[0.863s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/local_setup.zsh
+[0.864s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/local_setup.dsv
+[0.864s] -- Symlinking: /home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/package.dsv
+[0.910s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/ament_index/resource_index/packages/srf08_publisher
+[0.911s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/cmake/srf08_publisherConfig.cmake
+[0.912s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/cmake/srf08_publisherConfig-version.cmake
+[0.913s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/package.xml
+[0.925s] Invoked command in '/home/atuiee/spooky_ws/build/srf08_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/atuiee/spooky_ws/build/srf08_publisher

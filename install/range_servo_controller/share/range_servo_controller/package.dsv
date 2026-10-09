@@ -1,0 +1,6 @@
+source;share/range_servo_controller/hook/cmake_prefix_path.dsv
+source;share/range_servo_controller/hook/cmake_prefix_path.sh
+source;share/range_servo_controller/local_setup.bash
+source;share/range_servo_controller/local_setup.dsv
+source;share/range_servo_controller/local_setup.sh
+source;share/range_servo_controller/local_setup.zsh

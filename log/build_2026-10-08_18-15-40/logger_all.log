@@ -1,0 +1,229 @@
+[0.814s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.814s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffb37e28a0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffb39c2c90>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffb39c2c90>>)
+[1.057s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.058s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.058s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.058s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.058s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.059s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.059s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/atuiee/spooky_ws'
+[1.060s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.060s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.061s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.062s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.062s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.062s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.063s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.063s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.063s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.193s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.193s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.194s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.194s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.194s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.195s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.196s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.197s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.197s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.198s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.198s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.199s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.200s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.200s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.202s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.203s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.203s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.203s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.203s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.205s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.205s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.205s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.206s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_servo_motion) by extensions ['ignore', 'ignore_ament_install']
+[1.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_servo_motion) by extension 'ignore'
+[1.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_servo_motion) by extension 'ignore_ament_install'
+[1.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_servo_motion) by extensions ['colcon_pkg']
+[1.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_servo_motion) by extension 'colcon_pkg'
+[1.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_servo_motion) by extensions ['colcon_meta']
+[1.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_servo_motion) by extension 'colcon_meta'
+[1.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_servo_motion) by extensions ['ros']
+[1.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROS2_servo_motion) by extension 'ros'
+[1.223s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ROS2_servo_motion' with type 'ros.ament_cmake' and name 'ros2_servo_motion'
+[1.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/fs90r_hardware) by extensions ['ignore', 'ignore_ament_install']
+[1.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/fs90r_hardware) by extension 'ignore'
+[1.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/fs90r_hardware) by extension 'ignore_ament_install'
+[1.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/fs90r_hardware) by extensions ['colcon_pkg']
+[1.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/fs90r_hardware) by extension 'colcon_pkg'
+[1.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/fs90r_hardware) by extensions ['colcon_meta']
+[1.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/fs90r_hardware) by extension 'colcon_meta'
+[1.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/fs90r_hardware) by extensions ['ros']
+[1.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/fs90r_hardware) by extension 'ros'
+[1.231s] DEBUG:colcon.colcon_core.package_identification:Package 'src/fs90r_hardware' with type 'ros.ament_cmake' and name 'fs90r_hardware'
+[1.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/srf08_publisher) by extensions ['ignore', 'ignore_ament_install']
+[1.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/srf08_publisher) by extension 'ignore'
+[1.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/srf08_publisher) by extension 'ignore_ament_install'
+[1.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/srf08_publisher) by extensions ['colcon_pkg']
+[1.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/srf08_publisher) by extension 'colcon_pkg'
+[1.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/srf08_publisher) by extensions ['colcon_meta']
+[1.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/srf08_publisher) by extension 'colcon_meta'
+[1.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/srf08_publisher) by extensions ['ros']
+[1.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/srf08_publisher) by extension 'ros'
+[1.238s] DEBUG:colcon.colcon_core.package_identification:Package 'src/srf08_publisher' with type 'ros.ament_cmake' and name 'srf08_publisher'
+[1.239s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.239s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.239s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.240s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.240s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.337s] Level 5:colcon.colcon_core.verb:set package 'fs90r_hardware' build argument 'cmake_args' from command line to 'None'
+[1.337s] Level 5:colcon.colcon_core.verb:set package 'fs90r_hardware' build argument 'cmake_target' from command line to 'None'
+[1.337s] Level 5:colcon.colcon_core.verb:set package 'fs90r_hardware' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.337s] Level 5:colcon.colcon_core.verb:set package 'fs90r_hardware' build argument 'cmake_clean_cache' from command line to 'False'
+[1.338s] Level 5:colcon.colcon_core.verb:set package 'fs90r_hardware' build argument 'cmake_clean_first' from command line to 'False'
+[1.338s] Level 5:colcon.colcon_core.verb:set package 'fs90r_hardware' build argument 'cmake_force_configure' from command line to 'False'
+[1.338s] Level 5:colcon.colcon_core.verb:set package 'fs90r_hardware' build argument 'ament_cmake_args' from command line to 'None'
+[1.338s] Level 5:colcon.colcon_core.verb:set package 'fs90r_hardware' build argument 'catkin_cmake_args' from command line to 'None'
+[1.338s] Level 5:colcon.colcon_core.verb:set package 'fs90r_hardware' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.339s] DEBUG:colcon.colcon_core.verb:Building package 'fs90r_hardware' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/atuiee/spooky_ws/build/fs90r_hardware', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/atuiee/spooky_ws/install/fs90r_hardware', 'merge_install': False, 'path': '/home/atuiee/spooky_ws/src/fs90r_hardware', 'symlink_install': True, 'test_result_base': None}
+[1.340s] Level 5:colcon.colcon_core.verb:set package 'ros2_servo_motion' build argument 'cmake_args' from command line to 'None'
+[1.340s] Level 5:colcon.colcon_core.verb:set package 'ros2_servo_motion' build argument 'cmake_target' from command line to 'None'
+[1.341s] Level 5:colcon.colcon_core.verb:set package 'ros2_servo_motion' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.341s] Level 5:colcon.colcon_core.verb:set package 'ros2_servo_motion' build argument 'cmake_clean_cache' from command line to 'False'
+[1.341s] Level 5:colcon.colcon_core.verb:set package 'ros2_servo_motion' build argument 'cmake_clean_first' from command line to 'False'
+[1.341s] Level 5:colcon.colcon_core.verb:set package 'ros2_servo_motion' build argument 'cmake_force_configure' from command line to 'False'
+[1.341s] Level 5:colcon.colcon_core.verb:set package 'ros2_servo_motion' build argument 'ament_cmake_args' from command line to 'None'
+[1.342s] Level 5:colcon.colcon_core.verb:set package 'ros2_servo_motion' build argument 'catkin_cmake_args' from command line to 'None'
+[1.342s] Level 5:colcon.colcon_core.verb:set package 'ros2_servo_motion' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.342s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_servo_motion' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/atuiee/spooky_ws/build/ros2_servo_motion', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/atuiee/spooky_ws/install/ros2_servo_motion', 'merge_install': False, 'path': '/home/atuiee/spooky_ws/src/ROS2_servo_motion', 'symlink_install': True, 'test_result_base': None}
+[1.344s] Level 5:colcon.colcon_core.verb:set package 'srf08_publisher' build argument 'cmake_args' from command line to 'None'
+[1.344s] Level 5:colcon.colcon_core.verb:set package 'srf08_publisher' build argument 'cmake_target' from command line to 'None'
+[1.344s] Level 5:colcon.colcon_core.verb:set package 'srf08_publisher' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.345s] Level 5:colcon.colcon_core.verb:set package 'srf08_publisher' build argument 'cmake_clean_cache' from command line to 'False'
+[1.345s] Level 5:colcon.colcon_core.verb:set package 'srf08_publisher' build argument 'cmake_clean_first' from command line to 'False'
+[1.345s] Level 5:colcon.colcon_core.verb:set package 'srf08_publisher' build argument 'cmake_force_configure' from command line to 'False'
+[1.345s] Level 5:colcon.colcon_core.verb:set package 'srf08_publisher' build argument 'ament_cmake_args' from command line to 'None'
+[1.346s] Level 5:colcon.colcon_core.verb:set package 'srf08_publisher' build argument 'catkin_cmake_args' from command line to 'None'
+[1.346s] Level 5:colcon.colcon_core.verb:set package 'srf08_publisher' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.346s] DEBUG:colcon.colcon_core.verb:Building package 'srf08_publisher' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/atuiee/spooky_ws/build/srf08_publisher', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/atuiee/spooky_ws/install/srf08_publisher', 'merge_install': False, 'path': '/home/atuiee/spooky_ws/src/srf08_publisher', 'symlink_install': True, 'test_result_base': None}
+[1.347s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.351s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.353s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/atuiee/spooky_ws/src/fs90r_hardware' with build type 'ament_cmake'
+[1.354s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/atuiee/spooky_ws/src/fs90r_hardware'
+[1.366s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.367s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.403s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/atuiee/spooky_ws/src/ROS2_servo_motion' with build type 'ament_cmake'
+[1.403s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/atuiee/spooky_ws/src/ROS2_servo_motion'
+[1.404s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.432s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/atuiee/spooky_ws/src/srf08_publisher' with build type 'ament_cmake'
+[1.433s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/atuiee/spooky_ws/src/srf08_publisher'
+[1.434s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.487s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/atuiee/spooky_ws/build/fs90r_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/atuiee/spooky_ws/src/fs90r_hardware -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/atuiee/spooky_ws/install/fs90r_hardware
+[1.514s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/atuiee/spooky_ws/build/ros2_servo_motion': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/atuiee/spooky_ws/build/ros2_servo_motion -- -j4 -l4
+[1.550s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/atuiee/spooky_ws/build/srf08_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/atuiee/spooky_ws/build/srf08_publisher -- -j4 -l4
+[2.330s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/atuiee/spooky_ws/build/srf08_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/atuiee/spooky_ws/build/srf08_publisher -- -j4 -l4
+[2.530s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/atuiee/spooky_ws/build/srf08_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/atuiee/spooky_ws/build/srf08_publisher
+[2.842s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(srf08_publisher)
+[2.849s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/atuiee/spooky_ws/build/srf08_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/atuiee/spooky_ws/build/srf08_publisher
+[2.885s] Level 1:colcon.colcon_core.environment:checking '/home/atuiee/spooky_ws/install/srf08_publisher' for CMake module files
+[2.897s] Level 1:colcon.colcon_core.environment:checking '/home/atuiee/spooky_ws/install/srf08_publisher' for CMake config files
+[2.902s] Level 1:colcon.colcon_core.shell:create_environment_hook('srf08_publisher', 'cmake_prefix_path')
+[2.903s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/hook/cmake_prefix_path.dsv'
+[2.910s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/hook/cmake_prefix_path.sh'
+[2.921s] Level 1:colcon.colcon_core.environment:checking '/home/atuiee/spooky_ws/install/srf08_publisher/lib'
+[2.923s] Level 1:colcon.colcon_core.environment:checking '/home/atuiee/spooky_ws/install/srf08_publisher/bin'
+[2.923s] Level 1:colcon.colcon_core.environment:checking '/home/atuiee/spooky_ws/install/srf08_publisher/lib/pkgconfig/srf08_publisher.pc'
+[2.936s] Level 1:colcon.colcon_core.environment:checking '/home/atuiee/spooky_ws/install/srf08_publisher/lib/python3.12/site-packages'
+[2.939s] Level 1:colcon.colcon_core.environment:checking '/home/atuiee/spooky_ws/install/srf08_publisher/bin'
+[2.940s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/package.dsv'
+[2.950s] INFO:colcon.colcon_core.shell:Creating package script '/home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/package.sh'
+[2.957s] INFO:colcon.colcon_core.shell:Creating package script '/home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/package.bash'
+[2.967s] INFO:colcon.colcon_core.shell:Creating package script '/home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/package.zsh'
+[2.979s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/atuiee/spooky_ws/install/srf08_publisher/share/colcon-core/packages/srf08_publisher)
+[2.993s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(srf08_publisher)
+[2.998s] Level 1:colcon.colcon_core.environment:checking '/home/atuiee/spooky_ws/install/srf08_publisher' for CMake module files
+[3.012s] Level 1:colcon.colcon_core.environment:checking '/home/atuiee/spooky_ws/install/srf08_publisher' for CMake config files
+[3.017s] Level 1:colcon.colcon_core.shell:create_environment_hook('srf08_publisher', 'cmake_prefix_path')
+[3.018s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/hook/cmake_prefix_path.dsv'
+[3.027s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/hook/cmake_prefix_path.sh'
+[3.038s] Level 1:colcon.colcon_core.environment:checking '/home/atuiee/spooky_ws/install/srf08_publisher/lib'
+[3.042s] Level 1:colcon.colcon_core.environment:checking '/home/atuiee/spooky_ws/install/srf08_publisher/bin'
+[3.043s] Level 1:colcon.colcon_core.environment:checking '/home/atuiee/spooky_ws/install/srf08_publisher/lib/pkgconfig/srf08_publisher.pc'
+[3.044s] Level 1:colcon.colcon_core.environment:checking '/home/atuiee/spooky_ws/install/srf08_publisher/lib/python3.12/site-packages'
+[3.051s] Level 1:colcon.colcon_core.environment:checking '/home/atuiee/spooky_ws/install/srf08_publisher/bin'
+[3.055s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/package.dsv'
+[3.066s] INFO:colcon.colcon_core.shell:Creating package script '/home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/package.sh'
+[3.077s] INFO:colcon.colcon_core.shell:Creating package script '/home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/package.bash'
+[3.082s] INFO:colcon.colcon_core.shell:Creating package script '/home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/package.zsh'
+[3.087s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/atuiee/spooky_ws/install/srf08_publisher/share/colcon-core/packages/srf08_publisher)
+[9.063s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/atuiee/spooky_ws/build/ros2_servo_motion' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/atuiee/spooky_ws/build/ros2_servo_motion -- -j4 -l4
+[9.074s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/atuiee/spooky_ws/build/ros2_servo_motion': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/atuiee/spooky_ws/build/ros2_servo_motion
+[9.260s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_servo_motion)
+[9.261s] Level 1:colcon.colcon_core.environment:checking '/home/atuiee/spooky_ws/install/ros2_servo_motion' for CMake module files
+[9.266s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/atuiee/spooky_ws/build/ros2_servo_motion' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/atuiee/spooky_ws/build/ros2_servo_motion
+[9.268s] Level 1:colcon.colcon_core.environment:checking '/home/atuiee/spooky_ws/install/ros2_servo_motion' for CMake config files
+[9.271s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_servo_motion', 'cmake_prefix_path')
+[9.273s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/hook/cmake_prefix_path.dsv'
+[9.276s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/hook/cmake_prefix_path.sh'
+[9.281s] Level 1:colcon.colcon_core.environment:checking '/home/atuiee/spooky_ws/install/ros2_servo_motion/lib'
+[9.282s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_servo_motion', 'ld_library_path_lib')
+[9.283s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/hook/ld_library_path_lib.dsv'
+[9.285s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/hook/ld_library_path_lib.sh'
+[9.289s] Level 1:colcon.colcon_core.environment:checking '/home/atuiee/spooky_ws/install/ros2_servo_motion/bin'
+[9.290s] Level 1:colcon.colcon_core.environment:checking '/home/atuiee/spooky_ws/install/ros2_servo_motion/lib/pkgconfig/ros2_servo_motion.pc'
+[9.292s] Level 1:colcon.colcon_core.environment:checking '/home/atuiee/spooky_ws/install/ros2_servo_motion/lib/python3.12/site-packages'
+[9.293s] Level 1:colcon.colcon_core.environment:checking '/home/atuiee/spooky_ws/install/ros2_servo_motion/bin'
+[9.295s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/package.dsv'
+[9.297s] INFO:colcon.colcon_core.shell:Creating package script '/home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/package.sh'
+[9.300s] INFO:colcon.colcon_core.shell:Creating package script '/home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/package.bash'
+[9.302s] INFO:colcon.colcon_core.shell:Creating package script '/home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/package.zsh'
+[9.304s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/atuiee/spooky_ws/install/ros2_servo_motion/share/colcon-core/packages/ros2_servo_motion)
+[9.308s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_servo_motion)
+[9.309s] Level 1:colcon.colcon_core.environment:checking '/home/atuiee/spooky_ws/install/ros2_servo_motion' for CMake module files
+[9.313s] Level 1:colcon.colcon_core.environment:checking '/home/atuiee/spooky_ws/install/ros2_servo_motion' for CMake config files
+[9.318s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_servo_motion', 'cmake_prefix_path')
+[9.319s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/hook/cmake_prefix_path.dsv'
+[9.321s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/hook/cmake_prefix_path.sh'
+[9.325s] Level 1:colcon.colcon_core.environment:checking '/home/atuiee/spooky_ws/install/ros2_servo_motion/lib'
+[9.326s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_servo_motion', 'ld_library_path_lib')
+[9.327s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/hook/ld_library_path_lib.dsv'
+[9.330s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/hook/ld_library_path_lib.sh'
+[9.333s] Level 1:colcon.colcon_core.environment:checking '/home/atuiee/spooky_ws/install/ros2_servo_motion/bin'
+[9.333s] Level 1:colcon.colcon_core.environment:checking '/home/atuiee/spooky_ws/install/ros2_servo_motion/lib/pkgconfig/ros2_servo_motion.pc'
+[9.335s] Level 1:colcon.colcon_core.environment:checking '/home/atuiee/spooky_ws/install/ros2_servo_motion/lib/python3.12/site-packages'
+[9.337s] Level 1:colcon.colcon_core.environment:checking '/home/atuiee/spooky_ws/install/ros2_servo_motion/bin'
+[9.339s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/package.dsv'
+[9.342s] INFO:colcon.colcon_core.shell:Creating package script '/home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/package.sh'
+[9.345s] INFO:colcon.colcon_core.shell:Creating package script '/home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/package.bash'
+[9.348s] INFO:colcon.colcon_core.shell:Creating package script '/home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/package.zsh'
+[9.351s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/atuiee/spooky_ws/install/ros2_servo_motion/share/colcon-core/packages/ros2_servo_motion)
+[13.636s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/atuiee/spooky_ws/build/fs90r_hardware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/atuiee/spooky_ws/src/fs90r_hardware -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/atuiee/spooky_ws/install/fs90r_hardware
+[13.641s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/atuiee/spooky_ws/build/fs90r_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/atuiee/spooky_ws/build/fs90r_hardware -- -j4 -l4
+[32.922s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/atuiee/spooky_ws/build/fs90r_hardware' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/atuiee/spooky_ws/build/fs90r_hardware -- -j4 -l4
+[32.924s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(fs90r_hardware)
+[32.925s] Level 1:colcon.colcon_core.environment:checking '/home/atuiee/spooky_ws/install/fs90r_hardware' for CMake module files
+[32.927s] Level 1:colcon.colcon_core.environment:checking '/home/atuiee/spooky_ws/install/fs90r_hardware' for CMake config files
+[32.928s] Level 1:colcon.colcon_core.environment:checking '/home/atuiee/spooky_ws/install/fs90r_hardware/bin'
+[32.929s] Level 1:colcon.colcon_core.environment:checking '/home/atuiee/spooky_ws/install/fs90r_hardware/lib/pkgconfig/fs90r_hardware.pc'
+[32.930s] Level 1:colcon.colcon_core.environment:checking '/home/atuiee/spooky_ws/install/fs90r_hardware/lib/python3.12/site-packages'
+[32.931s] Level 1:colcon.colcon_core.environment:checking '/home/atuiee/spooky_ws/install/fs90r_hardware/bin'
+[32.932s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/package.dsv'
+[32.935s] INFO:colcon.colcon_core.shell:Creating package script '/home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/package.sh'
+[32.937s] INFO:colcon.colcon_core.shell:Creating package script '/home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/package.bash'
+[32.939s] INFO:colcon.colcon_core.shell:Creating package script '/home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/package.zsh'
+[32.940s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/atuiee/spooky_ws/install/fs90r_hardware/share/colcon-core/packages/fs90r_hardware)
+[32.952s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[32.953s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[32.953s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[32.953s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[32.956s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[32.957s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/atuiee/spooky_ws/install/local_setup.sh'
+[32.961s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/atuiee/spooky_ws/install/_local_setup_util_sh.py'
+[32.968s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/atuiee/spooky_ws/install/setup.sh'
+[32.973s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/atuiee/spooky_ws/install/local_setup.bash'
+[32.975s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/atuiee/spooky_ws/install/setup.bash'
+[32.979s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/atuiee/spooky_ws/install/local_setup.zsh'
+[32.981s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/atuiee/spooky_ws/install/setup.zsh'

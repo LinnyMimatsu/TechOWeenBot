@@ -1,0 +1,31 @@
+[0.132s] Invoking command in '/home/atuiee/spooky_ws/build/fs90r_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/atuiee/spooky_ws/build/fs90r_hardware -- -j4 -l4
+[0.981s] [ 33%] [32mBuilding CXX object CMakeFiles/fs90r_hardware.dir/src/fs90r_system.cpp.o[0m
+[14.669s] [01m[K/home/atuiee/spooky_ws/src/fs90r_hardware/src/fs90r_system.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::CallbackReturn fs90r_hardware::FS90RSystem::[01;32m[Kon_init[m[K(const hardware_interface::HardwareInfo&)[m[K’:
+[14.671s] [01m[K/home/atuiee/spooky_ws/src/fs90r_hardware/src/fs90r_system.cpp:18:51:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvirtual rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn hardware_interface::HardwareComponentInterface::[01;32m[Kon_init[m[K(const hardware_interface::HardwareInfo&)[m[K’ is deprecated: Use on_init(const HardwareComponentInterfaceParams & params) instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[14.672s]    18 |   if ([01;35m[Khardware_interface::SystemInterface::on_init(info)[m[K !=
+[14.674s]       |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[14.675s] In file included from [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/system_interface.hpp:18[m[K,
+[14.676s]                  from [01m[K/home/atuiee/spooky_ws/src/fs90r_hardware/include/fs90r_hardware/fs90r_system.hpp:8[m[K,
+[14.676s]                  from [01m[K/home/atuiee/spooky_ws/src/fs90r_hardware/src/fs90r_system.cpp:1[m[K:
+[14.677s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/hardware_component_interface.hpp:140:26:[m[K [01;36m[Knote: [m[Kdeclared here
+[14.678s]   140 |   virtual CallbackReturn [01;36m[Kon_init[m[K(const HardwareInfo & hardware_info);
+[14.678s]       |                          [01;36m[K^~~~~~~[m[K
+[21.931s] [ 66%] [32m[1mLinking CXX shared library libfs90r_hardware.so[0m
+[23.585s] [100%] Built target fs90r_hardware
+[23.647s] Invoked command in '/home/atuiee/spooky_ws/build/fs90r_hardware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/atuiee/spooky_ws/build/fs90r_hardware -- -j4 -l4
+[23.655s] Invoking command in '/home/atuiee/spooky_ws/build/fs90r_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/atuiee/spooky_ws/build/fs90r_hardware
+[23.697s] -- Install configuration: ""
+[23.700s] -- Execute custom install script
+[23.702s] -- Symlinking: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware//fs90r_hardware.xml
+[23.754s] -- Symlinking: /home/atuiee/spooky_ws/install/fs90r_hardware/include/fs90r_hardware/fs90r_servo.hpp
+[23.805s] -- Symlinking: /home/atuiee/spooky_ws/install/fs90r_hardware/include/fs90r_hardware/fs90r_system.hpp
+[23.856s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/fs90r_hardware.xml
+[23.857s] [31mCMake Error at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:105 (message):
+[23.857s]   ament_cmake_symlink_install_directory() can't find
+[23.858s]   '/home/atuiee/spooky_ws/src/fs90r_hardware/config'
+[23.858s] Call Stack (most recent call first):
+[23.859s]   ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:328 (ament_cmake_symlink_install_directory)
+[23.859s]   cmake_install.cmake:46 (include)
+[23.860s] 
+[23.860s] [0m
+[23.862s] Invoked command in '/home/atuiee/spooky_ws/build/fs90r_hardware' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/atuiee/spooky_ws/build/fs90r_hardware

@@ -1,0 +1,37 @@
+[0.090s] Invoking command in '/home/atuiee/spooky_ws/build/range_servo_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/atuiee/spooky_ws/build/range_servo_controller -- -j4 -l4
+[0.271s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.883s] -- Found rclcpp: 28.1.22 (/opt/ros/jazzy/share/rclcpp/cmake)
+[2.095s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[2.150s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[2.226s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.309s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.635s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[2.647s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[2.970s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.291s] -- Found sensor_msgs: 5.3.8 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[4.000s] -- Configuring done (3.8s)
+[4.087s] -- Generating done (0.0s)
+[4.109s] -- Build files have been written to: /home/atuiee/spooky_ws/build/range_servo_controller
+[4.382s] [100%] Built target range_servo_controller
+[4.441s] Invoked command in '/home/atuiee/spooky_ws/build/range_servo_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/atuiee/spooky_ws/build/range_servo_controller -- -j4 -l4
+[4.496s] Invoking command in '/home/atuiee/spooky_ws/build/range_servo_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/atuiee/spooky_ws/build/range_servo_controller
+[4.540s] -- Install configuration: ""
+[4.542s] -- Up-to-date: /home/atuiee/spooky_ws/install/range_servo_controller/lib/range_servo_controller/range_servo_controller
+[4.543s] -- Installing: /home/atuiee/spooky_ws/install/range_servo_controller/share/range_servo_controller/launch
+[4.544s] -- Installing: /home/atuiee/spooky_ws/install/range_servo_controller/share/range_servo_controller/launch/range_servo.launch.py
+[4.545s] -- Up-to-date: /home/atuiee/spooky_ws/install/range_servo_controller/share/ament_index/resource_index/package_run_dependencies/range_servo_controller
+[4.546s] -- Installing: /home/atuiee/spooky_ws/install/range_servo_controller/share/ament_index/resource_index/parent_prefix_path/range_servo_controller
+[4.548s] -- Up-to-date: /home/atuiee/spooky_ws/install/range_servo_controller/share/range_servo_controller/environment/ament_prefix_path.sh
+[4.548s] -- Up-to-date: /home/atuiee/spooky_ws/install/range_servo_controller/share/range_servo_controller/environment/ament_prefix_path.dsv
+[4.549s] -- Up-to-date: /home/atuiee/spooky_ws/install/range_servo_controller/share/range_servo_controller/environment/path.sh
+[4.549s] -- Up-to-date: /home/atuiee/spooky_ws/install/range_servo_controller/share/range_servo_controller/environment/path.dsv
+[4.550s] -- Up-to-date: /home/atuiee/spooky_ws/install/range_servo_controller/share/range_servo_controller/local_setup.bash
+[4.551s] -- Up-to-date: /home/atuiee/spooky_ws/install/range_servo_controller/share/range_servo_controller/local_setup.sh
+[4.551s] -- Up-to-date: /home/atuiee/spooky_ws/install/range_servo_controller/share/range_servo_controller/local_setup.zsh
+[4.552s] -- Up-to-date: /home/atuiee/spooky_ws/install/range_servo_controller/share/range_servo_controller/local_setup.dsv
+[4.552s] -- Installing: /home/atuiee/spooky_ws/install/range_servo_controller/share/range_servo_controller/package.dsv
+[4.553s] -- Up-to-date: /home/atuiee/spooky_ws/install/range_servo_controller/share/ament_index/resource_index/packages/range_servo_controller
+[4.554s] -- Up-to-date: /home/atuiee/spooky_ws/install/range_servo_controller/share/range_servo_controller/cmake/range_servo_controllerConfig.cmake
+[4.554s] -- Up-to-date: /home/atuiee/spooky_ws/install/range_servo_controller/share/range_servo_controller/cmake/range_servo_controllerConfig-version.cmake
+[4.555s] -- Up-to-date: /home/atuiee/spooky_ws/install/range_servo_controller/share/range_servo_controller/package.xml
+[4.561s] Invoked command in '/home/atuiee/spooky_ws/build/range_servo_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/atuiee/spooky_ws/build/range_servo_controller

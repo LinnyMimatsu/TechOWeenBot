@@ -1,0 +1,8 @@
+[100%] Built target fs90r_hardware
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware//fs90r_hardware.xml
+-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/include/fs90r_hardware/fs90r_servo.hpp
+-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/include/fs90r_hardware/fs90r_system.hpp
+-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/fs90r_hardware.xml
+-- Symlinking: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/config/controllers.yaml

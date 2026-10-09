@@ -1,0 +1,63 @@
+[0.084s] Invoking command in '/home/atuiee/spooky_ws/build/ros2_servo_motion': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/atuiee/spooky_ws/src/ROS2_servo_motion -DCMAKE_INSTALL_PREFIX=/home/atuiee/spooky_ws/install/ros2_servo_motion
+[0.241s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.791s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.839s] -- Found hardware_interface: 4.48.1 (/opt/ros/jazzy/share/hardware_interface/cmake)
+[2.059s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[2.114s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[2.175s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.268s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.289s] -- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+[3.450s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[3.457s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[3.542s] -- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+[3.590s] -- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+[3.676s] -- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+[3.718s] -- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+[3.765s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.931s] -- Configuring done (4.7s)
+[5.146s] -- Generating done (0.2s)
+[5.179s] -- Build files have been written to: /home/atuiee/spooky_ws/build/ros2_servo_motion
+[5.220s] Invoked command in '/home/atuiee/spooky_ws/build/ros2_servo_motion' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/atuiee/spooky_ws/src/ROS2_servo_motion -DCMAKE_INSTALL_PREFIX=/home/atuiee/spooky_ws/install/ros2_servo_motion
+[5.228s] Invoking command in '/home/atuiee/spooky_ws/build/ros2_servo_motion': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/atuiee/spooky_ws/build/ros2_servo_motion -- -j4 -l4
+[5.607s] [100%] Built target ros2_servo_motion
+[5.670s] Invoked command in '/home/atuiee/spooky_ws/build/ros2_servo_motion' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/atuiee/spooky_ws/build/ros2_servo_motion -- -j4 -l4
+[5.725s] Invoking command in '/home/atuiee/spooky_ws/build/ros2_servo_motion': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/atuiee/spooky_ws/build/ros2_servo_motion
+[5.770s] -- Install configuration: ""
+[5.772s] -- Execute custom install script
+[5.774s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion//ros2_servo_motion.xml
+[5.777s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/include/ros2_servo_motion/micro_servo_hardware/S90_servo.hpp
+[5.778s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/include/ros2_servo_motion/micro_servo_hardware/micro_servo.hpp
+[5.780s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/include/ros2_servo_motion/micro_servo_hardware/visibility_control.hpp
+[5.782s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/launch/display.launch.py
+[5.784s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/config/config.rviz
+[5.786s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/urdf/servo.ros2_control.xacro
+[5.787s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/urdf/servo.urdf.xacro
+[5.788s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/urdf/servo.xacro
+[5.790s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/launch/S90_servo.launch.py
+[5.791s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/launch/test_fordware_position_controller.launch.py
+[5.793s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/config/S90_servo_controllers.yaml
+[5.794s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/config/S90_servo_forward_position_publisher.yaml
+[5.795s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/environment/library_path.sh
+[5.797s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/environment/library_path.dsv
+[5.798s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ament_index/resource_index/package_run_dependencies/ros2_servo_motion
+[5.800s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ament_index/resource_index/parent_prefix_path/ros2_servo_motion
+[5.801s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/environment/ament_prefix_path.sh
+[5.803s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/environment/ament_prefix_path.dsv
+[5.805s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/environment/path.sh
+[5.807s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/environment/path.dsv
+[5.809s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/local_setup.bash
+[5.810s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/local_setup.sh
+[5.812s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/local_setup.zsh
+[5.813s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/local_setup.dsv
+[5.814s] -- Symlinking: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/package.dsv
+[5.862s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ament_index/resource_index/packages/ros2_servo_motion
+[5.864s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/ros2_servo_motion
+[5.865s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/cmake/ament_cmake_export_targets-extras.cmake
+[5.866s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.867s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/cmake/ros2_servo_motionConfig.cmake
+[5.869s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/cmake/ros2_servo_motionConfig-version.cmake
+[5.870s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/package.xml
+[5.873s] -- Up-to-date: /home/atuiee/spooky_ws/install/ros2_servo_motion/lib/libros2_servo_motion.so
+[5.875s] -- Up-to-date: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/cmake/export_hardwareExport.cmake
+[5.876s] -- Up-to-date: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/cmake/export_hardwareExport-noconfig.cmake
+[5.883s] Invoked command in '/home/atuiee/spooky_ws/build/ros2_servo_motion' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/atuiee/spooky_ws/build/ros2_servo_motion

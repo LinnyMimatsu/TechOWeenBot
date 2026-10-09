@@ -1,0 +1,1 @@
+/home/atuiee/spooky_ws/build/fs90r_hardware/ament_cmake_environment_hooks/local_setup.sh

@@ -1,0 +1,225 @@
+[0.000000] (-) TimerEvent: {}
+[0.007259] (ros2_servo_motion) JobQueued: {'identifier': 'ros2_servo_motion', 'dependencies': OrderedDict()}
+[0.007581] (srf08_publisher) JobQueued: {'identifier': 'srf08_publisher', 'dependencies': OrderedDict()}
+[0.013193] (ros2_servo_motion) JobStarted: {'identifier': 'ros2_servo_motion'}
+[0.078057] (ros2_servo_motion) JobProgress: {'identifier': 'ros2_servo_motion', 'progress': 'cmake'}
+[0.082410] (ros2_servo_motion) Command: {'cmd': ['/usr/bin/cmake', '/home/atuiee/spooky_ws/src/ROS2_servo_motion', '-DCMAKE_INSTALL_PREFIX=/home/atuiee/spooky_ws/install/ros2_servo_motion'], 'cwd': '/home/atuiee/spooky_ws/build/ros2_servo_motion', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'atuiee', 'SSH_CLIENT': '100.124.107.38 65075 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'BROWSER': '/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/bin/helpers/browser.sh', 'HOME': '/home/atuiee', 'OLDPWD': '/home/atuiee/.vscode-server', 'TERM_PROGRAM_VERSION': '1.141.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-40ae936e-f60c-4f78-88a7-1fadd80e0ef4.sock', 'VSCODE_GIT_ASKPASS_MAIN': '/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/atuiee/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'LOGNAME': 'atuiee', '_': '/usr/bin/colcon', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'PATH': '/home/atuiee/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/atuiee/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/atuiee/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/scripts/noConfigScripts', 'XDG_RUNTIME_DIR': '/run/user/1000', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/atuiee/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-bf60eb66ec7b6cc6.txt', 'LANG': 'en_US.UTF-8', 'PYTHONSTARTUP': '/home/atuiee/.vscode-server/data/User/workspaceStorage/a83387bff2b7a6f838fcedec451d90a3/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-7cfc85cf34.sock', 'TERM_PROGRAM': 'vscode', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/atuiee/spooky_ws/build/ros2_servo_motion', 'LC_ALL': 'en_US.UTF-8', 'COPILOT_DEBUG_NONCE': '57326fa212c91a67699e86d617f26f2d', 'SSH_CONNECTION': '100.124.107.38 65075 100.67.81.38 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'COLCON': '1'}), 'shell': False}
+[0.099467] (-) TimerEvent: {}
+[0.201136] (-) TimerEvent: {}
+[0.202982] (ros2_servo_motion) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.303648] (-) TimerEvent: {}
+[0.404518] (-) TimerEvent: {}
+[0.508163] (-) TimerEvent: {}
+[0.609027] (-) TimerEvent: {}
+[0.709943] (-) TimerEvent: {}
+[0.813203] (-) TimerEvent: {}
+[0.913934] (-) TimerEvent: {}
+[1.014946] (-) TimerEvent: {}
+[1.119143] (-) TimerEvent: {}
+[1.220145] (-) TimerEvent: {}
+[1.324039] (-) TimerEvent: {}
+[1.425331] (-) TimerEvent: {}
+[1.526359] (-) TimerEvent: {}
+[1.627627] (-) TimerEvent: {}
+[1.728434] (-) TimerEvent: {}
+[1.829150] (-) TimerEvent: {}
+[1.929929] (-) TimerEvent: {}
+[2.030651] (-) TimerEvent: {}
+[2.131380] (-) TimerEvent: {}
+[2.232109] (-) TimerEvent: {}
+[2.332850] (-) TimerEvent: {}
+[2.433595] (-) TimerEvent: {}
+[2.534367] (-) TimerEvent: {}
+[2.635138] (-) TimerEvent: {}
+[2.736729] (-) TimerEvent: {}
+[2.839256] (-) TimerEvent: {}
+[2.939911] (-) TimerEvent: {}
+[3.040589] (-) TimerEvent: {}
+[3.141220] (-) TimerEvent: {}
+[3.241956] (-) TimerEvent: {}
+[3.342822] (-) TimerEvent: {}
+[3.443554] (-) TimerEvent: {}
+[3.544356] (-) TimerEvent: {}
+[3.645150] (-) TimerEvent: {}
+[3.745911] (-) TimerEvent: {}
+[3.846737] (-) TimerEvent: {}
+[3.947520] (-) TimerEvent: {}
+[4.048212] (-) TimerEvent: {}
+[4.148887] (-) TimerEvent: {}
+[4.249549] (-) TimerEvent: {}
+[4.350246] (-) TimerEvent: {}
+[4.450932] (-) TimerEvent: {}
+[4.551684] (-) TimerEvent: {}
+[4.652469] (-) TimerEvent: {}
+[4.753237] (-) TimerEvent: {}
+[4.854178] (-) TimerEvent: {}
+[4.954890] (-) TimerEvent: {}
+[5.055534] (-) TimerEvent: {}
+[5.156244] (-) TimerEvent: {}
+[5.257058] (-) TimerEvent: {}
+[5.357734] (-) TimerEvent: {}
+[5.458432] (-) TimerEvent: {}
+[5.559164] (-) TimerEvent: {}
+[5.659874] (-) TimerEvent: {}
+[5.760662] (-) TimerEvent: {}
+[5.861620] (-) TimerEvent: {}
+[5.962428] (-) TimerEvent: {}
+[6.063278] (-) TimerEvent: {}
+[6.164131] (-) TimerEvent: {}
+[6.264982] (-) TimerEvent: {}
+[6.365695] (-) TimerEvent: {}
+[6.466358] (-) TimerEvent: {}
+[6.567023] (-) TimerEvent: {}
+[6.667859] (-) TimerEvent: {}
+[6.769065] (-) TimerEvent: {}
+[6.870746] (-) TimerEvent: {}
+[6.972371] (-) TimerEvent: {}
+[7.073696] (-) TimerEvent: {}
+[7.175092] (-) TimerEvent: {}
+[7.276904] (-) TimerEvent: {}
+[7.378315] (-) TimerEvent: {}
+[7.479900] (-) TimerEvent: {}
+[7.581318] (-) TimerEvent: {}
+[7.683044] (-) TimerEvent: {}
+[7.784240] (-) TimerEvent: {}
+[7.885629] (-) TimerEvent: {}
+[7.987198] (-) TimerEvent: {}
+[8.088518] (-) TimerEvent: {}
+[8.190035] (-) TimerEvent: {}
+[8.291360] (-) TimerEvent: {}
+[8.392964] (-) TimerEvent: {}
+[8.494536] (-) TimerEvent: {}
+[8.595936] (-) TimerEvent: {}
+[8.697262] (-) TimerEvent: {}
+[8.799121] (-) TimerEvent: {}
+[8.900689] (-) TimerEvent: {}
+[9.002337] (-) TimerEvent: {}
+[9.103754] (-) TimerEvent: {}
+[9.205358] (-) TimerEvent: {}
+[9.307058] (-) TimerEvent: {}
+[9.408346] (-) TimerEvent: {}
+[9.509880] (-) TimerEvent: {}
+[9.611344] (-) TimerEvent: {}
+[9.712864] (-) TimerEvent: {}
+[9.814465] (-) TimerEvent: {}
+[9.915817] (-) TimerEvent: {}
+[10.017531] (-) TimerEvent: {}
+[10.119184] (-) TimerEvent: {}
+[10.220567] (-) TimerEvent: {}
+[10.321971] (-) TimerEvent: {}
+[10.423269] (-) TimerEvent: {}
+[10.524982] (-) TimerEvent: {}
+[10.626272] (-) TimerEvent: {}
+[10.727901] (-) TimerEvent: {}
+[10.829154] (-) TimerEvent: {}
+[10.930626] (-) TimerEvent: {}
+[11.032018] (-) TimerEvent: {}
+[11.133536] (-) TimerEvent: {}
+[11.234935] (-) TimerEvent: {}
+[11.335963] (-) TimerEvent: {}
+[11.436732] (-) TimerEvent: {}
+[11.537565] (-) TimerEvent: {}
+[11.638237] (-) TimerEvent: {}
+[11.739236] (-) TimerEvent: {}
+[11.840532] (-) TimerEvent: {}
+[11.941209] (-) TimerEvent: {}
+[12.041909] (-) TimerEvent: {}
+[12.142980] (-) TimerEvent: {}
+[12.244028] (-) TimerEvent: {}
+[12.344960] (-) TimerEvent: {}
+[12.446414] (-) TimerEvent: {}
+[12.547248] (-) TimerEvent: {}
+[12.648718] (-) TimerEvent: {}
+[12.750609] (-) TimerEvent: {}
+[12.852189] (-) TimerEvent: {}
+[12.953124] (-) TimerEvent: {}
+[13.054664] (-) TimerEvent: {}
+[13.156189] (-) TimerEvent: {}
+[13.257678] (-) TimerEvent: {}
+[13.359350] (-) TimerEvent: {}
+[13.460719] (-) TimerEvent: {}
+[13.561646] (-) TimerEvent: {}
+[13.663111] (-) TimerEvent: {}
+[13.764081] (-) TimerEvent: {}
+[13.865494] (-) TimerEvent: {}
+[13.967032] (-) TimerEvent: {}
+[14.068463] (-) TimerEvent: {}
+[14.169653] (-) TimerEvent: {}
+[14.270441] (-) TimerEvent: {}
+[14.372068] (-) TimerEvent: {}
+[14.473198] (-) TimerEvent: {}
+[14.574096] (-) TimerEvent: {}
+[14.675266] (-) TimerEvent: {}
+[14.776512] (-) TimerEvent: {}
+[14.877389] (-) TimerEvent: {}
+[14.978683] (-) TimerEvent: {}
+[15.079671] (-) TimerEvent: {}
+[15.180864] (-) TimerEvent: {}
+[15.282389] (-) TimerEvent: {}
+[15.383660] (-) TimerEvent: {}
+[15.484883] (-) TimerEvent: {}
+[15.586590] (-) TimerEvent: {}
+[15.688033] (-) TimerEvent: {}
+[15.788664] (-) TimerEvent: {}
+[15.889365] (-) TimerEvent: {}
+[15.990030] (-) TimerEvent: {}
+[16.091473] (-) TimerEvent: {}
+[16.192943] (-) TimerEvent: {}
+[16.294146] (-) TimerEvent: {}
+[16.395413] (-) TimerEvent: {}
+[16.496119] (-) TimerEvent: {}
+[16.596728] (-) TimerEvent: {}
+[16.697580] (-) TimerEvent: {}
+[16.799162] (-) TimerEvent: {}
+[16.900619] (-) TimerEvent: {}
+[17.001457] (-) TimerEvent: {}
+[17.102984] (-) TimerEvent: {}
+[17.203577] (-) TimerEvent: {}
+[17.304288] (-) TimerEvent: {}
+[17.405091] (-) TimerEvent: {}
+[17.505808] (-) TimerEvent: {}
+[17.607125] (-) TimerEvent: {}
+[17.708855] (-) TimerEvent: {}
+[17.810079] (-) TimerEvent: {}
+[17.910718] (-) TimerEvent: {}
+[18.011330] (-) TimerEvent: {}
+[18.112221] (-) TimerEvent: {}
+[18.213547] (-) TimerEvent: {}
+[18.314262] (-) TimerEvent: {}
+[18.414906] (-) TimerEvent: {}
+[18.515712] (-) TimerEvent: {}
+[18.616909] (-) TimerEvent: {}
+[18.718639] (-) TimerEvent: {}
+[18.819536] (-) TimerEvent: {}
+[18.921044] (-) TimerEvent: {}
+[19.022471] (-) TimerEvent: {}
+[19.124036] (-) TimerEvent: {}
+[19.225265] (-) TimerEvent: {}
+[19.326046] (-) TimerEvent: {}
+[19.427347] (-) TimerEvent: {}
+[19.528368] (-) TimerEvent: {}
+[19.629145] (-) TimerEvent: {}
+[19.728361] (ros2_servo_motion) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[19.729266] (-) TimerEvent: {}
+[19.729680] (ros2_servo_motion) StderrLine: {'line': b'  File "/opt/ros/jazzy/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py", line 21, in <module>\n'}
+[19.730491] (ros2_servo_motion) StderrLine: {'line': b'    from ament_package.templates import get_environment_hook_template_path\n'}
+[19.731091] (ros2_servo_motion) StderrLine: {'line': b"ModuleNotFoundError: No module named 'ament_package'\n"}
+[19.829492] (-) TimerEvent: {}
+[19.878230] (ros2_servo_motion) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/jazzy/share/ament_cmake_core/cmake/ament_cmake_package_templates-extras.cmake:41 (message):\n'}
+[19.879083] (ros2_servo_motion) StderrLine: {'line': b'  execute_process(/usr/bin/python3\n'}
+[19.879659] (ros2_servo_motion) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py\n'}
+[19.880384] (ros2_servo_motion) StderrLine: {'line': b'  /home/atuiee/spooky_ws/build/ros2_servo_motion/ament_cmake_package_templates/templates.cmake)\n'}
+[19.881254] (ros2_servo_motion) StderrLine: {'line': b'  returned error code 1\n'}
+[19.882895] (ros2_servo_motion) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[19.884583] (ros2_servo_motion) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)\n'}
+[19.885596] (ros2_servo_motion) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)\n'}
+[19.886231] (ros2_servo_motion) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)\n'}
+[19.886725] (ros2_servo_motion) StderrLine: {'line': b'  CMakeLists.txt:17 (find_package)\n'}
+[19.887200] (ros2_servo_motion) StderrLine: {'line': b'\n'}
+[19.887691] (ros2_servo_motion) StderrLine: {'line': b'\x1b[0m\n'}
+[19.888167] (ros2_servo_motion) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[19.897044] (ros2_servo_motion) CommandEnded: {'returncode': 1}
+[19.929805] (-) TimerEvent: {}
+[19.957039] (ros2_servo_motion) JobEnded: {'identifier': 'ros2_servo_motion', 'rc': 1}
+[19.960498] (srf08_publisher) JobSkipped: {'identifier': 'srf08_publisher'}
+[19.960622] (-) EventReactorShutdown: {}

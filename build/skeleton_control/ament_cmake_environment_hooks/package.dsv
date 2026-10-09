@@ -1,0 +1,4 @@
+source;share/skeleton_control/local_setup.bash
+source;share/skeleton_control/local_setup.dsv
+source;share/skeleton_control/local_setup.sh
+source;share/skeleton_control/local_setup.zsh

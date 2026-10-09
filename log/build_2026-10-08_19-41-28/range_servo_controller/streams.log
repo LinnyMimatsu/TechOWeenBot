@@ -1,0 +1,18 @@
+[0.163s] Invoking command in '/home/atuiee/spooky_ws/build/range_servo_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/atuiee/spooky_ws/src/range_servo_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/atuiee/spooky_ws/install/range_servo_controller
+[0.319s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[2.546s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.642s] -- Found rclcpp: 28.1.22 (/opt/ros/jazzy/share/rclcpp/cmake)
+[2.886s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[2.956s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[3.044s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.141s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.513s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[3.523s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[3.872s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.188s] -- Found sensor_msgs: 5.3.8 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[4.973s] -- Configuring done (4.7s)
+[5.078s] -- Generating done (0.1s)
+[5.107s] -- Build files have been written to: /home/atuiee/spooky_ws/build/range_servo_controller
+[5.147s] Invoked command in '/home/atuiee/spooky_ws/build/range_servo_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/atuiee/spooky_ws/src/range_servo_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/atuiee/spooky_ws/install/range_servo_controller
+[5.149s] Invoking command in '/home/atuiee/spooky_ws/build/range_servo_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/atuiee/spooky_ws/build/range_servo_controller -- -j4 -l4
+[5.599s] [ 50%] [32mBuilding CXX object CMakeFiles/range_servo_controller.dir/src/range_servo_controller.cpp.o[0m

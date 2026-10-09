@@ -1,0 +1,30 @@
+[0.087s] Invoking command in '/home/atuiee/spooky_ws/build/skeleton_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/atuiee/spooky_ws/src/skeleton_control -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/atuiee/spooky_ws/install/skeleton_control
+[1.283s] -- The C compiler identification is GNU 13.3.0
+[2.230s] -- The CXX compiler identification is GNU 13.3.0
+[2.347s] -- Detecting C compiler ABI info
+[2.918s] -- Detecting C compiler ABI info - done
+[2.952s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.953s] -- Detecting C compile features
+[2.956s] -- Detecting C compile features - done
+[3.006s] -- Detecting CXX compiler ABI info
+[3.588s] -- Detecting CXX compiler ABI info - done
+[3.626s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.627s] -- Detecting CXX compile features
+[3.629s] -- Detecting CXX compile features - done
+[3.665s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[4.610s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[5.060s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[5.477s] -- Found sensor_msgs: 5.3.8 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[5.903s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[6.027s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[6.198s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.375s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.004s] [31mCMake Error at /opt/ros/jazzy/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:77 (message):
+[7.010s]   ament_target_dependencies() the passed package name 'rclcpp' was not found
+[7.019s]   before
+[7.024s] Call Stack (most recent call first):
+[7.028s]   CMakeLists.txt:17 (ament_target_dependencies)
+[7.029s] 
+[7.030s] [0m
+[7.032s] -- Configuring incomplete, errors occurred!
+[7.040s] Invoked command in '/home/atuiee/spooky_ws/build/skeleton_control' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/atuiee/spooky_ws/src/skeleton_control -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/atuiee/spooky_ws/install/skeleton_control

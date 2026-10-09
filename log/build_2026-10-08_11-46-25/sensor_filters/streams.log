@@ -1,0 +1,40 @@
+[0.056s] Invoking command in '/home/atuiee/spooky_ws/build/sensor_filters': /usr/bin/cmake /home/atuiee/spooky_ws/src/sensor_filters -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/atuiee/spooky_ws/install/sensor_filters
+[0.340s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.340s]   Compatibility with CMake < 3.5 will be removed from a future version of
+[0.341s]   CMake.
+[0.342s] 
+[0.343s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.343s]   CMake that the project does not need compatibility with older versions.
+[0.344s] 
+[0.345s] [0m
+[1.375s] -- The C compiler identification is GNU 13.3.0
+[2.246s] -- The CXX compiler identification is GNU 13.3.0
+[2.367s] -- Detecting C compiler ABI info
+[2.935s] -- Detecting C compiler ABI info - done
+[2.973s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.975s] -- Detecting C compile features
+[2.978s] -- Detecting C compile features - done
+[3.038s] -- Detecting CXX compiler ABI info
+[3.575s] -- Detecting CXX compiler ABI info - done
+[3.615s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.616s] -- Detecting CXX compile features
+[3.618s] -- Detecting CXX compile features - done
+[3.791s] [31mCMake Error at CMakeLists.txt:7 (find_package):
+[3.791s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[3.792s]   asked CMake to find a package configuration file provided by "catkin", but
+[3.792s]   CMake did not find one.
+[3.793s] 
+[3.793s]   Could not find a package configuration file provided by "catkin" with any
+[3.794s]   of the following names:
+[3.794s] 
+[3.794s]     catkinConfig.cmake
+[3.795s]     catkin-config.cmake
+[3.795s] 
+[3.796s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[3.796s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[3.797s]   provides a separate development package or SDK, be sure it has been
+[3.797s]   installed.
+[3.797s] 
+[3.798s] [0m
+[3.798s] -- Configuring incomplete, errors occurred!
+[3.804s] Invoked command in '/home/atuiee/spooky_ws/build/sensor_filters' returned '1': /usr/bin/cmake /home/atuiee/spooky_ws/src/sensor_filters -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/atuiee/spooky_ws/install/sensor_filters

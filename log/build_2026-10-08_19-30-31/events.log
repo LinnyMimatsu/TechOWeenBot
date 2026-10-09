@@ -1,0 +1,249 @@
+[0.000000] (-) TimerEvent: {}
+[0.001239] (-) JobUnselected: {'identifier': 'range_servo_controller'}
+[0.003720] (-) JobUnselected: {'identifier': 'ros2_servo_motion'}
+[0.003992] (-) JobUnselected: {'identifier': 'srf08_publisher'}
+[0.004103] (fs90r_hardware) JobQueued: {'identifier': 'fs90r_hardware', 'dependencies': OrderedDict()}
+[0.004222] (fs90r_hardware) JobStarted: {'identifier': 'fs90r_hardware'}
+[0.065680] (fs90r_hardware) JobProgress: {'identifier': 'fs90r_hardware', 'progress': 'cmake'}
+[0.068515] (fs90r_hardware) JobProgress: {'identifier': 'fs90r_hardware', 'progress': 'build'}
+[0.071242] (fs90r_hardware) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/atuiee/spooky_ws/build/fs90r_hardware', '--', '-j4', '-l4'], 'cwd': '/home/atuiee/spooky_ws/build/fs90r_hardware', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'atuiee', 'SSH_CLIENT': '100.124.107.38 65075 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/atuiee/spooky_ws/install/ros2_servo_motion/lib:/home/atuiee/spooky_ws/install/fs90r_hardware/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/bin/helpers/browser.sh', 'HOME': '/home/atuiee', 'OLDPWD': '/home/atuiee/spooky_ws', 'TERM_PROGRAM_VERSION': '1.141.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-8e000cff-6bd5-4ca8-a02e-649c89a77e06.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/atuiee/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/atuiee/spooky_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'atuiee', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/home/atuiee/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/atuiee/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/atuiee/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/scripts/noConfigScripts', 'XDG_RUNTIME_DIR': '/run/user/1000', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/atuiee/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-c5225ff144cf5e26.txt', 'LANG': 'en_US.UTF-8', 'PYTHONSTARTUP': '/home/atuiee/.vscode-server/data/User/workspaceStorage/a83387bff2b7a6f838fcedec451d90a3/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-7cfc85cf34.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/atuiee/spooky_ws/install/srf08_publisher:/home/atuiee/spooky_ws/install/ros2_servo_motion:/home/atuiee/spooky_ws/install/range_servo_controller:/home/atuiee/spooky_ws/install/fs90r_hardware:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/atuiee/spooky_ws/build/fs90r_hardware', 'LC_ALL': 'en_US.UTF-8', 'COPILOT_DEBUG_NONCE': '57326fa212c91a67699e86d617f26f2d', 'SSH_CONNECTION': '100.124.107.38 65075 100.67.81.38 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib/python:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/atuiee/spooky_ws/install/srf08_publisher:/home/atuiee/spooky_ws/install/ros2_servo_motion:/home/atuiee/spooky_ws/install/range_servo_controller:/home/atuiee/spooky_ws/install/fs90r_hardware:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.098474] (-) TimerEvent: {}
+[0.199144] (-) TimerEvent: {}
+[0.302567] (-) TimerEvent: {}
+[0.403363] (-) TimerEvent: {}
+[0.504231] (-) TimerEvent: {}
+[0.566057] (fs90r_hardware) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/fs90r_hardware.dir/src/fs90r_system.cpp.o\x1b[0m\n'}
+[0.609558] (fs90r_hardware) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/fs90r_hardware.dir/src/fs90r_servo.cpp.o\x1b[0m\n'}
+[0.611718] (-) TimerEvent: {}
+[0.715529] (-) TimerEvent: {}
+[0.816273] (-) TimerEvent: {}
+[0.917164] (-) TimerEvent: {}
+[1.020573] (-) TimerEvent: {}
+[1.121288] (-) TimerEvent: {}
+[1.222078] (-) TimerEvent: {}
+[1.322908] (-) TimerEvent: {}
+[1.423821] (-) TimerEvent: {}
+[1.527555] (-) TimerEvent: {}
+[1.628314] (-) TimerEvent: {}
+[1.729564] (-) TimerEvent: {}
+[1.830777] (-) TimerEvent: {}
+[1.932040] (-) TimerEvent: {}
+[2.033164] (-) TimerEvent: {}
+[2.134282] (-) TimerEvent: {}
+[2.235202] (-) TimerEvent: {}
+[2.304430] (fs90r_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/atuiee/spooky_ws/src/fs90r_hardware/src/fs90r_servo.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KFS90RServo::\x1b[01;32m\x1b[KFS90RServo\x1b[m\x1b[K(int, int, int, int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.305346] (fs90r_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/atuiee/spooky_ws/src/fs90r_hardware/src/fs90r_servo.cpp:29:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KsoftServoSetup\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.306203] (fs90r_hardware) StderrLine: {'line': b'   29 |   if (\x1b[01;31m\x1b[KsoftServoSetup\x1b[m\x1b[K(\n'}
+[2.306948] (fs90r_hardware) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.319647] (fs90r_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/atuiee/spooky_ws/src/fs90r_hardware/src/fs90r_servo.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid FS90RServo::\x1b[01;32m\x1b[Kset_normalized_speed\x1b[m\x1b[K(double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.320692] (fs90r_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/atuiee/spooky_ws/src/fs90r_hardware/src/fs90r_servo.cpp:64:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KsoftServoWrite\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.322350] (fs90r_hardware) StderrLine: {'line': b'   64 |   \x1b[01;31m\x1b[KsoftServoWrite\x1b[m\x1b[K(pin_, pulse_to_servo_value(pulse_us));\n'}
+[2.325068] (fs90r_hardware) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.332468] (fs90r_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/atuiee/spooky_ws/src/fs90r_hardware/src/fs90r_servo.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid FS90RServo::\x1b[01;32m\x1b[Kstop\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.333249] (fs90r_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/atuiee/spooky_ws/src/fs90r_hardware/src/fs90r_servo.cpp:69:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KsoftServoWrite\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.334024] (fs90r_hardware) StderrLine: {'line': b'   69 |   \x1b[01;31m\x1b[KsoftServoWrite\x1b[m\x1b[K(pin_, pulse_to_servo_value(neutral_us_));\n'}
+[2.334700] (fs90r_hardware) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.335265] (-) TimerEvent: {}
+[2.437819] (-) TimerEvent: {}
+[2.473301] (fs90r_hardware) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/fs90r_hardware.dir/build.make:90: CMakeFiles/fs90r_hardware.dir/src/fs90r_servo.cpp.o] Error 1\n'}
+[2.474634] (fs90r_hardware) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[2.537990] (-) TimerEvent: {}
+[2.638657] (-) TimerEvent: {}
+[2.739333] (-) TimerEvent: {}
+[2.840040] (-) TimerEvent: {}
+[2.940778] (-) TimerEvent: {}
+[3.041598] (-) TimerEvent: {}
+[3.142277] (-) TimerEvent: {}
+[3.242913] (-) TimerEvent: {}
+[3.343649] (-) TimerEvent: {}
+[3.444321] (-) TimerEvent: {}
+[3.545069] (-) TimerEvent: {}
+[3.645867] (-) TimerEvent: {}
+[3.746689] (-) TimerEvent: {}
+[3.847362] (-) TimerEvent: {}
+[3.948076] (-) TimerEvent: {}
+[4.048824] (-) TimerEvent: {}
+[4.149536] (-) TimerEvent: {}
+[4.250226] (-) TimerEvent: {}
+[4.350969] (-) TimerEvent: {}
+[4.451705] (-) TimerEvent: {}
+[4.552463] (-) TimerEvent: {}
+[4.653128] (-) TimerEvent: {}
+[4.754146] (-) TimerEvent: {}
+[4.855559] (-) TimerEvent: {}
+[4.956226] (-) TimerEvent: {}
+[5.056934] (-) TimerEvent: {}
+[5.157830] (-) TimerEvent: {}
+[5.258534] (-) TimerEvent: {}
+[5.359327] (-) TimerEvent: {}
+[5.460164] (-) TimerEvent: {}
+[5.560952] (-) TimerEvent: {}
+[5.661701] (-) TimerEvent: {}
+[5.762431] (-) TimerEvent: {}
+[5.863166] (-) TimerEvent: {}
+[5.964047] (-) TimerEvent: {}
+[6.064741] (-) TimerEvent: {}
+[6.165494] (-) TimerEvent: {}
+[6.266179] (-) TimerEvent: {}
+[6.366924] (-) TimerEvent: {}
+[6.467766] (-) TimerEvent: {}
+[6.568553] (-) TimerEvent: {}
+[6.669232] (-) TimerEvent: {}
+[6.769974] (-) TimerEvent: {}
+[6.870707] (-) TimerEvent: {}
+[6.971516] (-) TimerEvent: {}
+[7.072222] (-) TimerEvent: {}
+[7.172997] (-) TimerEvent: {}
+[7.273763] (-) TimerEvent: {}
+[7.374550] (-) TimerEvent: {}
+[7.475223] (-) TimerEvent: {}
+[7.575985] (-) TimerEvent: {}
+[7.676885] (-) TimerEvent: {}
+[7.777643] (-) TimerEvent: {}
+[7.878338] (-) TimerEvent: {}
+[7.979070] (-) TimerEvent: {}
+[8.079830] (-) TimerEvent: {}
+[8.180540] (-) TimerEvent: {}
+[8.281236] (-) TimerEvent: {}
+[8.381990] (-) TimerEvent: {}
+[8.482782] (-) TimerEvent: {}
+[8.583546] (-) TimerEvent: {}
+[8.684438] (-) TimerEvent: {}
+[8.785181] (-) TimerEvent: {}
+[8.885916] (-) TimerEvent: {}
+[8.986594] (-) TimerEvent: {}
+[9.087279] (-) TimerEvent: {}
+[9.188030] (-) TimerEvent: {}
+[9.288780] (-) TimerEvent: {}
+[9.389486] (-) TimerEvent: {}
+[9.490201] (-) TimerEvent: {}
+[9.590984] (-) TimerEvent: {}
+[9.691769] (-) TimerEvent: {}
+[9.792886] (-) TimerEvent: {}
+[9.893716] (-) TimerEvent: {}
+[9.994462] (-) TimerEvent: {}
+[10.095150] (-) TimerEvent: {}
+[10.195893] (-) TimerEvent: {}
+[10.296622] (-) TimerEvent: {}
+[10.397328] (-) TimerEvent: {}
+[10.498077] (-) TimerEvent: {}
+[10.598842] (-) TimerEvent: {}
+[10.699651] (-) TimerEvent: {}
+[10.800366] (-) TimerEvent: {}
+[10.901129] (-) TimerEvent: {}
+[11.001886] (-) TimerEvent: {}
+[11.102581] (-) TimerEvent: {}
+[11.203302] (-) TimerEvent: {}
+[11.304133] (-) TimerEvent: {}
+[11.404886] (-) TimerEvent: {}
+[11.505586] (-) TimerEvent: {}
+[11.606332] (-) TimerEvent: {}
+[11.707532] (-) TimerEvent: {}
+[11.808239] (-) TimerEvent: {}
+[11.908986] (-) TimerEvent: {}
+[12.009777] (-) TimerEvent: {}
+[12.110530] (-) TimerEvent: {}
+[12.211245] (-) TimerEvent: {}
+[12.311989] (-) TimerEvent: {}
+[12.412739] (-) TimerEvent: {}
+[12.513478] (-) TimerEvent: {}
+[12.614167] (-) TimerEvent: {}
+[12.714917] (-) TimerEvent: {}
+[12.815690] (-) TimerEvent: {}
+[12.916464] (-) TimerEvent: {}
+[13.017182] (-) TimerEvent: {}
+[13.117971] (-) TimerEvent: {}
+[13.218691] (-) TimerEvent: {}
+[13.319361] (-) TimerEvent: {}
+[13.420101] (-) TimerEvent: {}
+[13.520866] (-) TimerEvent: {}
+[13.621693] (-) TimerEvent: {}
+[13.722436] (-) TimerEvent: {}
+[13.823121] (-) TimerEvent: {}
+[13.835027] (fs90r_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/atuiee/spooky_ws/src/fs90r_hardware/src/fs90r_system.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual hardware_interface::CallbackReturn fs90r_hardware::FS90RSystem::\x1b[01;32m\x1b[Kon_init\x1b[m\x1b[K(const hardware_interface::HardwareInfo&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.835886] (fs90r_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/atuiee/spooky_ws/src/fs90r_hardware/src/fs90r_system.cpp:18:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvirtual rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn hardware_interface::HardwareComponentInterface::\x1b[01;32m\x1b[Kon_init\x1b[m\x1b[K(const hardware_interface::HardwareInfo&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: Use on_init(const HardwareComponentInterfaceParams & params) instead. [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.836510] (fs90r_hardware) StderrLine: {'line': b'   18 | \x1b[01;35m\x1b[Krface::on_init(info)\x1b[m\x1b[K !=\n'}
+[13.837101] (fs90r_hardware) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[13.837847] (fs90r_hardware) StderrLine: {'line': b'\n'}
+[13.838576] (fs90r_hardware) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/system_interface.hpp:18\x1b[m\x1b[K,\n'}
+[13.839122] (fs90r_hardware) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/atuiee/spooky_ws/src/fs90r_hardware/include/fs90r_hardware/fs90r_system.hpp:8\x1b[m\x1b[K,\n'}
+[13.839706] (fs90r_hardware) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/atuiee/spooky_ws/src/fs90r_hardware/src/fs90r_system.cpp:1\x1b[m\x1b[K:\n'}
+[13.840238] (fs90r_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/hardware_component_interface.hpp:140:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[13.840936] (fs90r_hardware) StderrLine: {'line': b'  140 | lbackReturn \x1b[01;36m\x1b[Kon_init\x1b[m\x1b[K(const HardwareInfo & hardware_info);\n'}
+[13.841470] (fs90r_hardware) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[13.841991] (fs90r_hardware) StderrLine: {'line': b'\n'}
+[13.923329] (-) TimerEvent: {}
+[14.024061] (-) TimerEvent: {}
+[14.124896] (-) TimerEvent: {}
+[14.225663] (-) TimerEvent: {}
+[14.326641] (-) TimerEvent: {}
+[14.427651] (-) TimerEvent: {}
+[14.528348] (-) TimerEvent: {}
+[14.629064] (-) TimerEvent: {}
+[14.729814] (-) TimerEvent: {}
+[14.830562] (-) TimerEvent: {}
+[14.931234] (-) TimerEvent: {}
+[15.031965] (-) TimerEvent: {}
+[15.132750] (-) TimerEvent: {}
+[15.233476] (-) TimerEvent: {}
+[15.334157] (-) TimerEvent: {}
+[15.434908] (-) TimerEvent: {}
+[15.535640] (-) TimerEvent: {}
+[15.636467] (-) TimerEvent: {}
+[15.737165] (-) TimerEvent: {}
+[15.837979] (-) TimerEvent: {}
+[15.938701] (-) TimerEvent: {}
+[16.039442] (-) TimerEvent: {}
+[16.140123] (-) TimerEvent: {}
+[16.240886] (-) TimerEvent: {}
+[16.341597] (-) TimerEvent: {}
+[16.442317] (-) TimerEvent: {}
+[16.543060] (-) TimerEvent: {}
+[16.643812] (-) TimerEvent: {}
+[16.744548] (-) TimerEvent: {}
+[16.845252] (-) TimerEvent: {}
+[16.946036] (-) TimerEvent: {}
+[17.046813] (-) TimerEvent: {}
+[17.147563] (-) TimerEvent: {}
+[17.248368] (-) TimerEvent: {}
+[17.349073] (-) TimerEvent: {}
+[17.449782] (-) TimerEvent: {}
+[17.550543] (-) TimerEvent: {}
+[17.651366] (-) TimerEvent: {}
+[17.752172] (-) TimerEvent: {}
+[17.852900] (-) TimerEvent: {}
+[17.953632] (-) TimerEvent: {}
+[18.054312] (-) TimerEvent: {}
+[18.155052] (-) TimerEvent: {}
+[18.255797] (-) TimerEvent: {}
+[18.356518] (-) TimerEvent: {}
+[18.457204] (-) TimerEvent: {}
+[18.557932] (-) TimerEvent: {}
+[18.658666] (-) TimerEvent: {}
+[18.759352] (-) TimerEvent: {}
+[18.860208] (-) TimerEvent: {}
+[18.960939] (-) TimerEvent: {}
+[19.061666] (-) TimerEvent: {}
+[19.162353] (-) TimerEvent: {}
+[19.263089] (-) TimerEvent: {}
+[19.363854] (-) TimerEvent: {}
+[19.464583] (-) TimerEvent: {}
+[19.565283] (-) TimerEvent: {}
+[19.665981] (-) TimerEvent: {}
+[19.766726] (-) TimerEvent: {}
+[19.867493] (-) TimerEvent: {}
+[19.968177] (-) TimerEvent: {}
+[20.068901] (-) TimerEvent: {}
+[20.169595] (-) TimerEvent: {}
+[20.270277] (-) TimerEvent: {}
+[20.371011] (-) TimerEvent: {}
+[20.471803] (-) TimerEvent: {}
+[20.572715] (-) TimerEvent: {}
+[20.673478] (-) TimerEvent: {}
+[20.774150] (-) TimerEvent: {}
+[20.874876] (-) TimerEvent: {}
+[20.884809] (fs90r_hardware) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/fs90r_hardware.dir/all] Error 2\n'}
+[20.885765] (fs90r_hardware) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[20.896266] (fs90r_hardware) CommandEnded: {'returncode': 2}
+[20.962397] (fs90r_hardware) JobEnded: {'identifier': 'fs90r_hardware', 'rc': 2}
+[20.974469] (-) EventReactorShutdown: {}

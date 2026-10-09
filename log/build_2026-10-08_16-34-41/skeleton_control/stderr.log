@@ -1,0 +1,11 @@
+[01m[K/home/atuiee/spooky_ws/src/skeleton_control/src/skeleton_control_node.cpp:[m[K In member function ‘[01m[Kvoid SkeletonControlNode::[01;32m[Krange_callback[m[K(sensor_msgs::msg::Range_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/atuiee/spooky_ws/src/skeleton_control/src/skeleton_control_node.cpp:48:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::msgs[m[K’ has not been declared
+   48 |         std::[01;31m[Kmsgs[m[K::msg::Float64 servo_msg;
+      |              [01;31m[K^~~~[m[K
+[01m[K/home/atuiee/spooky_ws/src/skeleton_control/src/skeleton_control_node.cpp:49:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kservo_msg[m[K’ was not declared in this scope; did you mean ‘[01m[Kservice_msgs[m[K’?
+   49 |         [01;31m[Kservo_msg[m[K.data = angle;
+      |         [01;31m[K^~~~~~~~~[m[K
+      |         [32m[Kservice_msgs[m[K
+gmake[2]: *** [CMakeFiles/skeleton_control_node.dir/build.make:76: CMakeFiles/skeleton_control_node.dir/src/skeleton_control_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/skeleton_control_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,68 @@
+-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found hardware_interface: 4.48.1 (/opt/ros/jazzy/share/hardware_interface/cmake)
+-- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Configuring done (4.0s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/atuiee/spooky_ws/build/fs90r_hardware
+[ 33%] [32mBuilding CXX object CMakeFiles/fs90r_hardware.dir/src/fs90r_system.cpp.o[0m
+[01m[K/home/atuiee/spooky_ws/src/fs90r_hardware/src/fs90r_system.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::CallbackReturn fs90r_hardware::FS90RSystem::[01;32m[Kon_init[m[K(const hardware_interface::HardwareInfo&)[m[K’:
+[01m[K/home/atuiee/spooky_ws/src/fs90r_hardware/src/fs90r_system.cpp:18:51:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvirtual rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn hardware_interface::HardwareComponentInterface::[01;32m[Kon_init[m[K(const hardware_interface::HardwareInfo&)[m[K’ is deprecated: Use on_init(const HardwareComponentInterfaceParams & params) instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   18 | [01;35m[K::SystemInterface::on_init(info)[m[K !=
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+
+In file included from [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/system_interface.hpp:18[m[K,
+                 from [01m[K/home/atuiee/spooky_ws/src/fs90r_hardware/include/fs90r_hardware/fs90r_system.hpp:8[m[K,
+                 from [01m[K/home/atuiee/spooky_ws/src/fs90r_hardware/src/fs90r_system.cpp:1[m[K:
+[01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/hardware_component_interface.hpp:140:26:[m[K [01;36m[Knote: [m[Kdeclared here
+  140 |  virtual CallbackReturn [01;36m[Kon_init[m[K(const HardwareInfo & hardware_info);
+      |                         [01;36m[K^~~~~~~[m[K
+
+[ 66%] [32m[1mLinking CXX shared library libfs90r_hardware.so[0m
+[100%] Built target fs90r_hardware
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware//fs90r_hardware.xml
+-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/include/fs90r_hardware/fs90r_servo.hpp
+-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/include/fs90r_hardware/fs90r_system.hpp
+-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/fs90r_hardware.xml
+-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/config/controllers.yaml
+-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/urdf/fs90r_control.xacro
+-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/config/controllers.yaml
+-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/urdf/fs90r_control.xacro
+-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/launch/test_fs90r.launch.py
+-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/environment/library_path.sh
+-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/environment/library_path.dsv
+-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/ament_index/resource_index/package_run_dependencies/fs90r_hardware
+-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/ament_index/resource_index/parent_prefix_path/fs90r_hardware
+-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/environment/path.sh
+-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/environment/path.dsv
+-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/local_setup.bash
+-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/local_setup.sh
+-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/local_setup.zsh
+-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/local_setup.dsv
+-- Symlinking: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/package.dsv
+-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/ament_index/resource_index/packages/fs90r_hardware
+-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/fs90r_hardware
+-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/cmake/ament_cmake_export_targets-extras.cmake
+-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/cmake/fs90r_hardwareConfig.cmake
+-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/cmake/fs90r_hardwareConfig-version.cmake
+-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/package.xml
+-- Installing: /home/atuiee/spooky_ws/install/fs90r_hardware/lib/libfs90r_hardware.so
+-- Set non-toolchain portion of runtime path of "/home/atuiee/spooky_ws/install/fs90r_hardware/lib/libfs90r_hardware.so" to ""
+-- Up-to-date: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/cmake/export_fs90r_hardwareExport.cmake
+-- Up-to-date: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/cmake/export_fs90r_hardwareExport-noconfig.cmake

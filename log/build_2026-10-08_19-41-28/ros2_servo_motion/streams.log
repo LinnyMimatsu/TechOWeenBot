@@ -1,0 +1,15 @@
+[0.153s] Invoking command in '/home/atuiee/spooky_ws/build/ros2_servo_motion': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/atuiee/spooky_ws/build/ros2_servo_motion -- -j4 -l4
+[1.142s] [ 33%] [32mBuilding CXX object CMakeFiles/ros2_servo_motion.dir/micro_servo_hardware/src/S90_servo.cpp.o[0m
+[1.184s] [ 66%] [32mBuilding CXX object CMakeFiles/ros2_servo_motion.dir/micro_servo_hardware/src/micro_servo.cpp.o[0m
+[17.213s] [01m[K/home/atuiee/spooky_ws/src/ROS2_servo_motion/micro_servo_hardware/src/S90_servo.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::CallbackReturn ros2_servo_motion::S90ServoSystemPositionOnlyHardware::[01;32m[Kon_init[m[K(const hardware_interface::HardwareInfo&)[m[K’:
+[17.214s] [01m[K/home/atuiee/spooky_ws/src/ROS2_servo_motion/micro_servo_hardware/src/S90_servo.cpp:20:53:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvirtual rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn hardware_interface::HardwareComponentInterface::[01;32m[Kon_init[m[K(const hardware_interface::HardwareInfo&)[m[K’ is deprecated: Use on_init(const HardwareComponentInterfaceParams & params) instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[17.215s]    20 | [01;35m[Krface::on_init(info)[m[K !=
+[17.215s]       | [01;35m[K~~~~~~~~~~~~~~^~~~~~[m[K
+[17.216s] 
+[17.218s] In file included from [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/system_interface.hpp:18[m[K,
+[17.219s]                  from [01m[K/home/atuiee/spooky_ws/src/ROS2_servo_motion/micro_servo_hardware/src/../include/micro_servo_hardware/S90_servo.hpp:10[m[K,
+[17.219s]                  from [01m[K/home/atuiee/spooky_ws/src/ROS2_servo_motion/micro_servo_hardware/src/S90_servo.cpp:1[m[K:
+[17.220s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/hardware_component_interface.hpp:140:26:[m[K [01;36m[Knote: [m[Kdeclared here
+[17.221s]   140 | lbackReturn [01;36m[Kon_init[m[K(const HardwareInfo & hardware_info);
+[17.222s]       |             [01;36m[K^~~~~~~[m[K
+[17.223s] 

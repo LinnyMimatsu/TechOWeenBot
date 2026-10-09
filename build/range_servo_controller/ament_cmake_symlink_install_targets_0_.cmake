@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/atuiee/spooky_ws/build/range_servo_controller/range_servo_controller" "TARGETS" "range_servo_controller" "DESTINATION" "lib/range_servo_controller")

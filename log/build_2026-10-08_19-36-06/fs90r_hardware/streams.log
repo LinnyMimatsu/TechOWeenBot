@@ -1,0 +1,12 @@
+[0.080s] Invoking command in '/home/atuiee/spooky_ws/build/fs90r_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/atuiee/spooky_ws/build/fs90r_hardware -- -j4 -l4
+[0.551s] [ 33%] [32mBuilding CXX object CMakeFiles/fs90r_hardware.dir/src/fs90r_servo.cpp.o[0m
+[0.572s] [ 66%] [32mBuilding CXX object CMakeFiles/fs90r_hardware.dir/src/fs90r_system.cpp.o[0m
+[0.738s] [01m[K/home/atuiee/spooky_ws/src/fs90r_hardware/src/fs90r_system.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kfs90r_hardware/fs90r_system.hpp: No such file or directory
+[0.738s]     1 | #include [01;31m[K"fs90r_hardware/fs90r_system.hpp"[m[K
+[0.739s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.740s] compilation terminated.
+[0.742s] gmake[2]: *** [CMakeFiles/fs90r_hardware.dir/build.make:76: CMakeFiles/fs90r_hardware.dir/src/fs90r_system.cpp.o] Error 1
+[0.742s] gmake[2]: *** Waiting for unfinished jobs....
+[3.204s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/fs90r_hardware.dir/all] Error 2
+[3.204s] gmake: *** [Makefile:146: all] Error 2
+[3.214s] Invoked command in '/home/atuiee/spooky_ws/build/fs90r_hardware' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/atuiee/spooky_ws/build/fs90r_hardware -- -j4 -l4

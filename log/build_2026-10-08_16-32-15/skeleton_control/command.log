@@ -1,0 +1,2 @@
+Invoking command in '/home/atuiee/spooky_ws/build/skeleton_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/atuiee/spooky_ws/src/skeleton_control -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/atuiee/spooky_ws/install/skeleton_control
+Invoked command in '/home/atuiee/spooky_ws/build/skeleton_control' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/atuiee/spooky_ws/src/skeleton_control -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/atuiee/spooky_ws/install/skeleton_control

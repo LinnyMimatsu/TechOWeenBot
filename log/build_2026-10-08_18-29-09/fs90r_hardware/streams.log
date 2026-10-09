@@ -1,0 +1,57 @@
+[0.142s] Invoking command in '/home/atuiee/spooky_ws/build/fs90r_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/atuiee/spooky_ws/build/fs90r_hardware -- -j4 -l4
+[0.398s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[2.367s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.418s] -- Found hardware_interface: 4.48.1 (/opt/ros/jazzy/share/hardware_interface/cmake)
+[2.606s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[2.654s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[2.714s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.784s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.582s] -- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+[3.718s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[3.725s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[3.802s] -- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+[3.845s] -- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+[3.932s] -- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+[3.971s] -- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+[4.015s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.013s] -- Configuring done (4.6s)
+[5.171s] -- Generating done (0.1s)
+[5.205s] -- Build files have been written to: /home/atuiee/spooky_ws/build/fs90r_hardware
+[5.488s] [100%] Built target fs90r_hardware
+[5.547s] Invoked command in '/home/atuiee/spooky_ws/build/fs90r_hardware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/atuiee/spooky_ws/build/fs90r_hardware -- -j4 -l4
+[5.554s] Invoking command in '/home/atuiee/spooky_ws/build/fs90r_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/atuiee/spooky_ws/build/fs90r_hardware
+[5.601s] -- Install configuration: ""
+[5.603s] -- Execute custom install script
+[5.604s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware//fs90r_hardware.xml
+[5.606s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/include/fs90r_hardware/fs90r_servo.hpp
+[5.607s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/include/fs90r_hardware/fs90r_system.hpp
+[5.608s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/fs90r_hardware.xml
+[5.610s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/config/controllers.yaml
+[5.611s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/urdf/fs90r_control.xacro
+[5.613s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/config/controllers.yaml
+[5.614s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/urdf/fs90r_control.xacro
+[5.616s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/launch/test_fs90r.launch.py
+[5.617s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/environment/library_path.sh
+[5.618s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/environment/library_path.dsv
+[5.619s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/ament_index/resource_index/package_run_dependencies/fs90r_hardware
+[5.620s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/ament_index/resource_index/parent_prefix_path/fs90r_hardware
+[5.621s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/environment/ament_prefix_path.sh
+[5.622s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/environment/ament_prefix_path.dsv
+[5.623s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/environment/path.sh
+[5.624s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/environment/path.dsv
+[5.625s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/local_setup.bash
+[5.626s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/local_setup.sh
+[5.627s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/local_setup.zsh
+[5.628s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/local_setup.dsv
+[5.629s] -- Symlinking: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/package.dsv
+[5.683s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/ament_index/resource_index/packages/fs90r_hardware
+[5.684s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/fs90r_hardware
+[5.685s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/cmake/ament_cmake_export_targets-extras.cmake
+[5.686s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.687s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/cmake/fs90r_hardwareConfig.cmake
+[5.688s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/cmake/fs90r_hardwareConfig-version.cmake
+[5.689s] -- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/package.xml
+[5.690s] -- Up-to-date: /home/atuiee/spooky_ws/install/fs90r_hardware/lib/libfs90r_hardware.so
+[5.692s] -- Up-to-date: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/cmake/export_fs90r_hardwareExport.cmake
+[5.693s] -- Up-to-date: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/cmake/export_fs90r_hardwareExport-noconfig.cmake
+[5.701s] Invoked command in '/home/atuiee/spooky_ws/build/fs90r_hardware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/atuiee/spooky_ws/build/fs90r_hardware

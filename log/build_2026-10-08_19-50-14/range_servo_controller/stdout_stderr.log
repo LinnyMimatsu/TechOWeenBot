@@ -1,0 +1,22 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/range_servo_controller.dir/src/range_servo_controller.cpp.o[0m
+[100%] [32m[1mLinking CXX executable range_servo_controller[0m
+[100%] Built target range_servo_controller
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/atuiee/spooky_ws/install/range_servo_controller/lib/range_servo_controller/range_servo_controller
+-- Symlinking: /home/atuiee/spooky_ws/install/range_servo_controller/share/range_servo_controller/launch/range_servo.launch.py
+-- Symlinking: /home/atuiee/spooky_ws/install/range_servo_controller/share/ament_index/resource_index/package_run_dependencies/range_servo_controller
+-- Symlinking: /home/atuiee/spooky_ws/install/range_servo_controller/share/ament_index/resource_index/parent_prefix_path/range_servo_controller
+-- Symlinking: /home/atuiee/spooky_ws/install/range_servo_controller/share/range_servo_controller/environment/ament_prefix_path.sh
+-- Symlinking: /home/atuiee/spooky_ws/install/range_servo_controller/share/range_servo_controller/environment/ament_prefix_path.dsv
+-- Symlinking: /home/atuiee/spooky_ws/install/range_servo_controller/share/range_servo_controller/environment/path.sh
+-- Symlinking: /home/atuiee/spooky_ws/install/range_servo_controller/share/range_servo_controller/environment/path.dsv
+-- Symlinking: /home/atuiee/spooky_ws/install/range_servo_controller/share/range_servo_controller/local_setup.bash
+-- Symlinking: /home/atuiee/spooky_ws/install/range_servo_controller/share/range_servo_controller/local_setup.sh
+-- Symlinking: /home/atuiee/spooky_ws/install/range_servo_controller/share/range_servo_controller/local_setup.zsh
+-- Symlinking: /home/atuiee/spooky_ws/install/range_servo_controller/share/range_servo_controller/local_setup.dsv
+-- Symlinking: /home/atuiee/spooky_ws/install/range_servo_controller/share/range_servo_controller/package.dsv
+-- Symlinking: /home/atuiee/spooky_ws/install/range_servo_controller/share/ament_index/resource_index/packages/range_servo_controller
+-- Symlinking: /home/atuiee/spooky_ws/install/range_servo_controller/share/range_servo_controller/cmake/range_servo_controllerConfig.cmake
+-- Symlinking: /home/atuiee/spooky_ws/install/range_servo_controller/share/range_servo_controller/cmake/range_servo_controllerConfig-version.cmake
+-- Symlinking: /home/atuiee/spooky_ws/install/range_servo_controller/share/range_servo_controller/package.xml

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<library path="fs90r_hardware">
+  <class
+    name="fs90r_hardware/FS90RSystem"
+    type="fs90r_hardware::FS90RSystem"
+    base_class_type="hardware_interface::SystemInterface">
+    <description>FS90R continuous-rotation servo hardware interface using wiringPi.</description>
+  </class>
+</library>

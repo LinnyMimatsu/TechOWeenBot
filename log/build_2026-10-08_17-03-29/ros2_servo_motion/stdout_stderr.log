@@ -1,0 +1,53 @@
+[ 33%] [32mBuilding CXX object CMakeFiles/ros2_servo_motion.dir/micro_servo_hardware/src/S90_servo.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/ros2_servo_motion.dir/micro_servo_hardware/src/micro_servo.cpp.o[0m
+[01m[K/home/atuiee/spooky_ws/src/ROS2_servo_motion/micro_servo_hardware/src/S90_servo.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::CallbackReturn ros2_servo_motion::S90ServoSystemPositionOnlyHardware::[01;32m[Kon_init[m[K(const hardware_interface::HardwareInfo&)[m[K’:
+[01m[K/home/atuiee/spooky_ws/src/ROS2_servo_motion/micro_servo_hardware/src/S90_servo.cpp:20:53:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvirtual rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn hardware_interface::HardwareComponentInterface::[01;32m[Kon_init[m[K(const hardware_interface::HardwareInfo&)[m[K’ is deprecated: Use on_init(const HardwareComponentInterfaceParams & params) instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   20 |         [01;35m[Khardware_interface::SystemInterface::on_init(info)[m[K !=
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+In file included from [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/system_interface.hpp:18[m[K,
+                 from [01m[K/home/atuiee/spooky_ws/src/ROS2_servo_motion/micro_servo_hardware/src/../include/micro_servo_hardware/S90_servo.hpp:10[m[K,
+                 from [01m[K/home/atuiee/spooky_ws/src/ROS2_servo_motion/micro_servo_hardware/src/S90_servo.cpp:1[m[K:
+[01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/hardware_component_interface.hpp:140:26:[m[K [01;36m[Knote: [m[Kdeclared here
+  140 |   virtual CallbackReturn [01;36m[Kon_init[m[K(const HardwareInfo & hardware_info);
+      |                          [01;36m[K^~~~~~~[m[K
+[100%] [32m[1mLinking CXX shared library libros2_servo_motion.so[0m
+[100%] Built target ros2_servo_motion
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion//ros2_servo_motion.xml
+-- Symlinking: /home/atuiee/spooky_ws/install/ros2_servo_motion/include/ros2_servo_motion/micro_servo_hardware/S90_servo.hpp
+-- Symlinking: /home/atuiee/spooky_ws/install/ros2_servo_motion/include/ros2_servo_motion/micro_servo_hardware/micro_servo.hpp
+-- Symlinking: /home/atuiee/spooky_ws/install/ros2_servo_motion/include/ros2_servo_motion/micro_servo_hardware/visibility_control.hpp
+-- Symlinking: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/launch/display.launch.py
+-- Symlinking: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/config/config.rviz
+-- Symlinking: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/urdf/servo.ros2_control.xacro
+-- Symlinking: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/urdf/servo.urdf.xacro
+-- Symlinking: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/urdf/servo.xacro
+-- Symlinking: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/launch/S90_servo.launch.py
+-- Symlinking: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/launch/test_fordware_position_controller.launch.py
+-- Symlinking: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/config/S90_servo_controllers.yaml
+-- Symlinking: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/config/S90_servo_forward_position_publisher.yaml
+-- Symlinking: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/environment/library_path.sh
+-- Symlinking: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/environment/library_path.dsv
+-- Symlinking: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ament_index/resource_index/package_run_dependencies/ros2_servo_motion
+-- Symlinking: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ament_index/resource_index/parent_prefix_path/ros2_servo_motion
+-- Symlinking: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/environment/ament_prefix_path.sh
+-- Symlinking: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/environment/ament_prefix_path.dsv
+-- Symlinking: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/environment/path.sh
+-- Symlinking: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/environment/path.dsv
+-- Symlinking: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/local_setup.bash
+-- Symlinking: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/local_setup.sh
+-- Symlinking: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/local_setup.zsh
+-- Symlinking: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/local_setup.dsv
+-- Symlinking: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/package.dsv
+-- Symlinking: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ament_index/resource_index/packages/ros2_servo_motion
+-- Symlinking: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/ros2_servo_motion
+-- Symlinking: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/cmake/ament_cmake_export_targets-extras.cmake
+-- Symlinking: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/cmake/ros2_servo_motionConfig.cmake
+-- Symlinking: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/cmake/ros2_servo_motionConfig-version.cmake
+-- Symlinking: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/package.xml
+-- Installing: /home/atuiee/spooky_ws/install/ros2_servo_motion/lib/libros2_servo_motion.so
+-- Set non-toolchain portion of runtime path of "/home/atuiee/spooky_ws/install/ros2_servo_motion/lib/libros2_servo_motion.so" to ""
+-- Installing: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/cmake/export_hardwareExport.cmake
+-- Installing: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/cmake/export_hardwareExport-noconfig.cmake

@@ -1,0 +1,7 @@
+[01m[K/home/atuiee/spooky_ws/src/srf08_publisher/src/srf08_node.cpp:[m[K In member function ‘[01m[Kvoid SRF08Publisher::[01;32m[Ktimer_callback[m[K()[m[K’:
+[01m[K/home/atuiee/spooky_ws/src/srf08_publisher/src/srf08_node.cpp:91:55:[m[K [01;31m[Kerror: [m[K‘[01m[KULTRASONIC[m[K’ is not a member of ‘[01m[Ksensor_msgs::msg::Range[m[K’ {aka ‘[01m[Ksensor_msgs::msg::Range_<std::allocator<void> >[m[K’}
+   91 |         msg.radiation_type = sensor_msgs::msg::Range::[01;31m[KULTRASONIC[m[K;
+      |                                                       [01;31m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/srf08_node.dir/build.make:76: CMakeFiles/srf08_node.dir/src/srf08_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/srf08_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

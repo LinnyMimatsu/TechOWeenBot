@@ -1,0 +1,4 @@
+Invoking command in '/home/atuiee/spooky_ws/build/range_servo_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/atuiee/spooky_ws/build/range_servo_controller -- -j4 -l4
+Invoked command in '/home/atuiee/spooky_ws/build/range_servo_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/atuiee/spooky_ws/build/range_servo_controller -- -j4 -l4
+Invoking command in '/home/atuiee/spooky_ws/build/range_servo_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/atuiee/spooky_ws/build/range_servo_controller
+Invoked command in '/home/atuiee/spooky_ws/build/range_servo_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/atuiee/spooky_ws/build/range_servo_controller

@@ -1,0 +1,474 @@
+[0.000000] (-) TimerEvent: {}
+[0.002780] (fs90r_hardware) JobQueued: {'identifier': 'fs90r_hardware', 'dependencies': OrderedDict()}
+[0.003661] (ros2_servo_motion) JobQueued: {'identifier': 'ros2_servo_motion', 'dependencies': OrderedDict()}
+[0.004413] (srf08_publisher) JobQueued: {'identifier': 'srf08_publisher', 'dependencies': OrderedDict()}
+[0.004679] (fs90r_hardware) JobStarted: {'identifier': 'fs90r_hardware'}
+[0.054433] (ros2_servo_motion) JobStarted: {'identifier': 'ros2_servo_motion'}
+[0.081362] (srf08_publisher) JobStarted: {'identifier': 'srf08_publisher'}
+[0.098895] (-) TimerEvent: {}
+[0.127162] (fs90r_hardware) JobProgress: {'identifier': 'fs90r_hardware', 'progress': 'cmake'}
+[0.131038] (fs90r_hardware) Command: {'cmd': ['/usr/bin/cmake', '/home/atuiee/spooky_ws/src/fs90r_hardware', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/atuiee/spooky_ws/install/fs90r_hardware'], 'cwd': '/home/atuiee/spooky_ws/build/fs90r_hardware', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'atuiee', 'SSH_CLIENT': '100.124.107.38 65075 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/atuiee/spooky_ws/install/ros2_servo_motion/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/bin/helpers/browser.sh', 'HOME': '/home/atuiee', 'OLDPWD': '/home/atuiee/spooky_ws/src', 'TERM_PROGRAM_VERSION': '1.141.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-40ae936e-f60c-4f78-88a7-1fadd80e0ef4.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/atuiee/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/atuiee/spooky_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'atuiee', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/home/atuiee/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/atuiee/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/atuiee/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/scripts/noConfigScripts', 'XDG_RUNTIME_DIR': '/run/user/1000', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/atuiee/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-bf60eb66ec7b6cc6.txt', 'LANG': 'en_US.UTF-8', 'PYTHONSTARTUP': '/home/atuiee/.vscode-server/data/User/workspaceStorage/a83387bff2b7a6f838fcedec451d90a3/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-7cfc85cf34.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/atuiee/spooky_ws/install/srf08_publisher:/home/atuiee/spooky_ws/install/ros2_servo_motion:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/atuiee/spooky_ws/build/fs90r_hardware', 'LC_ALL': 'en_US.UTF-8', 'COPILOT_DEBUG_NONCE': '57326fa212c91a67699e86d617f26f2d', 'SSH_CONNECTION': '100.124.107.38 65075 100.67.81.38 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib/python:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/atuiee/spooky_ws/install/srf08_publisher:/home/atuiee/spooky_ws/install/ros2_servo_motion:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.152460] (ros2_servo_motion) JobProgress: {'identifier': 'ros2_servo_motion', 'progress': 'cmake'}
+[0.153793] (ros2_servo_motion) JobProgress: {'identifier': 'ros2_servo_motion', 'progress': 'build'}
+[0.156441] (ros2_servo_motion) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/atuiee/spooky_ws/build/ros2_servo_motion', '--', '-j4', '-l4'], 'cwd': '/home/atuiee/spooky_ws/build/ros2_servo_motion', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'atuiee', 'SSH_CLIENT': '100.124.107.38 65075 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/atuiee/spooky_ws/install/ros2_servo_motion/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/bin/helpers/browser.sh', 'HOME': '/home/atuiee', 'OLDPWD': '/home/atuiee/spooky_ws/src', 'TERM_PROGRAM_VERSION': '1.141.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-40ae936e-f60c-4f78-88a7-1fadd80e0ef4.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/atuiee/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/atuiee/spooky_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'atuiee', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/home/atuiee/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/atuiee/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/atuiee/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/scripts/noConfigScripts', 'XDG_RUNTIME_DIR': '/run/user/1000', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/atuiee/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-bf60eb66ec7b6cc6.txt', 'LANG': 'en_US.UTF-8', 'PYTHONSTARTUP': '/home/atuiee/.vscode-server/data/User/workspaceStorage/a83387bff2b7a6f838fcedec451d90a3/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-7cfc85cf34.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/atuiee/spooky_ws/install/srf08_publisher:/home/atuiee/spooky_ws/install/ros2_servo_motion:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/atuiee/spooky_ws/build/ros2_servo_motion', 'LC_ALL': 'en_US.UTF-8', 'COPILOT_DEBUG_NONCE': '57326fa212c91a67699e86d617f26f2d', 'SSH_CONNECTION': '100.124.107.38 65075 100.67.81.38 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib/python:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/atuiee/spooky_ws/install/srf08_publisher:/home/atuiee/spooky_ws/install/ros2_servo_motion:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.190509] (srf08_publisher) JobProgress: {'identifier': 'srf08_publisher', 'progress': 'cmake'}
+[0.191663] (srf08_publisher) JobProgress: {'identifier': 'srf08_publisher', 'progress': 'build'}
+[0.196135] (srf08_publisher) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/atuiee/spooky_ws/build/srf08_publisher', '--', '-j4', '-l4'], 'cwd': '/home/atuiee/spooky_ws/build/srf08_publisher', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'atuiee', 'SSH_CLIENT': '100.124.107.38 65075 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/atuiee/spooky_ws/install/ros2_servo_motion/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/bin/helpers/browser.sh', 'HOME': '/home/atuiee', 'OLDPWD': '/home/atuiee/spooky_ws/src', 'TERM_PROGRAM_VERSION': '1.141.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-40ae936e-f60c-4f78-88a7-1fadd80e0ef4.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/atuiee/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/atuiee/spooky_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'atuiee', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/home/atuiee/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/atuiee/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/atuiee/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/scripts/noConfigScripts', 'XDG_RUNTIME_DIR': '/run/user/1000', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/atuiee/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-bf60eb66ec7b6cc6.txt', 'LANG': 'en_US.UTF-8', 'PYTHONSTARTUP': '/home/atuiee/.vscode-server/data/User/workspaceStorage/a83387bff2b7a6f838fcedec451d90a3/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-7cfc85cf34.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/atuiee/spooky_ws/install/srf08_publisher:/home/atuiee/spooky_ws/install/ros2_servo_motion:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/atuiee/spooky_ws/build/srf08_publisher', 'LC_ALL': 'en_US.UTF-8', 'COPILOT_DEBUG_NONCE': '57326fa212c91a67699e86d617f26f2d', 'SSH_CONNECTION': '100.124.107.38 65075 100.67.81.38 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib/python:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/atuiee/spooky_ws/install/srf08_publisher:/home/atuiee/spooky_ws/install/ros2_servo_motion:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.200013] (-) TimerEvent: {}
+[0.301783] (-) TimerEvent: {}
+[0.405771] (-) TimerEvent: {}
+[0.506547] (-) TimerEvent: {}
+[0.527447] (ros2_servo_motion) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.608716] (-) TimerEvent: {}
+[0.709496] (-) TimerEvent: {}
+[0.775868] (srf08_publisher) StdoutLine: {'line': b'[100%] Built target srf08_node\n'}
+[0.810748] (-) TimerEvent: {}
+[0.913938] (-) TimerEvent: {}
+[0.977806] (srf08_publisher) CommandEnded: {'returncode': 0}
+[0.980361] (srf08_publisher) JobProgress: {'identifier': 'srf08_publisher', 'progress': 'install'}
+[1.016787] (-) TimerEvent: {}
+[1.054046] (fs90r_hardware) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[1.119845] (-) TimerEvent: {}
+[1.167918] (srf08_publisher) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/atuiee/spooky_ws/build/srf08_publisher'], 'cwd': '/home/atuiee/spooky_ws/build/srf08_publisher', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'atuiee', 'SSH_CLIENT': '100.124.107.38 65075 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/atuiee/spooky_ws/install/ros2_servo_motion/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/bin/helpers/browser.sh', 'HOME': '/home/atuiee', 'OLDPWD': '/home/atuiee/spooky_ws/src', 'TERM_PROGRAM_VERSION': '1.141.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-40ae936e-f60c-4f78-88a7-1fadd80e0ef4.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/atuiee/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/atuiee/spooky_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'atuiee', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/home/atuiee/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/atuiee/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/atuiee/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/scripts/noConfigScripts', 'XDG_RUNTIME_DIR': '/run/user/1000', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/atuiee/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-bf60eb66ec7b6cc6.txt', 'LANG': 'en_US.UTF-8', 'PYTHONSTARTUP': '/home/atuiee/.vscode-server/data/User/workspaceStorage/a83387bff2b7a6f838fcedec451d90a3/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-7cfc85cf34.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/atuiee/spooky_ws/install/srf08_publisher:/home/atuiee/spooky_ws/install/ros2_servo_motion:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/atuiee/spooky_ws/build/srf08_publisher', 'LC_ALL': 'en_US.UTF-8', 'COPILOT_DEBUG_NONCE': '57326fa212c91a67699e86d617f26f2d', 'SSH_CONNECTION': '100.124.107.38 65075 100.67.81.38 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib/python:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/atuiee/spooky_ws/install/srf08_publisher:/home/atuiee/spooky_ws/install/ros2_servo_motion:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[1.221773] (-) TimerEvent: {}
+[1.259770] (srf08_publisher) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.264667] (srf08_publisher) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.269902] (srf08_publisher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/lib/srf08_publisher/srf08_node\n'}
+[1.274908] (srf08_publisher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher//launch/srf08_launch.py\n'}
+[1.279206] (srf08_publisher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/ament_index/resource_index/package_run_dependencies/srf08_publisher\n'}
+[1.283106] (srf08_publisher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/ament_index/resource_index/parent_prefix_path/srf08_publisher\n'}
+[1.286837] (srf08_publisher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/environment/ament_prefix_path.sh\n'}
+[1.291101] (srf08_publisher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/environment/ament_prefix_path.dsv\n'}
+[1.294758] (srf08_publisher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/environment/path.sh\n'}
+[1.304023] (srf08_publisher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/environment/path.dsv\n'}
+[1.305020] (srf08_publisher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/local_setup.bash\n'}
+[1.310666] (srf08_publisher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/local_setup.sh\n'}
+[1.319019] (srf08_publisher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/local_setup.zsh\n'}
+[1.322440] (srf08_publisher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/local_setup.dsv\n'}
+[1.323240] (-) TimerEvent: {}
+[1.323700] (srf08_publisher) StdoutLine: {'line': b'-- Symlinking: /home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/package.dsv\n'}
+[1.430841] (-) TimerEvent: {}
+[1.466785] (srf08_publisher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/ament_index/resource_index/packages/srf08_publisher\n'}
+[1.470267] (srf08_publisher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/cmake/srf08_publisherConfig.cmake\n'}
+[1.475705] (srf08_publisher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/cmake/srf08_publisherConfig-version.cmake\n'}
+[1.478880] (srf08_publisher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/package.xml\n'}
+[1.497122] (srf08_publisher) CommandEnded: {'returncode': 0}
+[1.535039] (-) TimerEvent: {}
+[1.657786] (-) TimerEvent: {}
+[1.738395] (srf08_publisher) JobEnded: {'identifier': 'srf08_publisher', 'rc': 0}
+[1.749405] (fs90r_hardware) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[1.757967] (-) TimerEvent: {}
+[1.859747] (-) TimerEvent: {}
+[1.887815] (fs90r_hardware) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.959958] (-) TimerEvent: {}
+[2.060753] (-) TimerEvent: {}
+[2.161548] (-) TimerEvent: {}
+[2.263874] (-) TimerEvent: {}
+[2.321929] (ros2_servo_motion) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.365651] (-) TimerEvent: {}
+[2.391456] (ros2_servo_motion) StdoutLine: {'line': b'-- Found hardware_interface: 4.48.1 (/opt/ros/jazzy/share/hardware_interface/cmake)\n'}
+[2.465854] (-) TimerEvent: {}
+[2.540126] (fs90r_hardware) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.566077] (-) TimerEvent: {}
+[2.586264] (fs90r_hardware) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.588646] (fs90r_hardware) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.591777] (fs90r_hardware) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.615827] (ros2_servo_motion) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[2.648380] (fs90r_hardware) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.668744] (ros2_servo_motion) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[2.669471] (-) TimerEvent: {}
+[2.732108] (ros2_servo_motion) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.769725] (-) TimerEvent: {}
+[2.818371] (ros2_servo_motion) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.870974] (-) TimerEvent: {}
+[2.971931] (-) TimerEvent: {}
+[3.073854] (-) TimerEvent: {}
+[3.174683] (-) TimerEvent: {}
+[3.275489] (-) TimerEvent: {}
+[3.315877] (fs90r_hardware) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.363990] (fs90r_hardware) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.366912] (fs90r_hardware) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.371173] (fs90r_hardware) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.375718] (-) TimerEvent: {}
+[3.429609] (fs90r_hardware) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[3.476359] (-) TimerEvent: {}
+[3.577078] (-) TimerEvent: {}
+[3.678301] (-) TimerEvent: {}
+[3.779012] (-) TimerEvent: {}
+[3.861339] (ros2_servo_motion) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2\n'}
+[3.879212] (-) TimerEvent: {}
+[3.979997] (-) TimerEvent: {}
+[4.030387] (ros2_servo_motion) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[4.038212] (ros2_servo_motion) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.080177] (-) TimerEvent: {}
+[4.136486] (ros2_servo_motion) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2\n'}
+[4.180460] (-) TimerEvent: {}
+[4.182002] (ros2_servo_motion) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2\n'}
+[4.273906] (ros2_servo_motion) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2\n'}
+[4.280659] (-) TimerEvent: {}
+[4.320266] (ros2_servo_motion) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2\n'}
+[4.337129] (fs90r_hardware) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[4.369765] (ros2_servo_motion) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.380842] (-) TimerEvent: {}
+[4.481528] (-) TimerEvent: {}
+[4.582370] (-) TimerEvent: {}
+[4.683271] (-) TimerEvent: {}
+[4.735119] (fs90r_hardware) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[4.783440] (-) TimerEvent: {}
+[4.884117] (-) TimerEvent: {}
+[4.984807] (-) TimerEvent: {}
+[5.085446] (-) TimerEvent: {}
+[5.170101] (fs90r_hardware) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[5.185682] (-) TimerEvent: {}
+[5.286415] (-) TimerEvent: {}
+[5.387091] (-) TimerEvent: {}
+[5.488715] (-) TimerEvent: {}
+[5.542528] (ros2_servo_motion) StdoutLine: {'line': b'-- Configuring done (5.1s)\n'}
+[5.588911] (-) TimerEvent: {}
+[5.690520] (-) TimerEvent: {}
+[5.719807] (fs90r_hardware) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[5.721921] (fs90r_hardware) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[5.752981] (fs90r_hardware) StdoutLine: {'line': b'-- Found hardware_interface: 4.48.1 (/opt/ros/jazzy/share/hardware_interface/cmake)\n'}
+[5.790746] (-) TimerEvent: {}
+[5.894781] (-) TimerEvent: {}
+[5.995610] (-) TimerEvent: {}
+[6.096483] (-) TimerEvent: {}
+[7.283148] (ros2_servo_motion) StdoutLine: {'line': b'-- Generating done (1.7s)\n'}
+[7.284019] (-) TimerEvent: {}
+[7.324104] (ros2_servo_motion) StdoutLine: {'line': b'-- Build files have been written to: /home/atuiee/spooky_ws/build/ros2_servo_motion\n'}
+[7.384230] (-) TimerEvent: {}
+[7.487782] (-) TimerEvent: {}
+[7.588535] (-) TimerEvent: {}
+[7.611390] (fs90r_hardware) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[7.633911] (ros2_servo_motion) StdoutLine: {'line': b'[100%] Built target ros2_servo_motion\n'}
+[7.693880] (-) TimerEvent: {}
+[7.710697] (ros2_servo_motion) CommandEnded: {'returncode': 0}
+[7.721727] (ros2_servo_motion) JobProgress: {'identifier': 'ros2_servo_motion', 'progress': 'install'}
+[7.722044] (ros2_servo_motion) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/atuiee/spooky_ws/build/ros2_servo_motion'], 'cwd': '/home/atuiee/spooky_ws/build/ros2_servo_motion', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'atuiee', 'SSH_CLIENT': '100.124.107.38 65075 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/atuiee/spooky_ws/install/ros2_servo_motion/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/bin/helpers/browser.sh', 'HOME': '/home/atuiee', 'OLDPWD': '/home/atuiee/spooky_ws/src', 'TERM_PROGRAM_VERSION': '1.141.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-40ae936e-f60c-4f78-88a7-1fadd80e0ef4.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/atuiee/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/atuiee/spooky_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'atuiee', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/home/atuiee/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/atuiee/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/atuiee/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/scripts/noConfigScripts', 'XDG_RUNTIME_DIR': '/run/user/1000', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/atuiee/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-bf60eb66ec7b6cc6.txt', 'LANG': 'en_US.UTF-8', 'PYTHONSTARTUP': '/home/atuiee/.vscode-server/data/User/workspaceStorage/a83387bff2b7a6f838fcedec451d90a3/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-7cfc85cf34.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/atuiee/spooky_ws/install/srf08_publisher:/home/atuiee/spooky_ws/install/ros2_servo_motion:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/atuiee/spooky_ws/build/ros2_servo_motion', 'LC_ALL': 'en_US.UTF-8', 'COPILOT_DEBUG_NONCE': '57326fa212c91a67699e86d617f26f2d', 'SSH_CONNECTION': '100.124.107.38 65075 100.67.81.38 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib/python:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/atuiee/spooky_ws/install/srf08_publisher:/home/atuiee/spooky_ws/install/ros2_servo_motion:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[7.763465] (fs90r_hardware) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[7.777269] (ros2_servo_motion) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.779469] (ros2_servo_motion) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[7.780959] (ros2_servo_motion) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion//ros2_servo_motion.xml\n'}
+[7.783761] (ros2_servo_motion) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/include/ros2_servo_motion/micro_servo_hardware/S90_servo.hpp\n'}
+[7.785077] (ros2_servo_motion) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/include/ros2_servo_motion/micro_servo_hardware/micro_servo.hpp\n'}
+[7.786335] (ros2_servo_motion) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/include/ros2_servo_motion/micro_servo_hardware/visibility_control.hpp\n'}
+[7.789170] (ros2_servo_motion) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/launch/display.launch.py\n'}
+[7.790843] (ros2_servo_motion) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/config/config.rviz\n'}
+[7.792705] (ros2_servo_motion) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/urdf/servo.ros2_control.xacro\n'}
+[7.794617] (ros2_servo_motion) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/urdf/servo.urdf.xacro\n'}
+[7.795488] (-) TimerEvent: {}
+[7.796411] (ros2_servo_motion) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/urdf/servo.xacro\n'}
+[7.797793] (ros2_servo_motion) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/launch/S90_servo.launch.py\n'}
+[7.799786] (ros2_servo_motion) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/launch/test_fordware_position_controller.launch.py\n'}
+[7.802426] (ros2_servo_motion) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/config/S90_servo_controllers.yaml\n'}
+[7.805989] (ros2_servo_motion) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/config/S90_servo_forward_position_publisher.yaml\n'}
+[7.806885] (ros2_servo_motion) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/environment/library_path.sh\n'}
+[7.807967] (ros2_servo_motion) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/environment/library_path.dsv\n'}
+[7.808920] (ros2_servo_motion) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ament_index/resource_index/package_run_dependencies/ros2_servo_motion\n'}
+[7.811423] (ros2_servo_motion) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ament_index/resource_index/parent_prefix_path/ros2_servo_motion\n'}
+[7.813496] (ros2_servo_motion) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/environment/ament_prefix_path.sh\n'}
+[7.815118] (ros2_servo_motion) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/environment/ament_prefix_path.dsv\n'}
+[7.816673] (ros2_servo_motion) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/environment/path.sh\n'}
+[7.819829] (ros2_servo_motion) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/environment/path.dsv\n'}
+[7.821319] (ros2_servo_motion) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/local_setup.bash\n'}
+[7.822627] (ros2_servo_motion) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/local_setup.sh\n'}
+[7.823183] (ros2_servo_motion) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/local_setup.zsh\n'}
+[7.824350] (ros2_servo_motion) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/local_setup.dsv\n'}
+[7.826305] (ros2_servo_motion) StdoutLine: {'line': b'-- Symlinking: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/package.dsv\n'}
+[7.886266] (ros2_servo_motion) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ament_index/resource_index/packages/ros2_servo_motion\n'}
+[7.888381] (ros2_servo_motion) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/ros2_servo_motion\n'}
+[7.890463] (ros2_servo_motion) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[7.892959] (ros2_servo_motion) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[7.895414] (ros2_servo_motion) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/cmake/ros2_servo_motionConfig.cmake\n'}
+[7.896110] (-) TimerEvent: {}
+[7.898289] (ros2_servo_motion) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/cmake/ros2_servo_motionConfig-version.cmake\n'}
+[7.899491] (ros2_servo_motion) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/package.xml\n'}
+[7.900166] (ros2_servo_motion) StdoutLine: {'line': b'-- Up-to-date: /home/atuiee/spooky_ws/install/ros2_servo_motion/lib/libros2_servo_motion.so\n'}
+[7.902168] (ros2_servo_motion) StdoutLine: {'line': b'-- Up-to-date: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/cmake/export_hardwareExport.cmake\n'}
+[7.904559] (ros2_servo_motion) StdoutLine: {'line': b'-- Up-to-date: /home/atuiee/spooky_ws/install/ros2_servo_motion/share/ros2_servo_motion/cmake/export_hardwareExport-noconfig.cmake\n'}
+[7.912132] (ros2_servo_motion) CommandEnded: {'returncode': 0}
+[7.937468] (fs90r_hardware) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.996301] (-) TimerEvent: {}
+[8.002444] (ros2_servo_motion) JobEnded: {'identifier': 'ros2_servo_motion', 'rc': 0}
+[8.096516] (-) TimerEvent: {}
+[8.105849] (fs90r_hardware) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[8.196710] (-) TimerEvent: {}
+[8.297323] (-) TimerEvent: {}
+[8.398021] (-) TimerEvent: {}
+[8.498687] (-) TimerEvent: {}
+[8.599286] (-) TimerEvent: {}
+[8.699950] (-) TimerEvent: {}
+[8.800558] (-) TimerEvent: {}
+[8.901237] (-) TimerEvent: {}
+[9.001942] (-) TimerEvent: {}
+[9.102629] (-) TimerEvent: {}
+[9.203232] (-) TimerEvent: {}
+[9.303868] (-) TimerEvent: {}
+[9.361669] (fs90r_hardware) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2\n'}
+[9.404058] (-) TimerEvent: {}
+[9.504710] (-) TimerEvent: {}
+[9.605348] (-) TimerEvent: {}
+[9.706000] (-) TimerEvent: {}
+[9.708801] (fs90r_hardware) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[9.743278] (fs90r_hardware) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[9.806176] (-) TimerEvent: {}
+[9.906815] (-) TimerEvent: {}
+[9.929270] (fs90r_hardware) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2\n'}
+[10.007032] (-) TimerEvent: {}
+[10.107832] (-) TimerEvent: {}
+[10.208650] (-) TimerEvent: {}
+[10.295204] (fs90r_hardware) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[10.308475] (fs90r_hardware) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2\n'}
+[10.309188] (-) TimerEvent: {}
+[10.389373] (fs90r_hardware) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[10.401563] (fs90r_hardware) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2\n'}
+[10.409375] (-) TimerEvent: {}
+[10.441477] (fs90r_hardware) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2\n'}
+[10.484264] (fs90r_hardware) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[10.509549] (-) TimerEvent: {}
+[10.610191] (-) TimerEvent: {}
+[10.710831] (-) TimerEvent: {}
+[10.811455] (-) TimerEvent: {}
+[10.912152] (-) TimerEvent: {}
+[11.012816] (-) TimerEvent: {}
+[11.095752] (fs90r_hardware) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0")  \n'}
+[11.113007] (-) TimerEvent: {}
+[11.213618] (-) TimerEvent: {}
+[11.314220] (-) TimerEvent: {}
+[11.414880] (-) TimerEvent: {}
+[11.515486] (-) TimerEvent: {}
+[11.616182] (-) TimerEvent: {}
+[11.716912] (-) TimerEvent: {}
+[11.817499] (-) TimerEvent: {}
+[11.918108] (-) TimerEvent: {}
+[12.018748] (-) TimerEvent: {}
+[12.048765] (fs90r_hardware) StdoutLine: {'line': b'-- Configuring done (11.8s)\n'}
+[12.118914] (-) TimerEvent: {}
+[12.208481] (fs90r_hardware) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[12.219093] (-) TimerEvent: {}
+[12.235279] (fs90r_hardware) StdoutLine: {'line': b'-- Build files have been written to: /home/atuiee/spooky_ws/build/fs90r_hardware\n'}
+[12.283898] (fs90r_hardware) CommandEnded: {'returncode': 0}
+[12.285779] (fs90r_hardware) JobProgress: {'identifier': 'fs90r_hardware', 'progress': 'build'}
+[12.289338] (fs90r_hardware) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/atuiee/spooky_ws/build/fs90r_hardware', '--', '-j4', '-l4'], 'cwd': '/home/atuiee/spooky_ws/build/fs90r_hardware', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'atuiee', 'SSH_CLIENT': '100.124.107.38 65075 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/atuiee/spooky_ws/install/ros2_servo_motion/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/bin/helpers/browser.sh', 'HOME': '/home/atuiee', 'OLDPWD': '/home/atuiee/spooky_ws/src', 'TERM_PROGRAM_VERSION': '1.141.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-40ae936e-f60c-4f78-88a7-1fadd80e0ef4.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/atuiee/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/atuiee/spooky_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'atuiee', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/home/atuiee/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/atuiee/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/atuiee/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/scripts/noConfigScripts', 'XDG_RUNTIME_DIR': '/run/user/1000', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/atuiee/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-bf60eb66ec7b6cc6.txt', 'LANG': 'en_US.UTF-8', 'PYTHONSTARTUP': '/home/atuiee/.vscode-server/data/User/workspaceStorage/a83387bff2b7a6f838fcedec451d90a3/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-7cfc85cf34.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/atuiee/spooky_ws/install/srf08_publisher:/home/atuiee/spooky_ws/install/ros2_servo_motion:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/atuiee/spooky_ws/build/fs90r_hardware', 'LC_ALL': 'en_US.UTF-8', 'COPILOT_DEBUG_NONCE': '57326fa212c91a67699e86d617f26f2d', 'SSH_CONNECTION': '100.124.107.38 65075 100.67.81.38 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib/python:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/atuiee/spooky_ws/install/srf08_publisher:/home/atuiee/spooky_ws/install/ros2_servo_motion:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[12.319318] (-) TimerEvent: {}
+[12.420274] (-) TimerEvent: {}
+[12.521152] (-) TimerEvent: {}
+[12.603427] (fs90r_hardware) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/fs90r_hardware.dir/src/fs90r_system.cpp.o\x1b[0m\n'}
+[12.606277] (fs90r_hardware) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/fs90r_hardware.dir/src/fs90r_servo.cpp.o\x1b[0m\n'}
+[12.621886] (-) TimerEvent: {}
+[12.722769] (-) TimerEvent: {}
+[12.823474] (-) TimerEvent: {}
+[12.924104] (-) TimerEvent: {}
+[13.024722] (-) TimerEvent: {}
+[13.125328] (-) TimerEvent: {}
+[13.225974] (-) TimerEvent: {}
+[13.326609] (-) TimerEvent: {}
+[13.427217] (-) TimerEvent: {}
+[13.527867] (-) TimerEvent: {}
+[13.628741] (-) TimerEvent: {}
+[13.729485] (-) TimerEvent: {}
+[13.830279] (-) TimerEvent: {}
+[13.932737] (-) TimerEvent: {}
+[14.034073] (-) TimerEvent: {}
+[14.135826] (-) TimerEvent: {}
+[14.237971] (-) TimerEvent: {}
+[14.338833] (-) TimerEvent: {}
+[14.439617] (-) TimerEvent: {}
+[14.540783] (-) TimerEvent: {}
+[14.641560] (-) TimerEvent: {}
+[14.742458] (-) TimerEvent: {}
+[14.843166] (-) TimerEvent: {}
+[14.943793] (-) TimerEvent: {}
+[15.044486] (-) TimerEvent: {}
+[15.145266] (-) TimerEvent: {}
+[15.245968] (-) TimerEvent: {}
+[15.346687] (-) TimerEvent: {}
+[15.447383] (-) TimerEvent: {}
+[15.548081] (-) TimerEvent: {}
+[15.648719] (-) TimerEvent: {}
+[15.749370] (-) TimerEvent: {}
+[15.850113] (-) TimerEvent: {}
+[15.950949] (-) TimerEvent: {}
+[16.051759] (-) TimerEvent: {}
+[16.152454] (-) TimerEvent: {}
+[16.253350] (-) TimerEvent: {}
+[16.354087] (-) TimerEvent: {}
+[16.454861] (-) TimerEvent: {}
+[16.555547] (-) TimerEvent: {}
+[16.656302] (-) TimerEvent: {}
+[16.757050] (-) TimerEvent: {}
+[16.857765] (-) TimerEvent: {}
+[16.958551] (-) TimerEvent: {}
+[17.059316] (-) TimerEvent: {}
+[17.160220] (-) TimerEvent: {}
+[17.260930] (-) TimerEvent: {}
+[17.361652] (-) TimerEvent: {}
+[17.462346] (-) TimerEvent: {}
+[17.563080] (-) TimerEvent: {}
+[17.663760] (-) TimerEvent: {}
+[17.764435] (-) TimerEvent: {}
+[17.865264] (-) TimerEvent: {}
+[17.965991] (-) TimerEvent: {}
+[18.066712] (-) TimerEvent: {}
+[18.167372] (-) TimerEvent: {}
+[18.268099] (-) TimerEvent: {}
+[18.368940] (-) TimerEvent: {}
+[18.469673] (-) TimerEvent: {}
+[18.570351] (-) TimerEvent: {}
+[18.671178] (-) TimerEvent: {}
+[18.771956] (-) TimerEvent: {}
+[18.872730] (-) TimerEvent: {}
+[18.973509] (-) TimerEvent: {}
+[19.074312] (-) TimerEvent: {}
+[19.175030] (-) TimerEvent: {}
+[19.275727] (-) TimerEvent: {}
+[19.376411] (-) TimerEvent: {}
+[19.477132] (-) TimerEvent: {}
+[19.577838] (-) TimerEvent: {}
+[19.678533] (-) TimerEvent: {}
+[19.779266] (-) TimerEvent: {}
+[19.880023] (-) TimerEvent: {}
+[19.980745] (-) TimerEvent: {}
+[20.081458] (-) TimerEvent: {}
+[20.182257] (-) TimerEvent: {}
+[20.282992] (-) TimerEvent: {}
+[20.383723] (-) TimerEvent: {}
+[20.484426] (-) TimerEvent: {}
+[20.585220] (-) TimerEvent: {}
+[20.685932] (-) TimerEvent: {}
+[20.786670] (-) TimerEvent: {}
+[20.887348] (-) TimerEvent: {}
+[20.988179] (-) TimerEvent: {}
+[21.088989] (-) TimerEvent: {}
+[21.189701] (-) TimerEvent: {}
+[21.290418] (-) TimerEvent: {}
+[21.391138] (-) TimerEvent: {}
+[21.491856] (-) TimerEvent: {}
+[21.592553] (-) TimerEvent: {}
+[21.693279] (-) TimerEvent: {}
+[21.794002] (-) TimerEvent: {}
+[21.894736] (-) TimerEvent: {}
+[21.995431] (-) TimerEvent: {}
+[22.096222] (-) TimerEvent: {}
+[22.197149] (-) TimerEvent: {}
+[22.298014] (-) TimerEvent: {}
+[22.398754] (-) TimerEvent: {}
+[22.499550] (-) TimerEvent: {}
+[22.600293] (-) TimerEvent: {}
+[22.701046] (-) TimerEvent: {}
+[22.801779] (-) TimerEvent: {}
+[22.902562] (-) TimerEvent: {}
+[23.003334] (-) TimerEvent: {}
+[23.104104] (-) TimerEvent: {}
+[23.204906] (-) TimerEvent: {}
+[23.305655] (-) TimerEvent: {}
+[23.406373] (-) TimerEvent: {}
+[23.507125] (-) TimerEvent: {}
+[23.607861] (-) TimerEvent: {}
+[23.708551] (-) TimerEvent: {}
+[23.809341] (-) TimerEvent: {}
+[23.910073] (-) TimerEvent: {}
+[24.010760] (-) TimerEvent: {}
+[24.111448] (-) TimerEvent: {}
+[24.212198] (-) TimerEvent: {}
+[24.312933] (-) TimerEvent: {}
+[24.413651] (-) TimerEvent: {}
+[24.514350] (-) TimerEvent: {}
+[24.615074] (-) TimerEvent: {}
+[24.715759] (-) TimerEvent: {}
+[24.816464] (-) TimerEvent: {}
+[24.917212] (-) TimerEvent: {}
+[25.017946] (-) TimerEvent: {}
+[25.118715] (-) TimerEvent: {}
+[25.219448] (-) TimerEvent: {}
+[25.320258] (-) TimerEvent: {}
+[25.421098] (-) TimerEvent: {}
+[25.521928] (-) TimerEvent: {}
+[25.622632] (-) TimerEvent: {}
+[25.723310] (-) TimerEvent: {}
+[25.824052] (-) TimerEvent: {}
+[25.924738] (-) TimerEvent: {}
+[26.025480] (-) TimerEvent: {}
+[26.126337] (-) TimerEvent: {}
+[26.227146] (-) TimerEvent: {}
+[26.327905] (-) TimerEvent: {}
+[26.378161] (fs90r_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/atuiee/spooky_ws/src/fs90r_hardware/src/fs90r_system.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual hardware_interface::CallbackReturn fs90r_hardware::FS90RSystem::\x1b[01;32m\x1b[Kon_init\x1b[m\x1b[K(const hardware_interface::HardwareInfo&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[26.379312] (fs90r_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/atuiee/spooky_ws/src/fs90r_hardware/src/fs90r_system.cpp:18:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvirtual rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn hardware_interface::HardwareComponentInterface::\x1b[01;32m\x1b[Kon_init\x1b[m\x1b[K(const hardware_interface::HardwareInfo&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: Use on_init(const HardwareComponentInterfaceParams & params) instead. [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[26.380040] (fs90r_hardware) StderrLine: {'line': b'   18 |   if (\x1b[01;35m\x1b[Khardware_interface::SystemInterface::on_init(info)\x1b[m\x1b[K !=\n'}
+[26.380628] (fs90r_hardware) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[26.381209] (fs90r_hardware) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/system_interface.hpp:18\x1b[m\x1b[K,\n'}
+[26.381764] (fs90r_hardware) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/atuiee/spooky_ws/src/fs90r_hardware/include/fs90r_hardware/fs90r_system.hpp:8\x1b[m\x1b[K,\n'}
+[26.382275] (fs90r_hardware) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/atuiee/spooky_ws/src/fs90r_hardware/src/fs90r_system.cpp:1\x1b[m\x1b[K:\n'}
+[26.382828] (fs90r_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/hardware_component_interface.hpp:140:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[26.383415] (fs90r_hardware) StderrLine: {'line': b'  140 |   virtual CallbackReturn \x1b[01;36m\x1b[Kon_init\x1b[m\x1b[K(const HardwareInfo & hardware_info);\n'}
+[26.384068] (fs90r_hardware) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[26.428106] (-) TimerEvent: {}
+[26.528802] (-) TimerEvent: {}
+[26.629506] (-) TimerEvent: {}
+[26.730352] (-) TimerEvent: {}
+[26.831088] (-) TimerEvent: {}
+[26.931816] (-) TimerEvent: {}
+[27.032544] (-) TimerEvent: {}
+[27.133321] (-) TimerEvent: {}
+[27.234053] (-) TimerEvent: {}
+[27.334753] (-) TimerEvent: {}
+[27.435463] (-) TimerEvent: {}
+[27.536230] (-) TimerEvent: {}
+[27.637015] (-) TimerEvent: {}
+[27.737733] (-) TimerEvent: {}
+[27.838424] (-) TimerEvent: {}
+[27.939168] (-) TimerEvent: {}
+[28.039909] (-) TimerEvent: {}
+[28.140729] (-) TimerEvent: {}
+[28.241726] (-) TimerEvent: {}
+[28.342428] (-) TimerEvent: {}
+[28.443168] (-) TimerEvent: {}
+[28.543895] (-) TimerEvent: {}
+[28.644648] (-) TimerEvent: {}
+[28.745365] (-) TimerEvent: {}
+[28.846085] (-) TimerEvent: {}
+[28.946757] (-) TimerEvent: {}
+[29.047509] (-) TimerEvent: {}
+[29.148260] (-) TimerEvent: {}
+[29.249023] (-) TimerEvent: {}
+[29.349748] (-) TimerEvent: {}
+[29.450477] (-) TimerEvent: {}
+[29.553098] (-) TimerEvent: {}
+[29.657880] (-) TimerEvent: {}
+[29.761426] (-) TimerEvent: {}
+[29.862368] (-) TimerEvent: {}
+[29.963107] (-) TimerEvent: {}
+[30.063833] (-) TimerEvent: {}
+[30.164510] (-) TimerEvent: {}
+[30.179824] (fs90r_hardware) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/memory:69\x1b[m\x1b[K,\n'}
+[30.180635] (fs90r_hardware) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/atuiee/spooky_ws/src/fs90r_hardware/include/fs90r_hardware/fs90r_system.hpp:4\x1b[m\x1b[K:\n'}
+[30.181285] (fs90r_hardware) StderrLine: {'line': b'/usr/include/c++/13/bits/stl_uninitialized.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kconstexpr bool std::\x1b[01;32m\x1b[K__check_constructible\x1b[m\x1b[K() \x1b[35m\x1b[K[with _ValueType = hardware_interface::CommandInterface; _Tp = const hardware_interface::CommandInterface&]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[30.182497] (fs90r_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_uninitialized.h:182:4:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[K_ForwardIterator std::\x1b[01;32m\x1b[Kuninitialized_copy\x1b[m\x1b[K(_InputIterator, _InputIterator, _ForwardIterator) \x1b[35m\x1b[K[with _InputIterator = const hardware_interface::CommandInterface*; _ForwardIterator = hardware_interface::CommandInterface*]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[30.183170] (fs90r_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_uninitialized.h:373:37:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[K_ForwardIterator std::\x1b[01;32m\x1b[K__uninitialized_copy_a\x1b[m\x1b[K(_InputIterator, _InputIterator, _ForwardIterator, allocator<_Tp>&) \x1b[35m\x1b[K[with _InputIterator = const hardware_interface::CommandInterface*; _ForwardIterator = hardware_interface::CommandInterface*; _Tp = hardware_interface::CommandInterface]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[30.183705] (fs90r_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_vector.h:1695:33:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kvoid std::vector<_Tp, _Alloc>::\x1b[01;32m\x1b[K_M_range_initialize\x1b[m\x1b[K(_ForwardIterator, _ForwardIterator, std::forward_iterator_tag) \x1b[35m\x1b[K[with _ForwardIterator = const hardware_interface::CommandInterface*; _Tp = hardware_interface::CommandInterface; _Alloc = std::allocator<hardware_interface::CommandInterface>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[30.184208] (fs90r_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_vector.h:682:21:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<_Tp, _Alloc>::\x1b[01;32m\x1b[Kvector\x1b[m\x1b[K(std::initializer_list<_Tp>, const allocator_type&) \x1b[35m\x1b[K[with _Tp = hardware_interface::CommandInterface; _Alloc = std::allocator<hardware_interface::CommandInterface>; allocator_type = std::allocator<hardware_interface::CommandInterface>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[30.185583] (fs90r_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/atuiee/spooky_ws/src/fs90r_hardware/src/fs90r_system.cpp:94:3:\x1b[m\x1b[K   required from here\n'}
+[30.186323] (fs90r_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_uninitialized.h:90:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kstatic assertion failed: result type must be constructible from input type\n'}
+[30.186917] (fs90r_hardware) StderrLine: {'line': b'   90 |       static_assert(is_constructible<_ValueType, _Tp>::\x1b[01;31m\x1b[Kvalue\x1b[m\x1b[K,\n'}
+[30.187529] (fs90r_hardware) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[30.189197] (fs90r_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_uninitialized.h:90:56:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::integral_constant<bool, false>::value\x1b[m\x1b[K\xe2\x80\x99 evaluates to false\n'}
+[30.264742] (-) TimerEvent: {}
+[30.365441] (-) TimerEvent: {}
+[30.466206] (-) TimerEvent: {}
+[30.566917] (-) TimerEvent: {}
+[30.667664] (-) TimerEvent: {}
+[30.768446] (-) TimerEvent: {}
+[30.869231] (-) TimerEvent: {}
+[30.969959] (-) TimerEvent: {}
+[31.070726] (-) TimerEvent: {}
+[31.171416] (-) TimerEvent: {}
+[31.272133] (-) TimerEvent: {}
+[31.372903] (-) TimerEvent: {}
+[31.474091] (-) TimerEvent: {}
+[31.560703] (fs90r_hardware) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/fs90r_hardware.dir/build.make:76: CMakeFiles/fs90r_hardware.dir/src/fs90r_system.cpp.o] Error 1\n'}
+[31.561689] (fs90r_hardware) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/fs90r_hardware.dir/all] Error 2\n'}
+[31.563144] (fs90r_hardware) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[31.570827] (fs90r_hardware) CommandEnded: {'returncode': 2}
+[31.574255] (-) TimerEvent: {}
+[31.591103] (fs90r_hardware) JobEnded: {'identifier': 'fs90r_hardware', 'rc': 2}
+[31.603175] (-) EventReactorShutdown: {}

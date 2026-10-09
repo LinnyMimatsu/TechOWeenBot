@@ -1,0 +1,55 @@
+[0.074s] Invoking command in '/home/atuiee/spooky_ws/build/range_servo_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/atuiee/spooky_ws/src/range_servo_controller -DCMAKE_INSTALL_PREFIX=/home/atuiee/spooky_ws/install/range_servo_controller
+[0.556s] -- The C compiler identification is GNU 13.3.0
+[1.116s] -- The CXX compiler identification is GNU 13.3.0
+[1.220s] -- Detecting C compiler ABI info
+[1.761s] -- Detecting C compiler ABI info - done
+[1.798s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.799s] -- Detecting C compile features
+[1.802s] -- Detecting C compile features - done
+[1.855s] -- Detecting CXX compiler ABI info
+[2.430s] -- Detecting CXX compiler ABI info - done
+[2.466s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.467s] -- Detecting CXX compile features
+[2.469s] -- Detecting CXX compile features - done
+[2.511s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[3.362s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[4.172s] -- Found rclcpp: 28.1.22 (/opt/ros/jazzy/share/rclcpp/cmake)
+[4.578s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[4.705s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[4.845s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.991s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.532s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[5.567s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[6.160s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[6.260s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[6.364s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[6.832s] -- Found sensor_msgs: 5.3.8 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[7.541s] -- Configuring done (7.4s)
+[7.611s] -- Generating done (0.0s)
+[7.627s] -- Build files have been written to: /home/atuiee/spooky_ws/build/range_servo_controller
+[7.669s] Invoked command in '/home/atuiee/spooky_ws/build/range_servo_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/atuiee/spooky_ws/src/range_servo_controller -DCMAKE_INSTALL_PREFIX=/home/atuiee/spooky_ws/install/range_servo_controller
+[7.677s] Invoking command in '/home/atuiee/spooky_ws/build/range_servo_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/atuiee/spooky_ws/build/range_servo_controller -- -j4 -l4
+[7.988s] [ 50%] [32mBuilding CXX object CMakeFiles/range_servo_controller.dir/src/range_servo_controller.cpp.o[0m
+[46.485s] [100%] [32m[1mLinking CXX executable range_servo_controller[0m
+[48.453s] [100%] Built target range_servo_controller
+[48.522s] Invoked command in '/home/atuiee/spooky_ws/build/range_servo_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/atuiee/spooky_ws/build/range_servo_controller -- -j4 -l4
+[48.577s] Invoking command in '/home/atuiee/spooky_ws/build/range_servo_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/atuiee/spooky_ws/build/range_servo_controller
+[48.622s] -- Install configuration: ""
+[48.623s] -- Installing: /home/atuiee/spooky_ws/install/range_servo_controller/lib/range_servo_controller/range_servo_controller
+[48.661s] -- Set non-toolchain portion of runtime path of "/home/atuiee/spooky_ws/install/range_servo_controller/lib/range_servo_controller/range_servo_controller" to ""
+[48.662s] -- Installing: /home/atuiee/spooky_ws/install/range_servo_controller/share/ament_index/resource_index/package_run_dependencies/range_servo_controller
+[48.664s] -- Installing: /home/atuiee/spooky_ws/install/range_servo_controller/share/ament_index/resource_index/parent_prefix_path/range_servo_controller
+[48.666s] -- Installing: /home/atuiee/spooky_ws/install/range_servo_controller/share/range_servo_controller/environment/ament_prefix_path.sh
+[48.669s] -- Installing: /home/atuiee/spooky_ws/install/range_servo_controller/share/range_servo_controller/environment/ament_prefix_path.dsv
+[48.670s] -- Installing: /home/atuiee/spooky_ws/install/range_servo_controller/share/range_servo_controller/environment/path.sh
+[48.673s] -- Installing: /home/atuiee/spooky_ws/install/range_servo_controller/share/range_servo_controller/environment/path.dsv
+[48.674s] -- Installing: /home/atuiee/spooky_ws/install/range_servo_controller/share/range_servo_controller/local_setup.bash
+[48.676s] -- Installing: /home/atuiee/spooky_ws/install/range_servo_controller/share/range_servo_controller/local_setup.sh
+[48.677s] -- Installing: /home/atuiee/spooky_ws/install/range_servo_controller/share/range_servo_controller/local_setup.zsh
+[48.679s] -- Installing: /home/atuiee/spooky_ws/install/range_servo_controller/share/range_servo_controller/local_setup.dsv
+[48.680s] -- Installing: /home/atuiee/spooky_ws/install/range_servo_controller/share/range_servo_controller/package.dsv
+[48.682s] -- Installing: /home/atuiee/spooky_ws/install/range_servo_controller/share/ament_index/resource_index/packages/range_servo_controller
+[48.684s] -- Installing: /home/atuiee/spooky_ws/install/range_servo_controller/share/range_servo_controller/cmake/range_servo_controllerConfig.cmake
+[48.685s] -- Installing: /home/atuiee/spooky_ws/install/range_servo_controller/share/range_servo_controller/cmake/range_servo_controllerConfig-version.cmake
+[48.686s] -- Installing: /home/atuiee/spooky_ws/install/range_servo_controller/share/range_servo_controller/package.xml
+[48.695s] Invoked command in '/home/atuiee/spooky_ws/build/range_servo_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/atuiee/spooky_ws/build/range_servo_controller

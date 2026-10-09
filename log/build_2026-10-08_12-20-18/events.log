@@ -1,0 +1,276 @@
+[0.000000] (-) TimerEvent: {}
+[0.003150] (srf08_publisher) JobQueued: {'identifier': 'srf08_publisher', 'dependencies': OrderedDict()}
+[0.003425] (srf08_publisher) JobStarted: {'identifier': 'srf08_publisher'}
+[0.100007] (srf08_publisher) JobProgress: {'identifier': 'srf08_publisher', 'progress': 'cmake'}
+[0.100470] (-) TimerEvent: {}
+[0.110613] (srf08_publisher) JobProgress: {'identifier': 'srf08_publisher', 'progress': 'build'}
+[0.110883] (srf08_publisher) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/atuiee/spooky_ws/build/srf08_publisher', '--', '-j4', '-l4'], 'cwd': '/home/atuiee/spooky_ws/build/srf08_publisher', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'atuiee', 'SSH_CLIENT': '100.80.236.56 49640 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/atuiee/.vscode-server/cli/servers/Stable-7debcd0e2acdea1c52de81bf9ee1620444407dda/server/bin/helpers/browser.sh', 'HOME': '/home/atuiee', 'OLDPWD': '/home/atuiee/spooky_ws/src', 'TERM_PROGRAM_VERSION': '1.138.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-6be87da3-dbc4-47c5-b111-ed0120b81640.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'atuiee', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '10', 'PATH': '/opt/ros/jazzy/bin:/home/atuiee/.vscode-server/cli/servers/Stable-7debcd0e2acdea1c52de81bf9ee1620444407dda/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/atuiee/spooky_ws/build/srf08_publisher', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '100.80.236.56 49640 100.67.81.38 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.200694] (-) TimerEvent: {}
+[0.302900] (-) TimerEvent: {}
+[0.404815] (-) TimerEvent: {}
+[0.507027] (-) TimerEvent: {}
+[0.612883] (-) TimerEvent: {}
+[0.716899] (-) TimerEvent: {}
+[0.817971] (-) TimerEvent: {}
+[0.918625] (-) TimerEvent: {}
+[0.922440] (srf08_publisher) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/srf08_node.dir/src/srf08_node.cpp.o\x1b[0m\n'}
+[1.018816] (-) TimerEvent: {}
+[1.119516] (-) TimerEvent: {}
+[1.220397] (-) TimerEvent: {}
+[1.321119] (-) TimerEvent: {}
+[1.421810] (-) TimerEvent: {}
+[1.522722] (-) TimerEvent: {}
+[1.623587] (-) TimerEvent: {}
+[1.724436] (-) TimerEvent: {}
+[1.825267] (-) TimerEvent: {}
+[1.925983] (-) TimerEvent: {}
+[2.026622] (-) TimerEvent: {}
+[2.127347] (-) TimerEvent: {}
+[2.228014] (-) TimerEvent: {}
+[2.328733] (-) TimerEvent: {}
+[2.430444] (-) TimerEvent: {}
+[2.531289] (-) TimerEvent: {}
+[2.631962] (-) TimerEvent: {}
+[2.732569] (-) TimerEvent: {}
+[2.833248] (-) TimerEvent: {}
+[2.933934] (-) TimerEvent: {}
+[3.034583] (-) TimerEvent: {}
+[3.135268] (-) TimerEvent: {}
+[3.236057] (-) TimerEvent: {}
+[3.336758] (-) TimerEvent: {}
+[3.437417] (-) TimerEvent: {}
+[3.538270] (-) TimerEvent: {}
+[3.639027] (-) TimerEvent: {}
+[3.739695] (-) TimerEvent: {}
+[3.840385] (-) TimerEvent: {}
+[3.941226] (-) TimerEvent: {}
+[4.041981] (-) TimerEvent: {}
+[4.143705] (-) TimerEvent: {}
+[4.244395] (-) TimerEvent: {}
+[4.345132] (-) TimerEvent: {}
+[4.445831] (-) TimerEvent: {}
+[4.546542] (-) TimerEvent: {}
+[4.647355] (-) TimerEvent: {}
+[4.748135] (-) TimerEvent: {}
+[4.848889] (-) TimerEvent: {}
+[4.949810] (-) TimerEvent: {}
+[5.050523] (-) TimerEvent: {}
+[5.151285] (-) TimerEvent: {}
+[5.252591] (-) TimerEvent: {}
+[5.353362] (-) TimerEvent: {}
+[5.454219] (-) TimerEvent: {}
+[5.555015] (-) TimerEvent: {}
+[5.655752] (-) TimerEvent: {}
+[5.756423] (-) TimerEvent: {}
+[5.857133] (-) TimerEvent: {}
+[5.957846] (-) TimerEvent: {}
+[6.058547] (-) TimerEvent: {}
+[6.159265] (-) TimerEvent: {}
+[6.260090] (-) TimerEvent: {}
+[6.614487] (-) TimerEvent: {}
+[6.715183] (-) TimerEvent: {}
+[6.815916] (-) TimerEvent: {}
+[6.916595] (-) TimerEvent: {}
+[7.017431] (-) TimerEvent: {}
+[7.118152] (-) TimerEvent: {}
+[7.218802] (-) TimerEvent: {}
+[7.319552] (-) TimerEvent: {}
+[7.420260] (-) TimerEvent: {}
+[7.520986] (-) TimerEvent: {}
+[7.621642] (-) TimerEvent: {}
+[7.722690] (-) TimerEvent: {}
+[7.823360] (-) TimerEvent: {}
+[7.924105] (-) TimerEvent: {}
+[8.024801] (-) TimerEvent: {}
+[8.125460] (-) TimerEvent: {}
+[8.226188] (-) TimerEvent: {}
+[8.326900] (-) TimerEvent: {}
+[8.427599] (-) TimerEvent: {}
+[8.528412] (-) TimerEvent: {}
+[8.629210] (-) TimerEvent: {}
+[8.729920] (-) TimerEvent: {}
+[8.830573] (-) TimerEvent: {}
+[8.931328] (-) TimerEvent: {}
+[9.032041] (-) TimerEvent: {}
+[9.132875] (-) TimerEvent: {}
+[9.233623] (-) TimerEvent: {}
+[9.334362] (-) TimerEvent: {}
+[9.435134] (-) TimerEvent: {}
+[9.535875] (-) TimerEvent: {}
+[9.636563] (-) TimerEvent: {}
+[9.737279] (-) TimerEvent: {}
+[9.837994] (-) TimerEvent: {}
+[9.938739] (-) TimerEvent: {}
+[10.039526] (-) TimerEvent: {}
+[10.140224] (-) TimerEvent: {}
+[10.241062] (-) TimerEvent: {}
+[10.341833] (-) TimerEvent: {}
+[10.442564] (-) TimerEvent: {}
+[10.543294] (-) TimerEvent: {}
+[10.644074] (-) TimerEvent: {}
+[10.744798] (-) TimerEvent: {}
+[10.845478] (-) TimerEvent: {}
+[10.946200] (-) TimerEvent: {}
+[11.046916] (-) TimerEvent: {}
+[11.147622] (-) TimerEvent: {}
+[11.248341] (-) TimerEvent: {}
+[11.349072] (-) TimerEvent: {}
+[11.449900] (-) TimerEvent: {}
+[11.550558] (-) TimerEvent: {}
+[11.651343] (-) TimerEvent: {}
+[11.752092] (-) TimerEvent: {}
+[11.852808] (-) TimerEvent: {}
+[11.953474] (-) TimerEvent: {}
+[12.054205] (-) TimerEvent: {}
+[12.154935] (-) TimerEvent: {}
+[12.255594] (-) TimerEvent: {}
+[12.356314] (-) TimerEvent: {}
+[12.457026] (-) TimerEvent: {}
+[12.557813] (-) TimerEvent: {}
+[12.658566] (-) TimerEvent: {}
+[12.759317] (-) TimerEvent: {}
+[12.860097] (-) TimerEvent: {}
+[12.960799] (-) TimerEvent: {}
+[13.061469] (-) TimerEvent: {}
+[13.162197] (-) TimerEvent: {}
+[13.262965] (-) TimerEvent: {}
+[13.363636] (-) TimerEvent: {}
+[13.464419] (-) TimerEvent: {}
+[13.565130] (-) TimerEvent: {}
+[13.665810] (-) TimerEvent: {}
+[13.766475] (-) TimerEvent: {}
+[13.867198] (-) TimerEvent: {}
+[13.967950] (-) TimerEvent: {}
+[14.068638] (-) TimerEvent: {}
+[14.169404] (-) TimerEvent: {}
+[14.270164] (-) TimerEvent: {}
+[14.370962] (-) TimerEvent: {}
+[14.471721] (-) TimerEvent: {}
+[14.572391] (-) TimerEvent: {}
+[14.673120] (-) TimerEvent: {}
+[14.773850] (-) TimerEvent: {}
+[14.874623] (-) TimerEvent: {}
+[14.975343] (-) TimerEvent: {}
+[15.076301] (-) TimerEvent: {}
+[15.177049] (-) TimerEvent: {}
+[15.277822] (-) TimerEvent: {}
+[15.378926] (-) TimerEvent: {}
+[15.479589] (-) TimerEvent: {}
+[15.580365] (-) TimerEvent: {}
+[15.681090] (-) TimerEvent: {}
+[15.781809] (-) TimerEvent: {}
+[15.882454] (-) TimerEvent: {}
+[15.983181] (-) TimerEvent: {}
+[16.084011] (-) TimerEvent: {}
+[16.184748] (-) TimerEvent: {}
+[16.285432] (-) TimerEvent: {}
+[16.386143] (-) TimerEvent: {}
+[16.486824] (-) TimerEvent: {}
+[16.587536] (-) TimerEvent: {}
+[16.688433] (-) TimerEvent: {}
+[16.789274] (-) TimerEvent: {}
+[16.889994] (-) TimerEvent: {}
+[16.990697] (-) TimerEvent: {}
+[17.091356] (-) TimerEvent: {}
+[17.192066] (-) TimerEvent: {}
+[17.292772] (-) TimerEvent: {}
+[17.393466] (-) TimerEvent: {}
+[17.494357] (-) TimerEvent: {}
+[17.595066] (-) TimerEvent: {}
+[17.695779] (-) TimerEvent: {}
+[17.796492] (-) TimerEvent: {}
+[17.897279] (-) TimerEvent: {}
+[17.998041] (-) TimerEvent: {}
+[18.098803] (-) TimerEvent: {}
+[18.199536] (-) TimerEvent: {}
+[18.300257] (-) TimerEvent: {}
+[18.400958] (-) TimerEvent: {}
+[18.502087] (-) TimerEvent: {}
+[18.602921] (-) TimerEvent: {}
+[18.703813] (-) TimerEvent: {}
+[18.804471] (-) TimerEvent: {}
+[18.905170] (-) TimerEvent: {}
+[19.006044] (-) TimerEvent: {}
+[19.106807] (-) TimerEvent: {}
+[19.207514] (-) TimerEvent: {}
+[19.308266] (-) TimerEvent: {}
+[19.408966] (-) TimerEvent: {}
+[19.509640] (-) TimerEvent: {}
+[19.610394] (-) TimerEvent: {}
+[19.711145] (-) TimerEvent: {}
+[19.814829] (-) TimerEvent: {}
+[19.915862] (-) TimerEvent: {}
+[20.016787] (-) TimerEvent: {}
+[20.123069] (-) TimerEvent: {}
+[20.223802] (-) TimerEvent: {}
+[20.324540] (-) TimerEvent: {}
+[20.425382] (-) TimerEvent: {}
+[20.526111] (-) TimerEvent: {}
+[20.626853] (-) TimerEvent: {}
+[20.727513] (-) TimerEvent: {}
+[20.828271] (-) TimerEvent: {}
+[20.928985] (-) TimerEvent: {}
+[21.029779] (-) TimerEvent: {}
+[21.130613] (-) TimerEvent: {}
+[21.231266] (-) TimerEvent: {}
+[21.332003] (-) TimerEvent: {}
+[21.432678] (-) TimerEvent: {}
+[21.533441] (-) TimerEvent: {}
+[21.634109] (-) TimerEvent: {}
+[21.734805] (-) TimerEvent: {}
+[21.835543] (-) TimerEvent: {}
+[21.936643] (-) TimerEvent: {}
+[22.037634] (-) TimerEvent: {}
+[22.138599] (-) TimerEvent: {}
+[22.239434] (-) TimerEvent: {}
+[22.340754] (-) TimerEvent: {}
+[22.441870] (-) TimerEvent: {}
+[22.543201] (-) TimerEvent: {}
+[22.644307] (-) TimerEvent: {}
+[22.745356] (-) TimerEvent: {}
+[22.846474] (-) TimerEvent: {}
+[22.923388] (srf08_publisher) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable srf08_node\x1b[0m\n'}
+[22.946713] (-) TimerEvent: {}
+[23.047411] (-) TimerEvent: {}
+[23.148180] (-) TimerEvent: {}
+[23.249044] (-) TimerEvent: {}
+[23.349836] (-) TimerEvent: {}
+[23.450908] (-) TimerEvent: {}
+[23.551893] (-) TimerEvent: {}
+[23.652961] (-) TimerEvent: {}
+[23.753710] (-) TimerEvent: {}
+[23.854382] (-) TimerEvent: {}
+[23.955137] (-) TimerEvent: {}
+[24.056544] (-) TimerEvent: {}
+[24.158248] (-) TimerEvent: {}
+[24.259143] (-) TimerEvent: {}
+[24.309461] (srf08_publisher) StdoutLine: {'line': b'[100%] Built target srf08_node\n'}
+[24.359329] (-) TimerEvent: {}
+[24.365169] (srf08_publisher) CommandEnded: {'returncode': 0}
+[24.367598] (srf08_publisher) JobProgress: {'identifier': 'srf08_publisher', 'progress': 'install'}
+[24.417048] (srf08_publisher) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/atuiee/spooky_ws/build/srf08_publisher'], 'cwd': '/home/atuiee/spooky_ws/build/srf08_publisher', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'atuiee', 'SSH_CLIENT': '100.80.236.56 49640 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/atuiee/.vscode-server/cli/servers/Stable-7debcd0e2acdea1c52de81bf9ee1620444407dda/server/bin/helpers/browser.sh', 'HOME': '/home/atuiee', 'OLDPWD': '/home/atuiee/spooky_ws/src', 'TERM_PROGRAM_VERSION': '1.138.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-6be87da3-dbc4-47c5-b111-ed0120b81640.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'atuiee', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '10', 'PATH': '/opt/ros/jazzy/bin:/home/atuiee/.vscode-server/cli/servers/Stable-7debcd0e2acdea1c52de81bf9ee1620444407dda/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/atuiee/spooky_ws/build/srf08_publisher', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '100.80.236.56 49640 100.67.81.38 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[24.459519] (-) TimerEvent: {}
+[24.460503] (srf08_publisher) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[24.463167] (srf08_publisher) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[24.464971] (srf08_publisher) StdoutLine: {'line': b'-- Symlinking: /home/atuiee/spooky_ws/install/srf08_publisher/lib/srf08_publisher/srf08_node\n'}
+[24.518078] (srf08_publisher) StdoutLine: {'line': b'-- Symlinking: /home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher//launch/srf08_launch.py\n'}
+[24.559779] (-) TimerEvent: {}
+[24.576681] (srf08_publisher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/ament_index/resource_index/package_run_dependencies/srf08_publisher\n'}
+[24.579465] (srf08_publisher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/ament_index/resource_index/parent_prefix_path/srf08_publisher\n'}
+[24.582108] (srf08_publisher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/environment/ament_prefix_path.sh\n'}
+[24.584098] (srf08_publisher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/environment/ament_prefix_path.dsv\n'}
+[24.586067] (srf08_publisher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/environment/path.sh\n'}
+[24.588014] (srf08_publisher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/environment/path.dsv\n'}
+[24.589280] (srf08_publisher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/local_setup.bash\n'}
+[24.590501] (srf08_publisher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/local_setup.sh\n'}
+[24.591767] (srf08_publisher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/local_setup.zsh\n'}
+[24.593004] (srf08_publisher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/local_setup.dsv\n'}
+[24.594025] (srf08_publisher) StdoutLine: {'line': b'-- Symlinking: /home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/package.dsv\n'}
+[24.645030] (srf08_publisher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/ament_index/resource_index/packages/srf08_publisher\n'}
+[24.646070] (srf08_publisher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/cmake/srf08_publisherConfig.cmake\n'}
+[24.646959] (srf08_publisher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/cmake/srf08_publisherConfig-version.cmake\n'}
+[24.647935] (srf08_publisher) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/srf08_publisher/share/srf08_publisher/package.xml\n'}
+[24.655028] (srf08_publisher) CommandEnded: {'returncode': 0}
+[24.659899] (-) TimerEvent: {}
+[24.734961] (srf08_publisher) JobEnded: {'identifier': 'srf08_publisher', 'rc': 0}
+[24.737548] (-) EventReactorShutdown: {}

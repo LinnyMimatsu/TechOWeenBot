@@ -1,0 +1,34 @@
+
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="fs90r_test_robot">
+
+  <link name="support_link"/>
+  <link name="rot_link"/>
+
+  <joint name="support_to_rot_link" type="continuous">
+    <parent link="support_link"/>
+    <child link="rot_link"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+
+  <ros2_control name="FS90RSystem" type="system">
+    <hardware>
+      <plugin>fs90r_hardware/FS90RSystem</plugin>
+      <param name="gpio_pin">5</param>
+      <param name="neutral_us">1500</param>
+      <param name="min_us">1000</param>
+      <param name="max_us">2000</param>
+      <param name="max_velocity_rad_s">6.0</param>
+    </hardware>
+
+    <joint name="support_to_rot_link">
+      <command_interface name="velocity">
+        <param name="min">-6.0</param>
+        <param name="max">6.0</param>
+      </command_interface>
+      <state_interface name="velocity"/>
+    </joint>
+  </ros2_control>
+
+</robot>
+

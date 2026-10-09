@@ -1,0 +1,294 @@
+[0.000000] (-) TimerEvent: {}
+[0.002072] (-) JobUnselected: {'identifier': 'range_servo_controller'}
+[0.002992] (-) JobUnselected: {'identifier': 'ros2_servo_motion'}
+[0.003140] (-) JobUnselected: {'identifier': 'srf08_publisher'}
+[0.003245] (fs90r_hardware) JobQueued: {'identifier': 'fs90r_hardware', 'dependencies': OrderedDict()}
+[0.003344] (fs90r_hardware) JobStarted: {'identifier': 'fs90r_hardware'}
+[0.059283] (fs90r_hardware) JobProgress: {'identifier': 'fs90r_hardware', 'progress': 'cmake'}
+[0.066893] (fs90r_hardware) JobProgress: {'identifier': 'fs90r_hardware', 'progress': 'build'}
+[0.067120] (fs90r_hardware) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/atuiee/spooky_ws/build/fs90r_hardware', '--', '-j4', '-l4'], 'cwd': '/home/atuiee/spooky_ws/build/fs90r_hardware', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'atuiee', 'SSH_CLIENT': '100.124.107.38 65075 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/atuiee/spooky_ws/install/ros2_servo_motion/lib:/home/atuiee/spooky_ws/install/fs90r_hardware/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/bin/helpers/browser.sh', 'HOME': '/home/atuiee', 'OLDPWD': '/home/atuiee/spooky_ws', 'TERM_PROGRAM_VERSION': '1.141.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-8e000cff-6bd5-4ca8-a02e-649c89a77e06.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/atuiee/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/atuiee/spooky_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'atuiee', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/home/atuiee/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/atuiee/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/atuiee/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/scripts/noConfigScripts', 'XDG_RUNTIME_DIR': '/run/user/1000', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/atuiee/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-c5225ff144cf5e26.txt', 'LANG': 'en_US.UTF-8', 'PYTHONSTARTUP': '/home/atuiee/.vscode-server/data/User/workspaceStorage/a83387bff2b7a6f838fcedec451d90a3/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-7cfc85cf34.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/atuiee/spooky_ws/install/srf08_publisher:/home/atuiee/spooky_ws/install/ros2_servo_motion:/home/atuiee/spooky_ws/install/range_servo_controller:/home/atuiee/spooky_ws/install/fs90r_hardware:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/atuiee/spooky_ws/build/fs90r_hardware', 'LC_ALL': 'en_US.UTF-8', 'COPILOT_DEBUG_NONCE': '57326fa212c91a67699e86d617f26f2d', 'SSH_CONNECTION': '100.124.107.38 65075 100.67.81.38 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib/python:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/atuiee/spooky_ws/install/srf08_publisher:/home/atuiee/spooky_ws/install/ros2_servo_motion:/home/atuiee/spooky_ws/install/range_servo_controller:/home/atuiee/spooky_ws/install/fs90r_hardware:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099642] (-) TimerEvent: {}
+[0.200453] (-) TimerEvent: {}
+[0.302692] (-) TimerEvent: {}
+[0.406655] (-) TimerEvent: {}
+[0.509727] (-) TimerEvent: {}
+[0.610870] (-) TimerEvent: {}
+[0.713666] (-) TimerEvent: {}
+[0.746309] (fs90r_hardware) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/fs90r_hardware.dir/src/fs90r_system.cpp.o\x1b[0m\n'}
+[0.756611] (fs90r_hardware) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/fs90r_hardware.dir/src/fs90r_servo.cpp.o\x1b[0m\n'}
+[0.816636] (-) TimerEvent: {}
+[0.917847] (-) TimerEvent: {}
+[1.018577] (-) TimerEvent: {}
+[1.120522] (-) TimerEvent: {}
+[1.221170] (-) TimerEvent: {}
+[1.324521] (-) TimerEvent: {}
+[1.425190] (-) TimerEvent: {}
+[1.525848] (-) TimerEvent: {}
+[1.626544] (-) TimerEvent: {}
+[1.729561] (-) TimerEvent: {}
+[1.830294] (-) TimerEvent: {}
+[1.931057] (-) TimerEvent: {}
+[2.033551] (-) TimerEvent: {}
+[2.134302] (-) TimerEvent: {}
+[2.235104] (-) TimerEvent: {}
+[2.337546] (-) TimerEvent: {}
+[2.438627] (-) TimerEvent: {}
+[2.540543] (-) TimerEvent: {}
+[2.641290] (-) TimerEvent: {}
+[2.742654] (-) TimerEvent: {}
+[2.844081] (-) TimerEvent: {}
+[2.945713] (-) TimerEvent: {}
+[3.047112] (-) TimerEvent: {}
+[3.148749] (-) TimerEvent: {}
+[3.249528] (-) TimerEvent: {}
+[3.351087] (-) TimerEvent: {}
+[3.451998] (-) TimerEvent: {}
+[3.552889] (-) TimerEvent: {}
+[3.653616] (-) TimerEvent: {}
+[3.754344] (-) TimerEvent: {}
+[3.855089] (-) TimerEvent: {}
+[3.955824] (-) TimerEvent: {}
+[4.056572] (-) TimerEvent: {}
+[4.157267] (-) TimerEvent: {}
+[4.258052] (-) TimerEvent: {}
+[4.358988] (-) TimerEvent: {}
+[4.459761] (-) TimerEvent: {}
+[4.560546] (-) TimerEvent: {}
+[4.661348] (-) TimerEvent: {}
+[4.762090] (-) TimerEvent: {}
+[4.862808] (-) TimerEvent: {}
+[4.963516] (-) TimerEvent: {}
+[5.064203] (-) TimerEvent: {}
+[5.165090] (-) TimerEvent: {}
+[5.268949] (-) TimerEvent: {}
+[5.369731] (-) TimerEvent: {}
+[5.470457] (-) TimerEvent: {}
+[5.571125] (-) TimerEvent: {}
+[5.671855] (-) TimerEvent: {}
+[5.772588] (-) TimerEvent: {}
+[5.873277] (-) TimerEvent: {}
+[5.974017] (-) TimerEvent: {}
+[6.074817] (-) TimerEvent: {}
+[6.175522] (-) TimerEvent: {}
+[6.276204] (-) TimerEvent: {}
+[6.376911] (-) TimerEvent: {}
+[6.477640] (-) TimerEvent: {}
+[6.578425] (-) TimerEvent: {}
+[6.679280] (-) TimerEvent: {}
+[6.780136] (-) TimerEvent: {}
+[6.880882] (-) TimerEvent: {}
+[6.981617] (-) TimerEvent: {}
+[7.082442] (-) TimerEvent: {}
+[7.183121] (-) TimerEvent: {}
+[7.283890] (-) TimerEvent: {}
+[7.384634] (-) TimerEvent: {}
+[7.485327] (-) TimerEvent: {}
+[7.586104] (-) TimerEvent: {}
+[7.686860] (-) TimerEvent: {}
+[7.787630] (-) TimerEvent: {}
+[7.888328] (-) TimerEvent: {}
+[7.989048] (-) TimerEvent: {}
+[8.089784] (-) TimerEvent: {}
+[8.190526] (-) TimerEvent: {}
+[8.291233] (-) TimerEvent: {}
+[8.391986] (-) TimerEvent: {}
+[8.492722] (-) TimerEvent: {}
+[8.593457] (-) TimerEvent: {}
+[8.694156] (-) TimerEvent: {}
+[8.794870] (-) TimerEvent: {}
+[8.895568] (-) TimerEvent: {}
+[8.996561] (-) TimerEvent: {}
+[9.097244] (-) TimerEvent: {}
+[9.197988] (-) TimerEvent: {}
+[9.298743] (-) TimerEvent: {}
+[9.399488] (-) TimerEvent: {}
+[9.500187] (-) TimerEvent: {}
+[9.600900] (-) TimerEvent: {}
+[9.701618] (-) TimerEvent: {}
+[9.802439] (-) TimerEvent: {}
+[9.903123] (-) TimerEvent: {}
+[10.003875] (-) TimerEvent: {}
+[10.104658] (-) TimerEvent: {}
+[10.205457] (-) TimerEvent: {}
+[10.306171] (-) TimerEvent: {}
+[10.406905] (-) TimerEvent: {}
+[10.507715] (-) TimerEvent: {}
+[10.608520] (-) TimerEvent: {}
+[10.709211] (-) TimerEvent: {}
+[10.809979] (-) TimerEvent: {}
+[10.910723] (-) TimerEvent: {}
+[11.011454] (-) TimerEvent: {}
+[11.112136] (-) TimerEvent: {}
+[11.212868] (-) TimerEvent: {}
+[11.313584] (-) TimerEvent: {}
+[11.414288] (-) TimerEvent: {}
+[11.515073] (-) TimerEvent: {}
+[11.615797] (-) TimerEvent: {}
+[11.716520] (-) TimerEvent: {}
+[11.817209] (-) TimerEvent: {}
+[11.917991] (-) TimerEvent: {}
+[12.018706] (-) TimerEvent: {}
+[12.119461] (-) TimerEvent: {}
+[12.220156] (-) TimerEvent: {}
+[12.320902] (-) TimerEvent: {}
+[12.421642] (-) TimerEvent: {}
+[12.522337] (-) TimerEvent: {}
+[12.623070] (-) TimerEvent: {}
+[12.723809] (-) TimerEvent: {}
+[12.824538] (-) TimerEvent: {}
+[12.925227] (-) TimerEvent: {}
+[13.025947] (-) TimerEvent: {}
+[13.126663] (-) TimerEvent: {}
+[13.227346] (-) TimerEvent: {}
+[13.328082] (-) TimerEvent: {}
+[13.428834] (-) TimerEvent: {}
+[13.529522] (-) TimerEvent: {}
+[13.630207] (-) TimerEvent: {}
+[13.731003] (-) TimerEvent: {}
+[13.831793] (-) TimerEvent: {}
+[13.932517] (-) TimerEvent: {}
+[14.005335] (fs90r_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/atuiee/spooky_ws/src/fs90r_hardware/src/fs90r_system.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual hardware_interface::CallbackReturn fs90r_hardware::FS90RSystem::\x1b[01;32m\x1b[Kon_init\x1b[m\x1b[K(const hardware_interface::HardwareInfo&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.006400] (fs90r_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/home/atuiee/spooky_ws/src/fs90r_hardware/src/fs90r_system.cpp:18:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvirtual rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn hardware_interface::HardwareComponentInterface::\x1b[01;32m\x1b[Kon_init\x1b[m\x1b[K(const hardware_interface::HardwareInfo&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: Use on_init(const HardwareComponentInterfaceParams & params) instead. [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[14.007312] (fs90r_hardware) StderrLine: {'line': b'   18 | \x1b[01;35m\x1b[Krface::on_init(info)\x1b[m\x1b[K !=\n'}
+[14.007980] (fs90r_hardware) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[14.008657] (fs90r_hardware) StderrLine: {'line': b'\n'}
+[14.009265] (fs90r_hardware) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/system_interface.hpp:18\x1b[m\x1b[K,\n'}
+[14.009969] (fs90r_hardware) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/atuiee/spooky_ws/src/fs90r_hardware/include/fs90r_hardware/fs90r_system.hpp:7\x1b[m\x1b[K,\n'}
+[14.011695] (fs90r_hardware) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/atuiee/spooky_ws/src/fs90r_hardware/src/fs90r_system.cpp:1\x1b[m\x1b[K:\n'}
+[14.012760] (fs90r_hardware) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/hardware_component_interface.hpp:140:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[14.013315] (fs90r_hardware) StderrLine: {'line': b'  140 | lbackReturn \x1b[01;36m\x1b[Kon_init\x1b[m\x1b[K(const HardwareInfo & hardware_info);\n'}
+[14.013945] (fs90r_hardware) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[14.015633] (fs90r_hardware) StderrLine: {'line': b'\n'}
+[14.032735] (-) TimerEvent: {}
+[14.133543] (-) TimerEvent: {}
+[14.234255] (-) TimerEvent: {}
+[14.334989] (-) TimerEvent: {}
+[14.435746] (-) TimerEvent: {}
+[14.536483] (-) TimerEvent: {}
+[14.637170] (-) TimerEvent: {}
+[14.737891] (-) TimerEvent: {}
+[14.838557] (-) TimerEvent: {}
+[14.939302] (-) TimerEvent: {}
+[15.040137] (-) TimerEvent: {}
+[15.140897] (-) TimerEvent: {}
+[15.241645] (-) TimerEvent: {}
+[15.342439] (-) TimerEvent: {}
+[15.443151] (-) TimerEvent: {}
+[15.543892] (-) TimerEvent: {}
+[15.644631] (-) TimerEvent: {}
+[15.745332] (-) TimerEvent: {}
+[15.846107] (-) TimerEvent: {}
+[15.946804] (-) TimerEvent: {}
+[16.047517] (-) TimerEvent: {}
+[16.148185] (-) TimerEvent: {}
+[16.248930] (-) TimerEvent: {}
+[16.349666] (-) TimerEvent: {}
+[16.450357] (-) TimerEvent: {}
+[16.551122] (-) TimerEvent: {}
+[16.651859] (-) TimerEvent: {}
+[16.752543] (-) TimerEvent: {}
+[16.853251] (-) TimerEvent: {}
+[16.953986] (-) TimerEvent: {}
+[17.054717] (-) TimerEvent: {}
+[17.155522] (-) TimerEvent: {}
+[17.256235] (-) TimerEvent: {}
+[17.357040] (-) TimerEvent: {}
+[17.457861] (-) TimerEvent: {}
+[17.558541] (-) TimerEvent: {}
+[17.659237] (-) TimerEvent: {}
+[17.759979] (-) TimerEvent: {}
+[17.860958] (-) TimerEvent: {}
+[17.961722] (-) TimerEvent: {}
+[18.062477] (-) TimerEvent: {}
+[18.163175] (-) TimerEvent: {}
+[18.263991] (-) TimerEvent: {}
+[18.364730] (-) TimerEvent: {}
+[18.465498] (-) TimerEvent: {}
+[18.566200] (-) TimerEvent: {}
+[18.666949] (-) TimerEvent: {}
+[18.767732] (-) TimerEvent: {}
+[18.868635] (-) TimerEvent: {}
+[18.969432] (-) TimerEvent: {}
+[19.070354] (-) TimerEvent: {}
+[19.171452] (-) TimerEvent: {}
+[19.272161] (-) TimerEvent: {}
+[19.373062] (-) TimerEvent: {}
+[19.473869] (-) TimerEvent: {}
+[19.574553] (-) TimerEvent: {}
+[19.675282] (-) TimerEvent: {}
+[19.776020] (-) TimerEvent: {}
+[19.876749] (-) TimerEvent: {}
+[19.977460] (-) TimerEvent: {}
+[20.078157] (-) TimerEvent: {}
+[20.178972] (-) TimerEvent: {}
+[20.280119] (-) TimerEvent: {}
+[20.380935] (-) TimerEvent: {}
+[20.481602] (-) TimerEvent: {}
+[20.582302] (-) TimerEvent: {}
+[20.683079] (-) TimerEvent: {}
+[20.784060] (-) TimerEvent: {}
+[20.884994] (-) TimerEvent: {}
+[20.985779] (-) TimerEvent: {}
+[21.086750] (-) TimerEvent: {}
+[21.101113] (fs90r_hardware) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libfs90r_hardware.so\x1b[0m\n'}
+[21.186926] (-) TimerEvent: {}
+[21.287617] (-) TimerEvent: {}
+[21.388488] (-) TimerEvent: {}
+[21.489254] (-) TimerEvent: {}
+[21.590325] (-) TimerEvent: {}
+[21.691250] (-) TimerEvent: {}
+[21.792107] (-) TimerEvent: {}
+[21.893266] (-) TimerEvent: {}
+[21.994042] (-) TimerEvent: {}
+[22.094810] (-) TimerEvent: {}
+[22.195769] (-) TimerEvent: {}
+[22.296549] (-) TimerEvent: {}
+[22.397297] (-) TimerEvent: {}
+[22.498096] (-) TimerEvent: {}
+[22.598974] (-) TimerEvent: {}
+[22.650528] (fs90r_hardware) StdoutLine: {'line': b'[100%] Built target fs90r_hardware\n'}
+[22.699175] (-) TimerEvent: {}
+[22.716648] (fs90r_hardware) CommandEnded: {'returncode': 0}
+[22.718718] (fs90r_hardware) JobProgress: {'identifier': 'fs90r_hardware', 'progress': 'install'}
+[22.770339] (fs90r_hardware) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/atuiee/spooky_ws/build/fs90r_hardware'], 'cwd': '/home/atuiee/spooky_ws/build/fs90r_hardware', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'atuiee', 'SSH_CLIENT': '100.124.107.38 65075 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/atuiee/spooky_ws/install/ros2_servo_motion/lib:/home/atuiee/spooky_ws/install/fs90r_hardware/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/bin/helpers/browser.sh', 'HOME': '/home/atuiee', 'OLDPWD': '/home/atuiee/spooky_ws', 'TERM_PROGRAM_VERSION': '1.141.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-8e000cff-6bd5-4ca8-a02e-649c89a77e06.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/atuiee/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/atuiee/spooky_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'atuiee', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/home/atuiee/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/atuiee/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/atuiee/.vscode-server/cli/servers/Stable-2a59476c9bfcb90b3ddc372c36762471b7dfad1c/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/atuiee/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/scripts/noConfigScripts', 'XDG_RUNTIME_DIR': '/run/user/1000', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/atuiee/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-c5225ff144cf5e26.txt', 'LANG': 'en_US.UTF-8', 'PYTHONSTARTUP': '/home/atuiee/.vscode-server/data/User/workspaceStorage/a83387bff2b7a6f838fcedec451d90a3/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-7cfc85cf34.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/atuiee/spooky_ws/install/srf08_publisher:/home/atuiee/spooky_ws/install/ros2_servo_motion:/home/atuiee/spooky_ws/install/range_servo_controller:/home/atuiee/spooky_ws/install/fs90r_hardware:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/atuiee/spooky_ws/build/fs90r_hardware', 'LC_ALL': 'en_US.UTF-8', 'COPILOT_DEBUG_NONCE': '57326fa212c91a67699e86d617f26f2d', 'SSH_CONNECTION': '100.124.107.38 65075 100.67.81.38 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib/python:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/atuiee/spooky_ws/install/srf08_publisher:/home/atuiee/spooky_ws/install/ros2_servo_motion:/home/atuiee/spooky_ws/install/range_servo_controller:/home/atuiee/spooky_ws/install/fs90r_hardware:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[22.799479] (-) TimerEvent: {}
+[22.814907] (fs90r_hardware) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[22.816671] (fs90r_hardware) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[22.817889] (fs90r_hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware//fs90r_hardware.xml\n'}
+[22.820033] (fs90r_hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/include/fs90r_hardware/fs90r_servo.hpp\n'}
+[22.820944] (fs90r_hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/include/fs90r_hardware/fs90r_system.hpp\n'}
+[22.822029] (fs90r_hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/fs90r_hardware.xml\n'}
+[22.824082] (fs90r_hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/config/controllers.yaml\n'}
+[22.827768] (fs90r_hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/urdf/fs90r_control.xacro\n'}
+[22.829194] (fs90r_hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/config/controllers.yaml\n'}
+[22.829992] (fs90r_hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/urdf/fs90r_control.xacro\n'}
+[22.831039] (fs90r_hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/launch/test_fs90r.launch.py\n'}
+[22.832326] (fs90r_hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/environment/library_path.sh\n'}
+[22.833551] (fs90r_hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/environment/library_path.dsv\n'}
+[22.836540] (fs90r_hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/ament_index/resource_index/package_run_dependencies/fs90r_hardware\n'}
+[22.838564] (fs90r_hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/ament_index/resource_index/parent_prefix_path/fs90r_hardware\n'}
+[22.839844] (fs90r_hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/environment/ament_prefix_path.sh\n'}
+[22.841048] (fs90r_hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/environment/ament_prefix_path.dsv\n'}
+[22.842402] (fs90r_hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/environment/path.sh\n'}
+[22.843587] (fs90r_hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/environment/path.dsv\n'}
+[22.845307] (fs90r_hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/local_setup.bash\n'}
+[22.846486] (fs90r_hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/local_setup.sh\n'}
+[22.847723] (fs90r_hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/local_setup.zsh\n'}
+[22.849206] (fs90r_hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/local_setup.dsv\n'}
+[22.850344] (fs90r_hardware) StdoutLine: {'line': b'-- Symlinking: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/package.dsv\n'}
+[22.899671] (-) TimerEvent: {}
+[22.902441] (fs90r_hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/ament_index/resource_index/packages/fs90r_hardware\n'}
+[22.903672] (fs90r_hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/fs90r_hardware\n'}
+[22.904830] (fs90r_hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[22.906013] (fs90r_hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[22.907230] (fs90r_hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/cmake/fs90r_hardwareConfig.cmake\n'}
+[22.908134] (fs90r_hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/cmake/fs90r_hardwareConfig-version.cmake\n'}
+[22.909279] (fs90r_hardware) StdoutLine: {'line': b'-- Up-to-date symlink: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/package.xml\n'}
+[22.912599] (fs90r_hardware) StdoutLine: {'line': b'-- Installing: /home/atuiee/spooky_ws/install/fs90r_hardware/lib/libfs90r_hardware.so\n'}
+[22.921189] (fs90r_hardware) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/atuiee/spooky_ws/install/fs90r_hardware/lib/libfs90r_hardware.so" to ""\n'}
+[22.921977] (fs90r_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/cmake/export_fs90r_hardwareExport.cmake\n'}
+[22.922805] (fs90r_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/atuiee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/cmake/export_fs90r_hardwareExport-noconfig.cmake\n'}
+[22.929881] (fs90r_hardware) CommandEnded: {'returncode': 0}
+[22.999818] (-) TimerEvent: {}
+[23.016017] (fs90r_hardware) JobEnded: {'identifier': 'fs90r_hardware', 'rc': 0}
+[23.019429] (-) EventReactorShutdown: {}

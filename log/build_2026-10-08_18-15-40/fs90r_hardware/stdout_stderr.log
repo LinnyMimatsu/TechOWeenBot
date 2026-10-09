@@ -1,0 +1,64 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found hardware_interface: 4.48.1 (/opt/ros/jazzy/share/hardware_interface/cmake)
+-- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0")  
+-- Configuring done (11.8s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/atuiee/spooky_ws/build/fs90r_hardware
+[ 33%] [32mBuilding CXX object CMakeFiles/fs90r_hardware.dir/src/fs90r_system.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/fs90r_hardware.dir/src/fs90r_servo.cpp.o[0m
+[01m[K/home/atuiee/spooky_ws/src/fs90r_hardware/src/fs90r_system.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::CallbackReturn fs90r_hardware::FS90RSystem::[01;32m[Kon_init[m[K(const hardware_interface::HardwareInfo&)[m[K’:
+[01m[K/home/atuiee/spooky_ws/src/fs90r_hardware/src/fs90r_system.cpp:18:51:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvirtual rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn hardware_interface::HardwareComponentInterface::[01;32m[Kon_init[m[K(const hardware_interface::HardwareInfo&)[m[K’ is deprecated: Use on_init(const HardwareComponentInterfaceParams & params) instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   18 |   if ([01;35m[Khardware_interface::SystemInterface::on_init(info)[m[K !=
+      |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+In file included from [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/system_interface.hpp:18[m[K,
+                 from [01m[K/home/atuiee/spooky_ws/src/fs90r_hardware/include/fs90r_hardware/fs90r_system.hpp:8[m[K,
+                 from [01m[K/home/atuiee/spooky_ws/src/fs90r_hardware/src/fs90r_system.cpp:1[m[K:
+[01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/hardware_component_interface.hpp:140:26:[m[K [01;36m[Knote: [m[Kdeclared here
+  140 |   virtual CallbackReturn [01;36m[Kon_init[m[K(const HardwareInfo & hardware_info);
+      |                          [01;36m[K^~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/13/memory:69[m[K,
+                 from [01m[K/home/atuiee/spooky_ws/src/fs90r_hardware/include/fs90r_hardware/fs90r_system.hpp:4[m[K:
+/usr/include/c++/13/bits/stl_uninitialized.h: In instantiation of ‘[01m[Kconstexpr bool std::[01;32m[K__check_constructible[m[K() [35m[K[with _ValueType = hardware_interface::CommandInterface; _Tp = const hardware_interface::CommandInterface&][m[K[m[K’:
+[01m[K/usr/include/c++/13/bits/stl_uninitialized.h:182:4:[m[K   required from ‘[01m[K_ForwardIterator std::[01;32m[Kuninitialized_copy[m[K(_InputIterator, _InputIterator, _ForwardIterator) [35m[K[with _InputIterator = const hardware_interface::CommandInterface*; _ForwardIterator = hardware_interface::CommandInterface*][m[K[m[K’
+[01m[K/usr/include/c++/13/bits/stl_uninitialized.h:373:37:[m[K   required from ‘[01m[K_ForwardIterator std::[01;32m[K__uninitialized_copy_a[m[K(_InputIterator, _InputIterator, _ForwardIterator, allocator<_Tp>&) [35m[K[with _InputIterator = const hardware_interface::CommandInterface*; _ForwardIterator = hardware_interface::CommandInterface*; _Tp = hardware_interface::CommandInterface][m[K[m[K’
+[01m[K/usr/include/c++/13/bits/stl_vector.h:1695:33:[m[K   required from ‘[01m[Kvoid std::vector<_Tp, _Alloc>::[01;32m[K_M_range_initialize[m[K(_ForwardIterator, _ForwardIterator, std::forward_iterator_tag) [35m[K[with _ForwardIterator = const hardware_interface::CommandInterface*; _Tp = hardware_interface::CommandInterface; _Alloc = std::allocator<hardware_interface::CommandInterface>][m[K[m[K’
+[01m[K/usr/include/c++/13/bits/stl_vector.h:682:21:[m[K   required from ‘[01m[Kstd::vector<_Tp, _Alloc>::[01;32m[Kvector[m[K(std::initializer_list<_Tp>, const allocator_type&) [35m[K[with _Tp = hardware_interface::CommandInterface; _Alloc = std::allocator<hardware_interface::CommandInterface>; allocator_type = std::allocator<hardware_interface::CommandInterface>][m[K[m[K’
+[01m[K/home/atuiee/spooky_ws/src/fs90r_hardware/src/fs90r_system.cpp:94:3:[m[K   required from here
+[01m[K/usr/include/c++/13/bits/stl_uninitialized.h:90:56:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: result type must be constructible from input type
+   90 |       static_assert(is_constructible<_ValueType, _Tp>::[01;31m[Kvalue[m[K,
+      |                                                        [01;31m[K^~~~~[m[K
+[01m[K/usr/include/c++/13/bits/stl_uninitialized.h:90:56:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::integral_constant<bool, false>::value[m[K’ evaluates to false
+gmake[2]: *** [CMakeFiles/fs90r_hardware.dir/build.make:76: CMakeFiles/fs90r_hardware.dir/src/fs90r_system.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/fs90r_hardware.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
