@@ -1,6 +1,6 @@
 import os
-import subprocess
 import random
+import subprocess
 
 import rclpy
 from ament_index_python.packages import get_package_share_directory
@@ -13,24 +13,27 @@ class SpeakerNode(Node):
     def __init__(self):
         super().__init__('speaker_node')
 
+        self.sounds_dir = os.path.join(
+            get_package_share_directory('speaker_controller'), 'sounds')
 
-        rand = random.randint(0, 5)
-
-        default_wav = os.path.join(
-            get_package_share_directory('speaker_controller'),
-            'sounds', f'{rand}.wav')
-
-
-        
-        self.declare_parameter('wav_path', default_wav)
+        # Empty string = pick randomly each time. Set it to force one file.
+        self.declare_parameter('wav_path', '')
         self.declare_parameter('trigger_distance_m', 0.5)
         self.declare_parameter('cooldown_s', 5.0)
 
         self.proc = None
         self.last_played = self.get_clock().now()
+        self.last_choice = None
+
         self.create_subscription(
             Range, '/scan/ultrasonic', self.on_range, qos_profile_sensor_data)
         self.get_logger().info('Speaker node ready, listening on /scan/ultrasonic')
+
+    def pick_sound(self):
+        # Avoid playing the same file twice in a row
+        choices = [i for i in range(1, 6) if i != self.last_choice]
+        self.last_choice = random.choice(choices)
+        return os.path.join(self.sounds_dir, f'{self.last_choice}.mp3')
 
     def on_range(self, msg: Range):
         trigger = self.get_parameter('trigger_distance_m').value
@@ -45,7 +48,10 @@ class SpeakerNode(Node):
         if elapsed < cooldown:
             return
 
-        self.get_logger().info(f'Object at {msg.range:.2f} m, playing sound')
+        if not wav:
+            wav = self.pick_sound()
+
+        self.get_logger().info(f'Object at {msg.range:.2f} m, playing {wav}')
         self.proc = subprocess.Popen(
             ['pw-play', wav],
             stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
