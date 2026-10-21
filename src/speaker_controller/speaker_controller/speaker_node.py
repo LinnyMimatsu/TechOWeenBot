@@ -1,5 +1,6 @@
 import os
 import subprocess
+import random
 
 import rclpy
 from ament_index_python.packages import get_package_share_directory
@@ -12,9 +13,15 @@ class SpeakerNode(Node):
     def __init__(self):
         super().__init__('speaker_node')
 
+
+        rand = random.randint(0, 5)
+
         default_wav = os.path.join(
             get_package_share_directory('speaker_controller'),
-            'sounds', 'bad-to-the-bone.wav')
+            'sounds', f'{rand}.wav')
+
+
+        
         self.declare_parameter('wav_path', default_wav)
         self.declare_parameter('trigger_distance_m', 0.5)
         self.declare_parameter('cooldown_s', 5.0)
