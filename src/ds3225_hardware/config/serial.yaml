@@ -4,6 +4,7 @@ ds3225_serial_bridge:
     baud_rate: 115200
     min_angle: 0.0
     max_angle: 180.0
+    reverse_direction: true
     home_angle: 0.0
     object_detect_angle: 90.0
     range_topic: /scan/ultrasonic
