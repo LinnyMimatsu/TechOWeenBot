@@ -52,10 +52,12 @@ class SpeakerNode(Node):
             wav = self.pick_sound()
 
         self.get_logger().info(f'Object at {msg.range:.2f} m, playing {wav}')
-        self.proc = subprocess.Popen(
-            ['pw-play', wav],
-            stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-        self.last_played = self.get_clock().now()
+        try:
+            self.proc = subprocess.Popen(
+                ['pw-play', wav], stdout=subprocess.DEVNULL)
+            self.last_played = self.get_clock().now()
+        except OSError as error:
+            self.get_logger().error(f'Could not start pw-play for {wav}: {error}')
 
     def destroy_node(self):
         if self.proc is not None and self.proc.poll() is None:
