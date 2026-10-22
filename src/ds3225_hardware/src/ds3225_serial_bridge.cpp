@@ -32,7 +32,8 @@ public:
     const auto baud_rate = declare_parameter<int>("baud_rate", 115200);
     min_angle_ = declare_parameter<double>("min_angle", 0.0);
     max_angle_ = declare_parameter<double>("max_angle", 180.0);
-    reverse_direction_ = declare_parameter<bool>("reverse_direction", false);
+    reverse_servo1_direction_ = declare_parameter<bool>("reverse_servo1_direction", false);
+    reverse_servo2_direction_ = declare_parameter<bool>("reverse_servo2_direction", false);
     home_angle_ = declare_parameter<double>("home_angle", 0.0);
     object_detect_angle_ = declare_parameter<double>("object_detect_angle", 90.0);
     range_topic_ = declare_parameter<std::string>("range_topic", "/scan/ultrasonic");
@@ -300,7 +301,9 @@ private:
       return;
     }
 
-    const double mapped_angle = reverse_direction_ ?
+    const bool reverse_direction = servo_id == 1 ?
+      reverse_servo1_direction_ : reverse_servo2_direction_;
+    const double mapped_angle = reverse_direction ?
       min_angle_ + max_angle_ - angle : angle;
     const auto servo_angle = static_cast<int>(std::lround(mapped_angle));
     const auto command = std::to_string(servo_id) + ":" +
@@ -334,7 +337,8 @@ private:
   int serial_fd_{-1};
   double min_angle_{0.0};
   double max_angle_{180.0};
-  bool reverse_direction_{false};
+  bool reverse_servo1_direction_{false};
+  bool reverse_servo2_direction_{false};
   double home_angle_{0.0};
   double object_detect_angle_{90.0};
   std::string range_topic_{"/scan/ultrasonic"};

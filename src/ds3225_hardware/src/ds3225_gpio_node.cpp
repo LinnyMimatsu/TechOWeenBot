@@ -148,12 +148,12 @@ private:
     }
     if (!std::isfinite(min_angle_) || !std::isfinite(max_angle_) ||
       !std::isfinite(home_angle_) || !std::isfinite(object_detect_angle_) ||
-      min_angle_ < 0.0 || max_angle_ > 180.0 || min_angle_ >= max_angle_ ||
+      min_angle_ < 180.0 || max_angle_ > 360.0 || min_angle_ >= max_angle_ ||
       home_angle_ < min_angle_ || home_angle_ > max_angle_ ||
       object_detect_angle_ < min_angle_ || object_detect_angle_ > max_angle_)
     {
       throw std::invalid_argument(
-              "Servo angles must satisfy 0 <= min < max <= 180 and home/detection angles "
+              "Servo angles must satisfy 180 <= min < max <= 360 and home/detection angles "
               "must be within that range");
     }
     if (min_pulse_width_us_ < 500 ||

@@ -3,7 +3,7 @@ ds3225_gpio_node:
     gpio_chip: 0
     servo1_gpio_pin: 5
     servo2_gpio_pin: 6
-    min_angle: 0.0
+    min_angle: 180.0
     max_angle: 180.0
     home_angle: 0.0
     object_detect_angle: 90.0
