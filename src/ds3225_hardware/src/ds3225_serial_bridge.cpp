@@ -1,3 +1,4 @@
+#include <algorithm>
 #include <cerrno>
 #include <chrono>
 #include <cmath>
@@ -46,6 +47,7 @@ public:
     sensor_timeout_seconds_ = declare_parameter<double>("sensor_timeout_seconds", 0.5);
     sensor_check_period_ms_ = declare_parameter<int>("sensor_check_period_ms", 100);
     hold_duration_seconds_ = declare_parameter<double>("hold_duration_seconds", 2.0);
+    return_duration_seconds_ = declare_parameter<double>("return_duration_seconds", 3.0);
 
     if (!std::isfinite(min_angle_) || !std::isfinite(max_angle_) ||
       !std::isfinite(home_angle_) || !std::isfinite(object_detect_angle_) ||
@@ -63,7 +65,8 @@ public:
       object_detect_distance_ >= object_clear_distance_ ||
       !std::isfinite(sensor_timeout_seconds_) || sensor_timeout_seconds_ <= 0.0 ||
       sensor_check_period_ms_ <= 0 ||
-      !std::isfinite(hold_duration_seconds_) || hold_duration_seconds_ <= 0.0)
+      !std::isfinite(hold_duration_seconds_) || hold_duration_seconds_ <= 0.0 ||
+      !std::isfinite(return_duration_seconds_) || return_duration_seconds_ <= 0.0)
     {
       throw std::invalid_argument(
               "Object distances must satisfy 0 < detect < clear, and sensor timeout and "
@@ -90,6 +93,9 @@ public:
       servo1_command_topic_,
       10,
       [this](const std_msgs::msg::Float64::SharedPtr msg) {
+        if (std::isfinite(msg->data) && msg->data >= min_angle_ && msg->data <= max_angle_) {
+          return_timer_->cancel();
+        }
         send_servo_angle(1, msg->data);
       });
 
@@ -97,6 +103,9 @@ public:
       servo2_command_topic_,
       10,
       [this](const std_msgs::msg::Float64::SharedPtr msg) {
+        if (std::isfinite(msg->data) && msg->data >= min_angle_ && msg->data <= max_angle_) {
+          return_timer_->cancel();
+        }
         send_servo_angle(2, msg->data);
       });
 
@@ -139,12 +148,14 @@ public:
         std::chrono::duration<double>(hold_duration_seconds_)),
       [this]() {
         hold_timer_->cancel();
-        RCLCPP_INFO(
-          get_logger(), "Hold complete; returning both servos to %.1f degrees", home_angle_);
-        send_servo_angle(1, home_angle_);
-        send_servo_angle(2, home_angle_);
+        begin_return_home();
       });
     hold_timer_->cancel();
+
+    return_timer_ = create_wall_timer(
+      std::chrono::milliseconds(50),
+      [this]() {advance_return_home();});
+    return_timer_->cancel();
 
     send_servo_angle(1, home_angle_);
     send_servo_angle(2, home_angle_);
@@ -164,6 +175,34 @@ public:
   }
 
 private:
+  void begin_return_home()
+  {
+    RCLCPP_INFO(
+      get_logger(), "Hold complete; returning both servos to %.1f degrees over %.1f seconds",
+      home_angle_, return_duration_seconds_);
+    return_start_servo1_angle_ = current_servo1_angle_;
+    return_start_servo2_angle_ = current_servo2_angle_;
+    return_started_at_ = std::chrono::steady_clock::now();
+    return_timer_->reset();
+  }
+
+  void advance_return_home()
+  {
+    const double elapsed = std::chrono::duration<double>(
+      std::chrono::steady_clock::now() - return_started_at_).count();
+    const double progress = std::clamp(elapsed / return_duration_seconds_, 0.0, 1.0);
+    const double servo1_angle = return_start_servo1_angle_ +
+      (home_angle_ - return_start_servo1_angle_) * progress;
+    const double servo2_angle = return_start_servo2_angle_ +
+      (home_angle_ - return_start_servo2_angle_) * progress;
+
+    send_servo_angle(1, servo1_angle);
+    send_servo_angle(2, servo2_angle);
+    if (progress >= 1.0) {
+      return_timer_->cancel();
+    }
+  }
+
   // Map supported baud rates to the POSIX termios constants.
   static speed_t baud_constant(int baud_rate)
   {
@@ -285,6 +324,7 @@ private:
       get_logger(), "Object %s",
       object_detected_ ? "detected" : "cleared");
     if (object_detected_) {
+      return_timer_->cancel();
       send_servo_angle(1, object_detect_angle_);
       send_servo_angle(2, object_detect_angle_);
       hold_timer_->reset();
@@ -329,6 +369,11 @@ private:
       RCLCPP_INFO(
         get_logger(), "Arduino accepted servo %d angle %d degrees",
         servo_id, servo_angle);
+      if (servo_id == 1) {
+        current_servo1_angle_ = angle;
+      } else {
+        current_servo2_angle_ = angle;
+      }
     } catch (const std::exception & error) {
       RCLCPP_ERROR(get_logger(), "Servo command was not acknowledged: %s", error.what());
     }
@@ -349,6 +394,11 @@ private:
   double sensor_timeout_seconds_{0.5};
   int sensor_check_period_ms_{100};
   double hold_duration_seconds_{2.0};
+  double return_duration_seconds_{3.0};
+  double current_servo1_angle_{0.0};
+  double current_servo2_angle_{0.0};
+  double return_start_servo1_angle_{0.0};
+  double return_start_servo2_angle_{0.0};
   bool object_detected_{false};
   bool received_sensor_message_{false};
   std::chrono::steady_clock::time_point last_sensor_message_time_{};
@@ -357,6 +407,8 @@ private:
   rclcpp::Subscription<sensor_msgs::msg::Range>::SharedPtr range_subscription_;
   rclcpp::TimerBase::SharedPtr sensor_timeout_timer_;
   rclcpp::TimerBase::SharedPtr hold_timer_;
+  rclcpp::TimerBase::SharedPtr return_timer_;
+  std::chrono::steady_clock::time_point return_started_at_{};
 };
 
 int main(int argc, char ** argv)
