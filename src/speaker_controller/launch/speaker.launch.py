@@ -10,7 +10,7 @@ def generate_launch_description():
             name='speaker_node',
             output='screen',
             parameters=[{
-                'trigger_distance_m': 0.5,
+                'trigger_distance_m': 0.2,
                 'cooldown_s': 5.0,
             }],
         ),

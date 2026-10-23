@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/atuiee/spooky_ws/install/range_servo_controller/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/atuieee/spooky_ws/install/range_servo_controller/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -128,7 +128,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/atuiee/spooky_ws/install/range_servo_controller/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/atuieee/spooky_ws/install/range_servo_controller/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -186,7 +186,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/atuiee/spooky_ws/install/range_servo_controller/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/atuieee/spooky_ws/install/range_servo_controller/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -256,7 +256,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/atuiee/spooky_ws/install/range_servo_controller/${destination}")
+      set(destination "/home/atuieee/spooky_ws/install/range_servo_controller/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -316,49 +316,49 @@ message(STATUS "Execute custom install script")
 # begin of custom install code
 
 # install("TARGETS" "range_servo_controller" "DESTINATION" "lib/range_servo_controller")
-include("/home/atuiee/spooky_ws/build/range_servo_controller/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/atuieee/spooky_ws/build/range_servo_controller/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(DIRECTORY "launch" "DESTINATION" "share/range_servo_controller")
-ament_cmake_symlink_install_directory("/home/atuiee/spooky_ws/src/range_servo_controller" DIRECTORY "launch" "DESTINATION" "share/range_servo_controller")
+ament_cmake_symlink_install_directory("/home/atuieee/spooky_ws/src/range_servo_controller" DIRECTORY "launch" "DESTINATION" "share/range_servo_controller")
 
-# install(FILES "/home/atuiee/spooky_ws/build/range_servo_controller/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/range_servo_controller" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/atuiee/spooky_ws/src/range_servo_controller" FILES "/home/atuiee/spooky_ws/build/range_servo_controller/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/range_servo_controller" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/atuieee/spooky_ws/build/range_servo_controller/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/range_servo_controller" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/atuieee/spooky_ws/src/range_servo_controller" FILES "/home/atuieee/spooky_ws/build/range_servo_controller/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/range_servo_controller" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/atuiee/spooky_ws/build/range_servo_controller/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/range_servo_controller" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/atuiee/spooky_ws/src/range_servo_controller" FILES "/home/atuiee/spooky_ws/build/range_servo_controller/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/range_servo_controller" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/atuieee/spooky_ws/build/range_servo_controller/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/range_servo_controller" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/atuieee/spooky_ws/src/range_servo_controller" FILES "/home/atuieee/spooky_ws/build/range_servo_controller/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/range_servo_controller" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/range_servo_controller/environment")
-ament_cmake_symlink_install_files("/home/atuiee/spooky_ws/src/range_servo_controller" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/range_servo_controller/environment")
+ament_cmake_symlink_install_files("/home/atuieee/spooky_ws/src/range_servo_controller" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/range_servo_controller/environment")
 
-# install(FILES "/home/atuiee/spooky_ws/build/range_servo_controller/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/range_servo_controller/environment")
-ament_cmake_symlink_install_files("/home/atuiee/spooky_ws/src/range_servo_controller" FILES "/home/atuiee/spooky_ws/build/range_servo_controller/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/range_servo_controller/environment")
+# install(FILES "/home/atuieee/spooky_ws/build/range_servo_controller/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/range_servo_controller/environment")
+ament_cmake_symlink_install_files("/home/atuieee/spooky_ws/src/range_servo_controller" FILES "/home/atuieee/spooky_ws/build/range_servo_controller/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/range_servo_controller/environment")
 
 # install(FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/range_servo_controller/environment")
-ament_cmake_symlink_install_files("/home/atuiee/spooky_ws/src/range_servo_controller" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/range_servo_controller/environment")
+ament_cmake_symlink_install_files("/home/atuieee/spooky_ws/src/range_servo_controller" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/range_servo_controller/environment")
 
-# install(FILES "/home/atuiee/spooky_ws/build/range_servo_controller/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/range_servo_controller/environment")
-ament_cmake_symlink_install_files("/home/atuiee/spooky_ws/src/range_servo_controller" FILES "/home/atuiee/spooky_ws/build/range_servo_controller/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/range_servo_controller/environment")
+# install(FILES "/home/atuieee/spooky_ws/build/range_servo_controller/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/range_servo_controller/environment")
+ament_cmake_symlink_install_files("/home/atuieee/spooky_ws/src/range_servo_controller" FILES "/home/atuieee/spooky_ws/build/range_servo_controller/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/range_servo_controller/environment")
 
-# install(FILES "/home/atuiee/spooky_ws/build/range_servo_controller/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/range_servo_controller")
-ament_cmake_symlink_install_files("/home/atuiee/spooky_ws/src/range_servo_controller" FILES "/home/atuiee/spooky_ws/build/range_servo_controller/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/range_servo_controller")
+# install(FILES "/home/atuieee/spooky_ws/build/range_servo_controller/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/range_servo_controller")
+ament_cmake_symlink_install_files("/home/atuieee/spooky_ws/src/range_servo_controller" FILES "/home/atuieee/spooky_ws/build/range_servo_controller/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/range_servo_controller")
 
-# install(FILES "/home/atuiee/spooky_ws/build/range_servo_controller/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/range_servo_controller")
-ament_cmake_symlink_install_files("/home/atuiee/spooky_ws/src/range_servo_controller" FILES "/home/atuiee/spooky_ws/build/range_servo_controller/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/range_servo_controller")
+# install(FILES "/home/atuieee/spooky_ws/build/range_servo_controller/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/range_servo_controller")
+ament_cmake_symlink_install_files("/home/atuieee/spooky_ws/src/range_servo_controller" FILES "/home/atuieee/spooky_ws/build/range_servo_controller/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/range_servo_controller")
 
-# install(FILES "/home/atuiee/spooky_ws/build/range_servo_controller/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/range_servo_controller")
-ament_cmake_symlink_install_files("/home/atuiee/spooky_ws/src/range_servo_controller" FILES "/home/atuiee/spooky_ws/build/range_servo_controller/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/range_servo_controller")
+# install(FILES "/home/atuieee/spooky_ws/build/range_servo_controller/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/range_servo_controller")
+ament_cmake_symlink_install_files("/home/atuieee/spooky_ws/src/range_servo_controller" FILES "/home/atuieee/spooky_ws/build/range_servo_controller/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/range_servo_controller")
 
-# install(FILES "/home/atuiee/spooky_ws/build/range_servo_controller/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/range_servo_controller")
-ament_cmake_symlink_install_files("/home/atuiee/spooky_ws/src/range_servo_controller" FILES "/home/atuiee/spooky_ws/build/range_servo_controller/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/range_servo_controller")
+# install(FILES "/home/atuieee/spooky_ws/build/range_servo_controller/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/range_servo_controller")
+ament_cmake_symlink_install_files("/home/atuieee/spooky_ws/src/range_servo_controller" FILES "/home/atuieee/spooky_ws/build/range_servo_controller/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/range_servo_controller")
 
-# install(FILES "/home/atuiee/spooky_ws/build/range_servo_controller/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/range_servo_controller")
-ament_cmake_symlink_install_files("/home/atuiee/spooky_ws/src/range_servo_controller" FILES "/home/atuiee/spooky_ws/build/range_servo_controller/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/range_servo_controller")
+# install(FILES "/home/atuieee/spooky_ws/build/range_servo_controller/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/range_servo_controller")
+ament_cmake_symlink_install_files("/home/atuieee/spooky_ws/src/range_servo_controller" FILES "/home/atuieee/spooky_ws/build/range_servo_controller/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/range_servo_controller")
 
-# install(FILES "/home/atuiee/spooky_ws/build/range_servo_controller/ament_cmake_index/share/ament_index/resource_index/packages/range_servo_controller" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/atuiee/spooky_ws/src/range_servo_controller" FILES "/home/atuiee/spooky_ws/build/range_servo_controller/ament_cmake_index/share/ament_index/resource_index/packages/range_servo_controller" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/atuieee/spooky_ws/build/range_servo_controller/ament_cmake_index/share/ament_index/resource_index/packages/range_servo_controller" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/atuieee/spooky_ws/src/range_servo_controller" FILES "/home/atuieee/spooky_ws/build/range_servo_controller/ament_cmake_index/share/ament_index/resource_index/packages/range_servo_controller" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/atuiee/spooky_ws/build/range_servo_controller/ament_cmake_core/range_servo_controllerConfig.cmake" "/home/atuiee/spooky_ws/build/range_servo_controller/ament_cmake_core/range_servo_controllerConfig-version.cmake" "DESTINATION" "share/range_servo_controller/cmake")
-ament_cmake_symlink_install_files("/home/atuiee/spooky_ws/src/range_servo_controller" FILES "/home/atuiee/spooky_ws/build/range_servo_controller/ament_cmake_core/range_servo_controllerConfig.cmake" "/home/atuiee/spooky_ws/build/range_servo_controller/ament_cmake_core/range_servo_controllerConfig-version.cmake" "DESTINATION" "share/range_servo_controller/cmake")
+# install(FILES "/home/atuieee/spooky_ws/build/range_servo_controller/ament_cmake_core/range_servo_controllerConfig.cmake" "/home/atuieee/spooky_ws/build/range_servo_controller/ament_cmake_core/range_servo_controllerConfig-version.cmake" "DESTINATION" "share/range_servo_controller/cmake")
+ament_cmake_symlink_install_files("/home/atuieee/spooky_ws/src/range_servo_controller" FILES "/home/atuieee/spooky_ws/build/range_servo_controller/ament_cmake_core/range_servo_controllerConfig.cmake" "/home/atuieee/spooky_ws/build/range_servo_controller/ament_cmake_core/range_servo_controllerConfig-version.cmake" "DESTINATION" "share/range_servo_controller/cmake")
 
-# install(FILES "/home/atuiee/spooky_ws/src/range_servo_controller/package.xml" "DESTINATION" "share/range_servo_controller")
-ament_cmake_symlink_install_files("/home/atuiee/spooky_ws/src/range_servo_controller" FILES "/home/atuiee/spooky_ws/src/range_servo_controller/package.xml" "DESTINATION" "share/range_servo_controller")
+# install(FILES "/home/atuieee/spooky_ws/src/range_servo_controller/package.xml" "DESTINATION" "share/range_servo_controller")
+ament_cmake_symlink_install_files("/home/atuieee/spooky_ws/src/range_servo_controller" FILES "/home/atuieee/spooky_ws/src/range_servo_controller/package.xml" "DESTINATION" "share/range_servo_controller")

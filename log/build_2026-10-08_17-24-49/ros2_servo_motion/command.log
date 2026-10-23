@@ -1,2 +1,0 @@
-Invoking command in '/home/atuiee/spooky_ws/build/ros2_servo_motion': /usr/bin/cmake /home/atuiee/spooky_ws/src/ROS2_servo_motion -DCMAKE_INSTALL_PREFIX=/home/atuiee/spooky_ws/install/ros2_servo_motion
-Invoked command in '/home/atuiee/spooky_ws/build/ros2_servo_motion' returned '1': /usr/bin/cmake /home/atuiee/spooky_ws/src/ROS2_servo_motion -DCMAKE_INSTALL_PREFIX=/home/atuiee/spooky_ws/install/ros2_servo_motion

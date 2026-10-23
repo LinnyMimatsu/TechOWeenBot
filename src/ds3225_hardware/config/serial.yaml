@@ -15,5 +15,5 @@ ds3225_serial_bridge:
     object_clear_distance: 0.25
     sensor_timeout_seconds: 0.5
     sensor_check_period_ms: 100
-    hold_duration_seconds: 2.0
-    return_duration_seconds: 3.0
+    hold_duration_seconds: 3.0
+    return_duration_seconds: 2.0

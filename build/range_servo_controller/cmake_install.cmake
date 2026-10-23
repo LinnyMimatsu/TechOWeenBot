@@ -1,8 +1,8 @@
-# Install script for directory: /home/atuiee/spooky_ws/src/range_servo_controller
+# Install script for directory: /home/atuieee/spooky_ws/src/range_servo_controller
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/atuiee/spooky_ws/install/range_servo_controller")
+  set(CMAKE_INSTALL_PREFIX "/home/atuieee/spooky_ws/install/range_servo_controller")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,7 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/atuiee/spooky_ws/build/range_servo_controller/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  include("/home/atuieee/spooky_ws/build/range_servo_controller/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -54,5 +54,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/atuiee/spooky_ws/build/range_servo_controller/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/atuieee/spooky_ws/build/range_servo_controller/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

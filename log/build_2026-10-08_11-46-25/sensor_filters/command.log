@@ -1,2 +1,0 @@
-Invoking command in '/home/atuiee/spooky_ws/build/sensor_filters': /usr/bin/cmake /home/atuiee/spooky_ws/src/sensor_filters -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/atuiee/spooky_ws/install/sensor_filters
-Invoked command in '/home/atuiee/spooky_ws/build/sensor_filters' returned '1': /usr/bin/cmake /home/atuiee/spooky_ws/src/sensor_filters -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/atuiee/spooky_ws/install/sensor_filters

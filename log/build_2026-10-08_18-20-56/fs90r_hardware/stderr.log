@@ -1,8 +1,0 @@
-[31mCMake Error at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:105 (message):
-  ament_cmake_symlink_install_directory() can't find
-  '/home/atuiee/spooky_ws/src/fs90r_hardware/urdf'
-Call Stack (most recent call first):
-  ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:328 (ament_cmake_symlink_install_directory)
-  cmake_install.cmake:46 (include)
-
-[0m

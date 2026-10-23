@@ -1,7 +1,7 @@
 CMakeFiles/fs90r_hardware.dir/src/fs90r_system.cpp.o: \
- /home/atuiee/spooky_ws/src/fs90r_hardware/src/fs90r_system.cpp \
+ /home/atuieee/spooky_ws/src/fs90r_hardware/src/fs90r_system.cpp \
  /usr/include/stdc-predef.h \
- /home/atuiee/spooky_ws/src/fs90r_hardware/include/fs90r_hardware/fs90r_system.hpp \
+ /home/atuieee/spooky_ws/src/fs90r_hardware/include/fs90r_hardware/fs90r_system.hpp \
  /usr/include/c++/13/memory /usr/include/c++/13/bits/memoryfwd.h \
  /usr/include/aarch64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/aarch64-linux-gnu/c++/13/bits/os_defines.h \
@@ -795,7 +795,7 @@ CMakeFiles/fs90r_hardware.dir/src/fs90r_system.cpp.o: \
  /opt/ros/jazzy/include/realtime_tools/realtime_tools/async_function_handler.hpp \
  /usr/include/fmt/format.h /usr/include/fmt/ranges.h \
  /opt/ros/jazzy/include/realtime_tools/realtime_tools/realtime_helpers.hpp \
- /home/atuiee/spooky_ws/src/fs90r_hardware/include/fs90r_hardware/fs90r_servo.hpp \
+ /home/atuieee/spooky_ws/src/fs90r_hardware/include/fs90r_hardware/fs90r_servo.hpp \
  /opt/ros/jazzy/include/pluginlib/pluginlib/class_list_macros.hpp \
  /opt/ros/jazzy/include/class_loader/class_loader/class_loader.hpp \
  /usr/include/console_bridge/console.h \

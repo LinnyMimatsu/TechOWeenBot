@@ -1,7 +1,7 @@
 CMakeFiles/fs90r_hardware.dir/src/fs90r_servo.cpp.o: \
- /home/atuiee/spooky_ws/src/fs90r_hardware/src/fs90r_servo.cpp \
+ /home/atuieee/spooky_ws/src/fs90r_hardware/src/fs90r_servo.cpp \
  /usr/include/stdc-predef.h \
- /home/atuiee/spooky_ws/src/fs90r_hardware/include/fs90r_hardware/fs90r_servo.hpp \
+ /home/atuieee/spooky_ws/src/fs90r_hardware/include/fs90r_hardware/fs90r_servo.hpp \
  /usr/include/c++/13/algorithm /usr/include/c++/13/bits/stl_algobase.h \
  /usr/include/aarch64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/aarch64-linux-gnu/c++/13/bits/os_defines.h \

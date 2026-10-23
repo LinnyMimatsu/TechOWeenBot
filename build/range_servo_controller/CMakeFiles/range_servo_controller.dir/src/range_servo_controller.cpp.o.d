@@ -1,5 +1,5 @@
 CMakeFiles/range_servo_controller.dir/src/range_servo_controller.cpp.o: \
- /home/atuiee/spooky_ws/src/range_servo_controller/src/range_servo_controller.cpp \
+ /home/atuieee/spooky_ws/src/range_servo_controller/src/range_servo_controller.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/13/chrono \
  /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/aarch64-linux-gnu/c++/13/bits/c++config.h \

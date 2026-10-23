@@ -1,5 +1,5 @@
 CMakeFiles/srf08_node.dir/src/srf08_node.cpp.o: \
- /home/atuiee/spooky_ws/src/srf08_publisher/src/srf08_node.cpp \
+ /home/atuieee/spooky_ws/src/srf08_publisher/src/srf08_node.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/13/chrono \
  /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/aarch64-linux-gnu/c++/13/bits/c++config.h \
