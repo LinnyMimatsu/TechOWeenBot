@@ -31,7 +31,7 @@ class SpeakerNode(Node):
 
     def pick_sound(self):
         # Avoid playing the same file twice in a row
-        choices = [i for i in range(1, 6) if i != self.last_choice]
+        choices = [i for i in range(1, 7) if i != self.last_choice]
         self.last_choice = random.choice(choices)
         return os.path.join(self.sounds_dir, f'{self.last_choice}.mp3')
 
