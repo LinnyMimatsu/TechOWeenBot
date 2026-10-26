@@ -1,3 +1,3 @@
-/home/atuieee/spooky_ws/install/fs90r_hardware/lib/libfs90r_hardware.so
-/home/atuieee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/cmake/export_fs90r_hardwareExport.cmake
-/home/atuieee/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/cmake/export_fs90r_hardwareExport-noconfig.cmake
+/home/robodemo/Bots/spooky_ws/install/fs90r_hardware/lib/libfs90r_hardware.so
+/home/robodemo/Bots/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/cmake/export_fs90r_hardwareExport.cmake
+/home/robodemo/Bots/spooky_ws/install/fs90r_hardware/share/fs90r_hardware/cmake/export_fs90r_hardwareExport-noconfig.cmake

@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/atuieee/spooky_ws/install/srf08_publisher/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/robodemo/Bots/spooky_ws/install/srf08_publisher/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -128,7 +128,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/atuieee/spooky_ws/install/srf08_publisher/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/robodemo/Bots/spooky_ws/install/srf08_publisher/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -186,7 +186,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/atuieee/spooky_ws/install/srf08_publisher/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/robodemo/Bots/spooky_ws/install/srf08_publisher/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -256,7 +256,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/atuieee/spooky_ws/install/srf08_publisher/${destination}")
+      set(destination "/home/robodemo/Bots/spooky_ws/install/srf08_publisher/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -316,49 +316,49 @@ message(STATUS "Execute custom install script")
 # begin of custom install code
 
 # install("TARGETS" "srf08_node" "DESTINATION" "lib/srf08_publisher")
-include("/home/atuieee/spooky_ws/build/srf08_publisher/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/robodemo/Bots/spooky_ws/build/srf08_publisher/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(DIRECTORY "launch" "DESTINATION" "share/srf08_publisher/")
-ament_cmake_symlink_install_directory("/home/atuieee/spooky_ws/src/srf08_publisher" DIRECTORY "launch" "DESTINATION" "share/srf08_publisher/")
+ament_cmake_symlink_install_directory("/home/robodemo/Bots/spooky_ws/src/srf08_publisher" DIRECTORY "launch" "DESTINATION" "share/srf08_publisher/")
 
-# install(FILES "/home/atuieee/spooky_ws/build/srf08_publisher/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/srf08_publisher" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/atuieee/spooky_ws/src/srf08_publisher" FILES "/home/atuieee/spooky_ws/build/srf08_publisher/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/srf08_publisher" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/robodemo/Bots/spooky_ws/build/srf08_publisher/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/srf08_publisher" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/robodemo/Bots/spooky_ws/src/srf08_publisher" FILES "/home/robodemo/Bots/spooky_ws/build/srf08_publisher/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/srf08_publisher" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/atuieee/spooky_ws/build/srf08_publisher/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/srf08_publisher" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/atuieee/spooky_ws/src/srf08_publisher" FILES "/home/atuieee/spooky_ws/build/srf08_publisher/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/srf08_publisher" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/robodemo/Bots/spooky_ws/build/srf08_publisher/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/srf08_publisher" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/robodemo/Bots/spooky_ws/src/srf08_publisher" FILES "/home/robodemo/Bots/spooky_ws/build/srf08_publisher/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/srf08_publisher" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/srf08_publisher/environment")
-ament_cmake_symlink_install_files("/home/atuieee/spooky_ws/src/srf08_publisher" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/srf08_publisher/environment")
+ament_cmake_symlink_install_files("/home/robodemo/Bots/spooky_ws/src/srf08_publisher" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/srf08_publisher/environment")
 
-# install(FILES "/home/atuieee/spooky_ws/build/srf08_publisher/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/srf08_publisher/environment")
-ament_cmake_symlink_install_files("/home/atuieee/spooky_ws/src/srf08_publisher" FILES "/home/atuieee/spooky_ws/build/srf08_publisher/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/srf08_publisher/environment")
+# install(FILES "/home/robodemo/Bots/spooky_ws/build/srf08_publisher/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/srf08_publisher/environment")
+ament_cmake_symlink_install_files("/home/robodemo/Bots/spooky_ws/src/srf08_publisher" FILES "/home/robodemo/Bots/spooky_ws/build/srf08_publisher/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/srf08_publisher/environment")
 
 # install(FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/srf08_publisher/environment")
-ament_cmake_symlink_install_files("/home/atuieee/spooky_ws/src/srf08_publisher" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/srf08_publisher/environment")
+ament_cmake_symlink_install_files("/home/robodemo/Bots/spooky_ws/src/srf08_publisher" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/srf08_publisher/environment")
 
-# install(FILES "/home/atuieee/spooky_ws/build/srf08_publisher/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/srf08_publisher/environment")
-ament_cmake_symlink_install_files("/home/atuieee/spooky_ws/src/srf08_publisher" FILES "/home/atuieee/spooky_ws/build/srf08_publisher/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/srf08_publisher/environment")
+# install(FILES "/home/robodemo/Bots/spooky_ws/build/srf08_publisher/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/srf08_publisher/environment")
+ament_cmake_symlink_install_files("/home/robodemo/Bots/spooky_ws/src/srf08_publisher" FILES "/home/robodemo/Bots/spooky_ws/build/srf08_publisher/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/srf08_publisher/environment")
 
-# install(FILES "/home/atuieee/spooky_ws/build/srf08_publisher/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/srf08_publisher")
-ament_cmake_symlink_install_files("/home/atuieee/spooky_ws/src/srf08_publisher" FILES "/home/atuieee/spooky_ws/build/srf08_publisher/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/srf08_publisher")
+# install(FILES "/home/robodemo/Bots/spooky_ws/build/srf08_publisher/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/srf08_publisher")
+ament_cmake_symlink_install_files("/home/robodemo/Bots/spooky_ws/src/srf08_publisher" FILES "/home/robodemo/Bots/spooky_ws/build/srf08_publisher/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/srf08_publisher")
 
-# install(FILES "/home/atuieee/spooky_ws/build/srf08_publisher/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/srf08_publisher")
-ament_cmake_symlink_install_files("/home/atuieee/spooky_ws/src/srf08_publisher" FILES "/home/atuieee/spooky_ws/build/srf08_publisher/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/srf08_publisher")
+# install(FILES "/home/robodemo/Bots/spooky_ws/build/srf08_publisher/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/srf08_publisher")
+ament_cmake_symlink_install_files("/home/robodemo/Bots/spooky_ws/src/srf08_publisher" FILES "/home/robodemo/Bots/spooky_ws/build/srf08_publisher/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/srf08_publisher")
 
-# install(FILES "/home/atuieee/spooky_ws/build/srf08_publisher/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/srf08_publisher")
-ament_cmake_symlink_install_files("/home/atuieee/spooky_ws/src/srf08_publisher" FILES "/home/atuieee/spooky_ws/build/srf08_publisher/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/srf08_publisher")
+# install(FILES "/home/robodemo/Bots/spooky_ws/build/srf08_publisher/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/srf08_publisher")
+ament_cmake_symlink_install_files("/home/robodemo/Bots/spooky_ws/src/srf08_publisher" FILES "/home/robodemo/Bots/spooky_ws/build/srf08_publisher/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/srf08_publisher")
 
-# install(FILES "/home/atuieee/spooky_ws/build/srf08_publisher/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/srf08_publisher")
-ament_cmake_symlink_install_files("/home/atuieee/spooky_ws/src/srf08_publisher" FILES "/home/atuieee/spooky_ws/build/srf08_publisher/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/srf08_publisher")
+# install(FILES "/home/robodemo/Bots/spooky_ws/build/srf08_publisher/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/srf08_publisher")
+ament_cmake_symlink_install_files("/home/robodemo/Bots/spooky_ws/src/srf08_publisher" FILES "/home/robodemo/Bots/spooky_ws/build/srf08_publisher/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/srf08_publisher")
 
-# install(FILES "/home/atuieee/spooky_ws/build/srf08_publisher/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/srf08_publisher")
-ament_cmake_symlink_install_files("/home/atuieee/spooky_ws/src/srf08_publisher" FILES "/home/atuieee/spooky_ws/build/srf08_publisher/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/srf08_publisher")
+# install(FILES "/home/robodemo/Bots/spooky_ws/build/srf08_publisher/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/srf08_publisher")
+ament_cmake_symlink_install_files("/home/robodemo/Bots/spooky_ws/src/srf08_publisher" FILES "/home/robodemo/Bots/spooky_ws/build/srf08_publisher/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/srf08_publisher")
 
-# install(FILES "/home/atuieee/spooky_ws/build/srf08_publisher/ament_cmake_index/share/ament_index/resource_index/packages/srf08_publisher" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/atuieee/spooky_ws/src/srf08_publisher" FILES "/home/atuieee/spooky_ws/build/srf08_publisher/ament_cmake_index/share/ament_index/resource_index/packages/srf08_publisher" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/robodemo/Bots/spooky_ws/build/srf08_publisher/ament_cmake_index/share/ament_index/resource_index/packages/srf08_publisher" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/robodemo/Bots/spooky_ws/src/srf08_publisher" FILES "/home/robodemo/Bots/spooky_ws/build/srf08_publisher/ament_cmake_index/share/ament_index/resource_index/packages/srf08_publisher" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/atuieee/spooky_ws/build/srf08_publisher/ament_cmake_core/srf08_publisherConfig.cmake" "/home/atuieee/spooky_ws/build/srf08_publisher/ament_cmake_core/srf08_publisherConfig-version.cmake" "DESTINATION" "share/srf08_publisher/cmake")
-ament_cmake_symlink_install_files("/home/atuieee/spooky_ws/src/srf08_publisher" FILES "/home/atuieee/spooky_ws/build/srf08_publisher/ament_cmake_core/srf08_publisherConfig.cmake" "/home/atuieee/spooky_ws/build/srf08_publisher/ament_cmake_core/srf08_publisherConfig-version.cmake" "DESTINATION" "share/srf08_publisher/cmake")
+# install(FILES "/home/robodemo/Bots/spooky_ws/build/srf08_publisher/ament_cmake_core/srf08_publisherConfig.cmake" "/home/robodemo/Bots/spooky_ws/build/srf08_publisher/ament_cmake_core/srf08_publisherConfig-version.cmake" "DESTINATION" "share/srf08_publisher/cmake")
+ament_cmake_symlink_install_files("/home/robodemo/Bots/spooky_ws/src/srf08_publisher" FILES "/home/robodemo/Bots/spooky_ws/build/srf08_publisher/ament_cmake_core/srf08_publisherConfig.cmake" "/home/robodemo/Bots/spooky_ws/build/srf08_publisher/ament_cmake_core/srf08_publisherConfig-version.cmake" "DESTINATION" "share/srf08_publisher/cmake")
 
-# install(FILES "/home/atuieee/spooky_ws/src/srf08_publisher/package.xml" "DESTINATION" "share/srf08_publisher")
-ament_cmake_symlink_install_files("/home/atuieee/spooky_ws/src/srf08_publisher" FILES "/home/atuieee/spooky_ws/src/srf08_publisher/package.xml" "DESTINATION" "share/srf08_publisher")
+# install(FILES "/home/robodemo/Bots/spooky_ws/src/srf08_publisher/package.xml" "DESTINATION" "share/srf08_publisher")
+ament_cmake_symlink_install_files("/home/robodemo/Bots/spooky_ws/src/srf08_publisher" FILES "/home/robodemo/Bots/spooky_ws/src/srf08_publisher/package.xml" "DESTINATION" "share/srf08_publisher")

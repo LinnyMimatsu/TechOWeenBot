@@ -3,18 +3,13 @@ ds3225_gpio_node:
     gpio_chip: 0
     servo1_gpio_pin: 5
     servo2_gpio_pin: 6
-    min_angle: 180.0
+    min_angle: 0.0
     max_angle: 180.0
     home_angle: 0.0
-    object_detect_angle: 90.0
+    jaw_open_angle: 90.0
+    jaw_playback_topic: /speaker/playing
     min_pulse_width_us: 500
     max_pulse_width_us: 2500
     pwm_frequency_hz: 50
-    range_topic: /scan/ultrasonic
     servo1_command_topic: /ds3225/angle
     servo2_command_topic: /ds3225/servo2/angle
-    object_detect_distance: 0.20
-    object_clear_distance: 0.25
-    sensor_timeout_seconds: 0.5
-    sensor_check_period_ms: 100
-    hold_duration_seconds: 2.0

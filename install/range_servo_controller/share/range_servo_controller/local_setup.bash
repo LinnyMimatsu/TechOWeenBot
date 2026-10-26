@@ -1,1 +1,1 @@
-/home/atuieee/spooky_ws/build/range_servo_controller/ament_cmake_environment_hooks/local_setup.bash
+/home/robodemo/Bots/spooky_ws/build/range_servo_controller/ament_cmake_environment_hooks/local_setup.bash

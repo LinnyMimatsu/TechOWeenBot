@@ -61,7 +61,7 @@ add_library(fs90r_hardware::fs90r_hardware SHARED IMPORTED)
 set_target_properties(fs90r_hardware::fs90r_hardware PROPERTIES
   INTERFACE_COMPILE_FEATURES "cxx_std_17"
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include;/usr/include"
-  INTERFACE_LINK_LIBRARIES "/usr/lib/aarch64-linux-gnu/liblgpio.so;hardware_interface::mock_components;hardware_interface::hardware_interface;pluginlib::pluginlib;rclcpp::rclcpp;rclcpp_lifecycle::rclcpp_lifecycle"
+  INTERFACE_LINK_LIBRARIES "/usr/lib/x86_64-linux-gnu/liblgpio.so;hardware_interface::mock_components;hardware_interface::hardware_interface;pluginlib::pluginlib;rclcpp::rclcpp;rclcpp_lifecycle::rclcpp_lifecycle"
 )
 
 if(CMAKE_VERSION VERSION_LESS 2.8.12)

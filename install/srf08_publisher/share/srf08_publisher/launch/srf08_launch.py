@@ -1,1 +1,1 @@
-/home/atuieee/spooky_ws/src/srf08_publisher/launch/srf08_launch.py
+/home/robodemo/Bots/spooky_ws/src/srf08_publisher/launch/srf08_launch.py

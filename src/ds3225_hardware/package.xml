@@ -3,7 +3,7 @@
 <package format="3">
   <name>ds3225_hardware</name>
   <version>0.0.0</version>
-  <description>ROS 2 GPIO PWM control of two DS3225 servos, with an Arduino serial fallback.</description>
+  <description>ROS 2 Arduino serial and Raspberry Pi GPIO control for DS3225 servos.</description>
   <maintainer email="dapressler@gmail.com">robodemo</maintainer>
   <license>TODO: License declaration</license>
 

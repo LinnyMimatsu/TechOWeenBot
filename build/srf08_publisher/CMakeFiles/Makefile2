@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/atuieee/spooky_ws/src/srf08_publisher
+CMAKE_SOURCE_DIR = /home/robodemo/Bots/spooky_ws/src/srf08_publisher
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/atuieee/spooky_ws/build/srf08_publisher
+CMAKE_BINARY_DIR = /home/robodemo/Bots/spooky_ws/build/srf08_publisher
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -83,14 +83,14 @@ clean: CMakeFiles/srf08_node.dir/clean
 CMakeFiles/uninstall.dir/all: CMakeFiles/srf08_publisher_uninstall.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/atuieee/spooky_ws/build/srf08_publisher/CMakeFiles --progress-num= "Built target uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/robodemo/Bots/spooky_ws/build/srf08_publisher/CMakeFiles --progress-num= "Built target uninstall"
 .PHONY : CMakeFiles/uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/atuieee/spooky_ws/build/srf08_publisher/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robodemo/Bots/spooky_ws/build/srf08_publisher/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/atuieee/spooky_ws/build/srf08_publisher/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robodemo/Bots/spooky_ws/build/srf08_publisher/CMakeFiles 0
 .PHONY : CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
@@ -109,14 +109,14 @@ CMakeFiles/uninstall.dir/clean:
 CMakeFiles/srf08_publisher_uninstall.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/srf08_publisher_uninstall.dir/build.make CMakeFiles/srf08_publisher_uninstall.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/srf08_publisher_uninstall.dir/build.make CMakeFiles/srf08_publisher_uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/atuieee/spooky_ws/build/srf08_publisher/CMakeFiles --progress-num= "Built target srf08_publisher_uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/robodemo/Bots/spooky_ws/build/srf08_publisher/CMakeFiles --progress-num= "Built target srf08_publisher_uninstall"
 .PHONY : CMakeFiles/srf08_publisher_uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/srf08_publisher_uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/atuieee/spooky_ws/build/srf08_publisher/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robodemo/Bots/spooky_ws/build/srf08_publisher/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/srf08_publisher_uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/atuieee/spooky_ws/build/srf08_publisher/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robodemo/Bots/spooky_ws/build/srf08_publisher/CMakeFiles 0
 .PHONY : CMakeFiles/srf08_publisher_uninstall.dir/rule
 
 # Convenience name for target.
@@ -135,14 +135,14 @@ CMakeFiles/srf08_publisher_uninstall.dir/clean:
 CMakeFiles/srf08_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/srf08_node.dir/build.make CMakeFiles/srf08_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/srf08_node.dir/build.make CMakeFiles/srf08_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/atuieee/spooky_ws/build/srf08_publisher/CMakeFiles --progress-num=1,2 "Built target srf08_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/robodemo/Bots/spooky_ws/build/srf08_publisher/CMakeFiles --progress-num=1,2 "Built target srf08_node"
 .PHONY : CMakeFiles/srf08_node.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/srf08_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/atuieee/spooky_ws/build/srf08_publisher/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robodemo/Bots/spooky_ws/build/srf08_publisher/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/srf08_node.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/atuieee/spooky_ws/build/srf08_publisher/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robodemo/Bots/spooky_ws/build/srf08_publisher/CMakeFiles 0
 .PHONY : CMakeFiles/srf08_node.dir/rule
 
 # Convenience name for target.

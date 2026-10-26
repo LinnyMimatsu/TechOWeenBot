@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/atuieee/spooky_ws/src/range_servo_controller
+CMAKE_SOURCE_DIR = /home/robodemo/Bots/spooky_ws/src/range_servo_controller
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/atuieee/spooky_ws/build/range_servo_controller
+CMAKE_BINARY_DIR = /home/robodemo/Bots/spooky_ws/build/range_servo_controller
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/atuieee/spooky_ws/build/range_servo_controller && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/atuieee/spooky_ws/src/range_servo_controller /home/atuieee/spooky_ws/src/range_servo_controller /home/atuieee/spooky_ws/build/range_servo_controller /home/atuieee/spooky_ws/build/range_servo_controller /home/atuieee/spooky_ws/build/range_servo_controller/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/robodemo/Bots/spooky_ws/build/range_servo_controller && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robodemo/Bots/spooky_ws/src/range_servo_controller /home/robodemo/Bots/spooky_ws/src/range_servo_controller /home/robodemo/Bots/spooky_ws/build/range_servo_controller /home/robodemo/Bots/spooky_ws/build/range_servo_controller /home/robodemo/Bots/spooky_ws/build/range_servo_controller/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/uninstall.dir/depend
 

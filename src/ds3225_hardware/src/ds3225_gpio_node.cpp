@@ -1,5 +1,4 @@
 #include <algorithm>
-#include <chrono>
 #include <cmath>
 #include <memory>
 #include <stdexcept>
@@ -8,10 +7,8 @@
 #include <lgpio.h>
 
 #include "rclcpp/rclcpp.hpp"
-#include "sensor_msgs/msg/range.hpp"
+#include "std_msgs/msg/bool.hpp"
 #include "std_msgs/msg/float64.hpp"
-
-using namespace std::chrono_literals;
 
 class DS3225GpioNode : public rclcpp::Node
 {
@@ -26,21 +23,16 @@ public:
     min_angle_ = declare_parameter<double>("min_angle", 0.0);
     max_angle_ = declare_parameter<double>("max_angle", 180.0);
     home_angle_ = declare_parameter<double>("home_angle", 0.0);
-    object_detect_angle_ = declare_parameter<double>("object_detect_angle", 90.0);
+    jaw_open_angle_ = declare_parameter<double>("jaw_open_angle", 90.0);
     min_pulse_width_us_ = declare_parameter<int>("min_pulse_width_us", 500);
     max_pulse_width_us_ = declare_parameter<int>("max_pulse_width_us", 2500);
     pwm_frequency_hz_ = declare_parameter<int>("pwm_frequency_hz", 50);
-    range_topic_ = declare_parameter<std::string>("range_topic", "/scan/ultrasonic");
+    jaw_playback_topic_ = declare_parameter<std::string>(
+      "jaw_playback_topic", "/speaker/playing");
     servo1_command_topic_ =
       declare_parameter<std::string>("servo1_command_topic", "/ds3225/angle");
     servo2_command_topic_ =
       declare_parameter<std::string>("servo2_command_topic", "/ds3225/servo2/angle");
-    object_detect_distance_ = declare_parameter<double>("object_detect_distance", 0.20);
-    object_clear_distance_ = declare_parameter<double>("object_clear_distance", 0.25);
-    sensor_timeout_seconds_ = declare_parameter<double>("sensor_timeout_seconds", 0.5);
-    sensor_check_period_ms_ = declare_parameter<int>("sensor_check_period_ms", 100);
-    hold_duration_seconds_ = declare_parameter<double>("hold_duration_seconds", 2.0);
-
     validate_parameters();
 
     gpio_chip_handle_ = lgGpiochipOpen(gpio_chip);
@@ -53,26 +45,6 @@ public:
       claim_gpio(servo2_pin_);
       set_servo_angle(servo1_pin_, home_angle_);
       set_servo_angle(servo2_pin_, home_angle_);
-
-      // Use SRF08 distance messages to detect and clear nearby objects.
-      range_subscription_ = create_subscription<sensor_msgs::msg::Range>(
-        range_topic_,
-        10,
-        [this](const sensor_msgs::msg::Range::SharedPtr msg) {
-          last_sensor_message_time_ = std::chrono::steady_clock::now();
-          received_sensor_message_ = true;
-
-          const double distance = msg->range;
-          if (!std::isfinite(distance) ||
-            distance < msg->min_range || distance >= msg->max_range)
-          {
-            set_object_detected(false);
-          } else if (distance <= object_detect_distance_) {
-            set_object_detected(true);
-          } else if (distance >= object_clear_distance_) {
-            set_object_detected(false);
-          }
-        });
 
       // Allow direct angle commands for servo 1.
       servo1_subscription_ = create_subscription<std_msgs::msg::Float64>(
@@ -90,39 +62,19 @@ public:
           set_servo_angle(servo2_pin_, msg->data);
         });
 
-      // Return the detection state to clear if SRF08 messages stop arriving.
-      sensor_timeout_timer_ = create_wall_timer(
-        std::chrono::milliseconds(sensor_check_period_ms_),
-        [this]() {
-          const auto now = std::chrono::steady_clock::now();
-          const auto timeout = std::chrono::duration<double>(sensor_timeout_seconds_);
-          if (object_detected_ &&
-            (!received_sensor_message_ || now - last_sensor_message_time_ > timeout))
-          {
-            set_object_detected(false);
-          }
+      playback_subscription_ = create_subscription<std_msgs::msg::Bool>(
+        jaw_playback_topic_,
+        10,
+        [this](const std_msgs::msg::Bool::SharedPtr msg) {
+          const double angle = msg->data ? jaw_open_angle_ : home_angle_;
+          set_servo_angle(servo1_pin_, angle);
         });
-
-      // Return both servos home after the configured detection hold duration.
-      hold_timer_ = create_wall_timer(
-        std::chrono::duration_cast<std::chrono::nanoseconds>(
-          std::chrono::duration<double>(hold_duration_seconds_)),
-        [this]() {
-          hold_timer_->cancel();
-          RCLCPP_INFO(
-            get_logger(), "Hold complete; returning both servos to %.1f degrees",
-            home_angle_);
-          set_servo_angle(servo1_pin_, home_angle_);
-          set_servo_angle(servo2_pin_, home_angle_);
-        });
-      hold_timer_->cancel();
 
       RCLCPP_INFO(
         get_logger(),
-        "DS3225 GPIO controller ready on BCM GPIO %d and %d; each detection on %s moves "
-        "both servos to %.1f degrees for %.1f seconds",
-        servo1_pin_, servo2_pin_, range_topic_.c_str(),
-        object_detect_angle_, hold_duration_seconds_);
+        "DS3225 GPIO controller ready on BCM GPIO %d and %d; jaw playback from %s "
+        "moves servo 1 between %.1f and %.1f degrees",
+        servo1_pin_, servo2_pin_, jaw_playback_topic_.c_str(), home_angle_, jaw_open_angle_);
     } catch (...) {
       release_gpio();
       throw;
@@ -147,13 +99,13 @@ private:
               "Servo GPIO pins must be distinct Raspberry Pi BCM GPIO numbers from 0 to 27");
     }
     if (!std::isfinite(min_angle_) || !std::isfinite(max_angle_) ||
-      !std::isfinite(home_angle_) || !std::isfinite(object_detect_angle_) ||
-      min_angle_ < 180.0 || max_angle_ > 360.0 || min_angle_ >= max_angle_ ||
+      !std::isfinite(home_angle_) || !std::isfinite(jaw_open_angle_) ||
+      min_angle_ < 0.0 || max_angle_ > 180.0 || min_angle_ >= max_angle_ ||
       home_angle_ < min_angle_ || home_angle_ > max_angle_ ||
-      object_detect_angle_ < min_angle_ || object_detect_angle_ > max_angle_)
+      jaw_open_angle_ < min_angle_ || jaw_open_angle_ > max_angle_)
     {
       throw std::invalid_argument(
-              "Servo angles must satisfy 180 <= min < max <= 360 and home/detection angles "
+              "Servo angles must satisfy 0 <= min < max <= 180 and home/jaw-open angles "
               "must be within that range");
     }
     if (min_pulse_width_us_ < 500 ||
@@ -163,18 +115,6 @@ private:
       throw std::invalid_argument(
               "Pulse widths must satisfy 500 <= min < max <= 2500 microseconds, and PWM "
               "frequency must be positive");
-    }
-    if (!std::isfinite(object_detect_distance_) ||
-      !std::isfinite(object_clear_distance_) ||
-      object_detect_distance_ <= 0.0 ||
-      object_detect_distance_ >= object_clear_distance_ ||
-      !std::isfinite(sensor_timeout_seconds_) || sensor_timeout_seconds_ <= 0.0 ||
-      sensor_check_period_ms_ <= 0 ||
-      !std::isfinite(hold_duration_seconds_) || hold_duration_seconds_ <= 0.0)
-    {
-      throw std::invalid_argument(
-              "Object distances must satisfy 0 < detect < clear, and sensor timeout and "
-              "hold duration must be positive");
     }
   }
 
@@ -243,24 +183,6 @@ private:
       pin, angle, pulse_width_us);
   }
 
-  // Apply rising-edge detection and start a timed movement for a new detection.
-  void set_object_detected(bool detected)
-  {
-    if (detected == object_detected_) {
-      return;
-    }
-
-    object_detected_ = detected;
-    RCLCPP_INFO(
-      get_logger(), "Object %s",
-      object_detected_ ? "detected" : "cleared");
-    if (object_detected_) {
-      set_servo_angle(servo1_pin_, object_detect_angle_);
-      set_servo_angle(servo2_pin_, object_detect_angle_);
-      hold_timer_->reset();
-    }
-  }
-
   int gpio_chip_handle_{-1};
   bool servo1_claimed_{false};
   bool servo2_claimed_{false};
@@ -269,26 +191,16 @@ private:
   double min_angle_{0.0};
   double max_angle_{180.0};
   double home_angle_{0.0};
-  double object_detect_angle_{90.0};
+  double jaw_open_angle_{90.0};
   int min_pulse_width_us_{500};
   int max_pulse_width_us_{2500};
   int pwm_frequency_hz_{50};
-  std::string range_topic_{"/scan/ultrasonic"};
+  std::string jaw_playback_topic_{"/speaker/playing"};
   std::string servo1_command_topic_{"/ds3225/angle"};
   std::string servo2_command_topic_{"/ds3225/servo2/angle"};
-  double object_detect_distance_{0.20};
-  double object_clear_distance_{0.25};
-  double sensor_timeout_seconds_{0.5};
-  int sensor_check_period_ms_{100};
-  double hold_duration_seconds_{2.0};
-  bool object_detected_{false};
-  bool received_sensor_message_{false};
-  std::chrono::steady_clock::time_point last_sensor_message_time_{};
-  rclcpp::Subscription<sensor_msgs::msg::Range>::SharedPtr range_subscription_;
   rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr servo1_subscription_;
   rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr servo2_subscription_;
-  rclcpp::TimerBase::SharedPtr sensor_timeout_timer_;
-  rclcpp::TimerBase::SharedPtr hold_timer_;
+  rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr playback_subscription_;
 };
 
 int main(int argc, char ** argv)

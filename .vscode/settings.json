@@ -10,5 +10,6 @@
         "/opt/ros/jazzy/opt/sdformat_vendor/lib/python",
         "/opt/ros/jazzy/opt/gz_math_vendor/lib/python",
         "/opt/ros/jazzy/lib/python3.12/site-packages"
-    ]
+    ],
+    "cmake.ignoreCMakeListsMissing": true
 }

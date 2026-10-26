@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/atuieee/spooky_ws/src/fs90r_hardware
-# Build directory: /home/atuieee/spooky_ws/build/fs90r_hardware
+# Source directory: /home/robodemo/Bots/spooky_ws/src/fs90r_hardware
+# Build directory: /home/robodemo/Bots/spooky_ws/build/fs90r_hardware
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

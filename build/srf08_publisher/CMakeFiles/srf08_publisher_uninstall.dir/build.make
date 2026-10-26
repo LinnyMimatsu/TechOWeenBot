@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/atuieee/spooky_ws/src/srf08_publisher
+CMAKE_SOURCE_DIR = /home/robodemo/Bots/spooky_ws/src/srf08_publisher
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/atuieee/spooky_ws/build/srf08_publisher
+CMAKE_BINARY_DIR = /home/robodemo/Bots/spooky_ws/build/srf08_publisher
 
 # Utility rule file for srf08_publisher_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/srf08_publisher_uninstall.dir/compiler_depend.make
 include CMakeFiles/srf08_publisher_uninstall.dir/progress.make
 
 CMakeFiles/srf08_publisher_uninstall:
-	/usr/bin/cmake -P /home/atuieee/spooky_ws/build/srf08_publisher/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/robodemo/Bots/spooky_ws/build/srf08_publisher/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 srf08_publisher_uninstall: CMakeFiles/srf08_publisher_uninstall
 srf08_publisher_uninstall: CMakeFiles/srf08_publisher_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/srf08_publisher_uninstall.dir/clean:
 .PHONY : CMakeFiles/srf08_publisher_uninstall.dir/clean
 
 CMakeFiles/srf08_publisher_uninstall.dir/depend:
-	cd /home/atuieee/spooky_ws/build/srf08_publisher && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/atuieee/spooky_ws/src/srf08_publisher /home/atuieee/spooky_ws/src/srf08_publisher /home/atuieee/spooky_ws/build/srf08_publisher /home/atuieee/spooky_ws/build/srf08_publisher /home/atuieee/spooky_ws/build/srf08_publisher/CMakeFiles/srf08_publisher_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/robodemo/Bots/spooky_ws/build/srf08_publisher && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robodemo/Bots/spooky_ws/src/srf08_publisher /home/robodemo/Bots/spooky_ws/src/srf08_publisher /home/robodemo/Bots/spooky_ws/build/srf08_publisher /home/robodemo/Bots/spooky_ws/build/srf08_publisher /home/robodemo/Bots/spooky_ws/build/srf08_publisher/CMakeFiles/srf08_publisher_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/srf08_publisher_uninstall.dir/depend
 

@@ -8,6 +8,9 @@ ds3225_serial_bridge:
     reverse_servo2_direction: false
     home_angle: 180.0
     object_detect_angle: 120.0
+    jaw_closed_angle: 0.0
+    jaw_open_angle: 120.0
+    jaw_playback_topic: /speaker/playing
     range_topic: /scan/ultrasonic
     servo1_command_topic: /ds3225/angle
     servo2_command_topic: /ds3225/servo2/angle
