@@ -6,6 +6,7 @@ ds3225_serial_bridge:
     max_angle: 180.0
     reverse_servo1_direction: true
     reverse_servo2_direction: false
+    reverse_jaw_servo_direction: false
     home_angle: 180.0
     object_detect_angle: 120.0
     jaw_closed_angle: 0.0
@@ -14,6 +15,7 @@ ds3225_serial_bridge:
     range_topic: /scan/ultrasonic
     servo1_command_topic: /ds3225/angle
     servo2_command_topic: /ds3225/servo2/angle
+    jaw_servo_command_topic: /ds3225/jaw/angle
     object_detect_distance: 0.20
     object_clear_distance: 0.25
     sensor_timeout_seconds: 0.5

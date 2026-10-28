@@ -35,6 +35,8 @@ public:
     max_angle_ = declare_parameter<double>("max_angle", 180.0);
     reverse_servo1_direction_ = declare_parameter<bool>("reverse_servo1_direction", false);
     reverse_servo2_direction_ = declare_parameter<bool>("reverse_servo2_direction", false);
+    reverse_jaw_servo_direction_ = declare_parameter<bool>(
+      "reverse_jaw_servo_direction", false);
     home_angle_ = declare_parameter<double>("home_angle", 0.0);
     object_detect_angle_ = declare_parameter<double>("object_detect_angle", 90.0);
     jaw_closed_angle_ = declare_parameter<double>("jaw_closed_angle", 0.0);
@@ -46,6 +48,8 @@ public:
       declare_parameter<std::string>("servo1_command_topic", "/ds3225/angle");
     servo2_command_topic_ =
       declare_parameter<std::string>("servo2_command_topic", "/ds3225/servo2/angle");
+    jaw_servo_command_topic_ = declare_parameter<std::string>(
+      "jaw_servo_command_topic", "/ds3225/jaw/angle");
     object_detect_distance_ = declare_parameter<double>("object_detect_distance", 0.20);
     object_clear_distance_ = declare_parameter<double>("object_clear_distance", 0.25);
     sensor_timeout_seconds_ = declare_parameter<double>("sensor_timeout_seconds", 0.5);
@@ -113,6 +117,13 @@ public:
           return_timer_->cancel();
         }
         send_servo_angle(2, msg->data);
+      });
+
+    jaw_servo_subscription_ = create_subscription<std_msgs::msg::Float64>(
+      jaw_servo_command_topic_,
+      10,
+      [this](const std_msgs::msg::Float64::SharedPtr msg) {
+        send_servo_angle(3, msg->data);
       });
 
     range_subscription_ = create_subscription<sensor_msgs::msg::Range>(
@@ -351,7 +362,7 @@ private:
     }
 
     const bool reverse_direction = servo_id == 1 ? reverse_servo1_direction_ :
-      (servo_id == 2 && reverse_servo2_direction_);
+      (servo_id == 2 ? reverse_servo2_direction_ : reverse_jaw_servo_direction_);
     const double mapped_angle = reverse_direction ?
       min_angle_ + max_angle_ - angle : angle;
     const auto servo_angle = static_cast<int>(std::lround(mapped_angle));
@@ -393,6 +404,7 @@ private:
   double max_angle_{180.0};
   bool reverse_servo1_direction_{false};
   bool reverse_servo2_direction_{false};
+  bool reverse_jaw_servo_direction_{false};
   double home_angle_{0.0};
   double object_detect_angle_{90.0};
   double jaw_closed_angle_{0.0};
@@ -401,6 +413,7 @@ private:
   std::string range_topic_{"/scan/ultrasonic"};
   std::string servo1_command_topic_{"/ds3225/angle"};
   std::string servo2_command_topic_{"/ds3225/servo2/angle"};
+  std::string jaw_servo_command_topic_{"/ds3225/jaw/angle"};
   double object_detect_distance_{0.20};
   double object_clear_distance_{0.25};
   double sensor_timeout_seconds_{0.5};
@@ -416,6 +429,7 @@ private:
   std::chrono::steady_clock::time_point last_sensor_message_time_{};
   rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr subscription_;
   rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr servo2_subscription_;
+  rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr jaw_servo_subscription_;
   rclcpp::Subscription<sensor_msgs::msg::Range>::SharedPtr range_subscription_;
   rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr playback_subscription_;
   rclcpp::TimerBase::SharedPtr sensor_timeout_timer_;
